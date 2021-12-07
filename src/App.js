@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import "./App.css";
 import "./styles/commonStyles/mouse.css";
 import Nav from "./components/global/Nav";
-import Home from "./components/Home";
 
 function App() {
   useEffect(() => {
