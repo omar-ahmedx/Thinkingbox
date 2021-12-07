@@ -58,3 +58,7 @@ a {
   height: 2px;
   background-color: black;
 }
+.row {
+  display: flex;
+  justify-content: space-between;
+}

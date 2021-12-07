@@ -4,6 +4,7 @@ import logo from "../../styles/imgs/logo.png";
 import Home from "../Home";
 import Work from "../Work";
 import Contact from "../Contact";
+import Archive from "../Archive";
 function Nav() {
   return (
     <div>
@@ -69,7 +70,7 @@ function Nav() {
           <Route exact path="/work" element={<Work />}></Route>
           <Route exact path="/careers" element={<Home />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/archive" element={<Home />}></Route>
+          <Route exact path="/archive" element={<Archive />}></Route>
         </Routes>
       </Router>
     </div>

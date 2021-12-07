@@ -336,7 +336,7 @@ function Work() {
           </div>
         </div>
 
-        <div className="btn-container archive">
+        <div className="btn-container archive-btn">
           <div>
             <a href="/archive">
               <div className="btn">

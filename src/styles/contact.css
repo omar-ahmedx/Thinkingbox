@@ -37,10 +37,7 @@
 .form-container {
   margin-top: 60px;
 }
-.row {
-  display: flex;
-  justify-content: space-between;
-}
+
 label {
   display: flex;
   flex-basis: 50%;

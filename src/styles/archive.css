@@ -1,1 +1,34 @@
-/*--- style ---*
+.timeline {
+  margin: 70px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.timeline a {
+  color: #656565;
+  font-size: 20px;
+  padding: 0 5px;
+}
+.archive {
+  display: flex;
+}
+.years {
+  flex-basis: 35%;
+}
+.years div {
+  font-size: 50px;
+  padding: 40px 250px 40px 0;
+  margin-right: 30px;
+  color: #656565;
+  border: 1px solid #c7c7c7;
+  border-top: none;
+  border-left: none;
+}
+
+.articals {
+  margin-top: 10px;
+}
+.articals a {
+  color: #656565;
+  font-size: 30px;
+  line-height: 2;
+}
