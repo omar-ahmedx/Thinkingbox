@@ -1,23 +1,104 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import "./styles/commonStyles/mouse.css";
+import Nav from "./components/global/Nav";
+import Home from "./components/Home";
 
 function App() {
+  useEffect(() => {
+    var cursor = {
+      delay: 8,
+      _x: 0,
+      _y: 0,
+      endX: window.innerWidth / 2,
+      endY: window.innerHeight / 2,
+      cursorVisible: true,
+      cursorEnlarged: false,
+      $dot: document.querySelector(".cursor-dot"),
+      $outline: document.querySelector(".cursor-dot-outline"),
+
+      init: function () {
+        // Set up element sizes
+        this.dotSize = this.$dot.offsetWidth;
+        this.outlineSize = this.$outline.offsetWidth;
+
+        this.setupEventListeners();
+        this.animateDotOutline();
+      },
+
+      setupEventListeners: function () {
+        var self = this;
+
+        document.addEventListener("mousemove", function (e) {
+          // Show the cursor
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+
+          // Position the dot
+          self.endX = e.pageX;
+          self.endY = e.pageY;
+          self.$dot.style.top = self.endY + "px";
+          self.$dot.style.left = self.endX + "px";
+        });
+
+        // Hide/show cursor
+        document.addEventListener("mouseenter", function (e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+        });
+
+        document.addEventListener("mouseleave", function (e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+        });
+      },
+
+      animateDotOutline: function () {
+        var self = this;
+
+        self._x += (self.endX - self._x) / self.delay;
+        self._y += (self.endY - self._y) / self.delay;
+        self.$outline.style.top = self._y + "px";
+        self.$outline.style.left = self._x + "px";
+
+        requestAnimationFrame(this.animateDotOutline.bind(self));
+      },
+
+      toggleCursorSize: function () {
+        var self = this;
+
+        if (self.cursorEnlarged) {
+          self.$dot.style.transform = "translate(-50%, -50%) scale(0.75)";
+          self.$outline.style.transform = "translate(-50%, -50%) scale(1.5)";
+        } else {
+          self.$dot.style.transform = "translate(-50%, -50%) scale(1)";
+          self.$outline.style.transform = "translate(-50%, -50%) scale(1)";
+        }
+      },
+
+      toggleCursorVisibility: function () {
+        var self = this;
+
+        if (self.cursorVisible) {
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+        } else {
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+        }
+      },
+    };
+    cursor.init();
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="cursor-dot-outline"></div>
+      <div className="cursor-dot"></div>
+      <Nav />
     </div>
   );
 }

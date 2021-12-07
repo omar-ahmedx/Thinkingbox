@@ -1,0 +1,89 @@
+.sec-nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.sec-nav {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-nav div {
+  display: flex;
+  flex-direction: column;
+}
+.sec-nav div a {
+  color: black;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.work-with {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+.line {
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  margin-right: 40px;
+}
+
+.privacy {
+  margin: 30px 0 100px 0;
+  font-size: 18px;
+}
+.privacy a {
+  color: black;
+}
+.small-dot {
+  position: relative;
+  top: -5px;
+  height: 2px;
+  width: 2px;
+  margin: 0 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.loop-outer-container {
+  position: relative;
+  width: 100vw;
+  height: 70px;
+  left: -30%;
+}
+.loop-inner-container {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  font-size: 35px;
+  white-space: nowrap;
+  animation: loop 25s linear infinite;
+}
+@keyframes loop {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -49.8%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.orange-dot {
+  position: relative;
+  top: -6px;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgb(255, 156, 125);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 30px;
+}
