@@ -5,16 +5,16 @@ function Footer() {
       <div className="sec-nav-container">
         <div className="sec-nav">
           <div>
-            <a href="">Home</a>
-            <a href="">Work</a>
-            <a href="">Culture</a>
-            <a href="">Careers</a>
-            <a href="">Contact</a>
-            <a href="">Archive</a>
+            <a href="/home">Home</a>
+            <a href="/work">Work</a>
+            <a href="/culture">Culture</a>
+            <a href="/careers">Careers</a>
+            <a href="/contact">Contact</a>
+            <a href="/archive">Archive</a>
           </div>
           <div>
-            <a href="">AntiSocial</a>
-            <a href="">Talk Nerdy</a>
+            <a href="/AntiSocial">AntiSocial</a>
+            <a href="/talknerdy">Talk Nerdy</a>
           </div>
         </div>
 
@@ -82,8 +82,9 @@ function Footer() {
       <div className="privacy">
         <span>
           Thinking box 2021 <span className="small-dot"></span>{" "}
-          <a href="">Terms And Conditions</a>{" "}
-          <span className="small-dot"></span> <a href="">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms And Conditions</a>{" "}
+          <span className="small-dot"></span>{" "}
+          <a href="/privacy-policy">Privacy Policy</a>
         </span>
         <img src="" alt="" />
       </div>

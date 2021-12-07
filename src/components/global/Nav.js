@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../../styles/commonStyles/nav.css";
+import logo from "../../styles/imgs/logo.png";
 import Home from "../Home";
 import Work from "../Work";
-import logo from "../../styles/imgs/logo.png";
+import Contact from "../Contact";
 function Nav() {
   return (
     <div>
@@ -67,7 +68,7 @@ function Nav() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/work" element={<Work />}></Route>
           <Route exact path="/careers" element={<Home />}></Route>
-          <Route exact path="/contact" element={<Home />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/archive" element={<Home />}></Route>
         </Routes>
       </Router>

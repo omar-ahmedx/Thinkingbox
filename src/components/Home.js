@@ -48,8 +48,8 @@ function Home() {
     const area = document.querySelector(".shape");
     const box = document.querySelector(".shape-container");
 
-    const width = document.querySelector(".shape").clientWidth;
-    const height = document.querySelector(".shape").clientHeight;
+    //const width = document.querySelector(".shape").clientWidth;
+    //const height = document.querySelector(".shape").clientHeight;
 
     // we want to move the object by 50px at most
     const maxDeltaX = 50;
@@ -410,15 +410,15 @@ function Home() {
       <section className="bottom-list">
         <div className="hover-container">
           <img className="hover-img" src={mountainDwe} alt="img" />
-          <a href="">Our</a>
+          <a href="/culture">Our</a>
         </div>
         <div className="middle hover-container">
-          <a href="" className="light">
+          <a href="/culture" className="light">
             Collectives's
           </a>
         </div>
         <div className="hover-container">
-          <a href="">Culture</a>
+          <a href="/culture">Culture</a>
         </div>
       </section>
       <Footer />
