@@ -136,3 +136,12 @@
   grid-row-start: 8;
   margin-top: -170px;
 }
+
+.all-projects {
+  grid-column: 1/-1;
+  position: relative;
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}

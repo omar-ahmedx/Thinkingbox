@@ -5,6 +5,7 @@ import Home from "../Home";
 import Work from "../Work";
 import Contact from "../Contact";
 import Archive from "../Archive";
+import Careers from "../Careers";
 function Nav() {
   return (
     <div>
@@ -68,7 +69,7 @@ function Nav() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/work" element={<Work />}></Route>
-          <Route exact path="/careers" element={<Home />}></Route>
+          <Route exact path="/careers" element={<Careers />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/archive" element={<Archive />}></Route>
         </Routes>
