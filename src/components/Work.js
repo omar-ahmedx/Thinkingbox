@@ -23,7 +23,7 @@ function Work() {
           if (top < 1600) {
             e.classList.add("active");
           }
-        }, 200 * i);
+        }, 100 * i);
       });
     });
   }, []);

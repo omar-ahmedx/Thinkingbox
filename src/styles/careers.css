@@ -1,0 +1,120 @@
+.imgs-box {
+  position: relative;
+}
+
+.imgs-box .img {
+  width: 100%;
+  max-width: 80vw;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.imgs-box .img.hide {
+  visibility: hidden;
+}
+
+.imgs-box .img:not(.hide) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s cubic-bezier(0.18, 0.98, 0.45, 1);
+}
+
+.imgs-box:hover .img:not(.hide)[data-slide="0"] {
+  transform: rotate(4deg);
+}
+
+.imgs-box:hover .img:not(.hide)[data-slide="1"] {
+  transform: rotate(-4deg);
+}
+
+.imgs-box .img:not(.hide)[data-slide="0"] {
+  z-index: 6;
+  opacity: 1;
+}
+
+.imgs-box .img:not(.hide)[data-slide="1"] {
+  z-index: 5;
+  opacity: 0.9;
+}
+
+.imgs-box .img:not(.hide)[data-slide="2"] {
+  z-index: 4;
+  opacity: 0.8;
+}
+
+.imgs-box .img:not(.hide)[data-slide="3"] {
+  animation: slide 1s 1 linear;
+}
+@keyframes slide {
+  0% {
+    z-index: 7;
+    transform: translateX(0) rotate(4deg);
+  }
+  50% {
+    transform: translateX(-100px) rotate(-10deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.imgs-box .img:not(.hide)[data-slide="4"] {
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.imgs-box .img:not(.hide)[data-slide="5"] {
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.imgs-box .img:not(.hide)[data-slide="0"] {
+  transition: all 1s cubic-bezier(0.18, 0.98, 0.45, 1);
+}
+.img img {
+  width: 100%;
+}
+
+.row div {
+  flex-basis: 45%;
+}
+.openings-container {
+  align-items: center;
+  margin: 100px 0;
+  padding: 120px 0;
+}
+.openings-container:nth-child(even) {
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+.openings-container:first-of-type {
+  border-top: none;
+}
+.openings-container:last-child {
+  margin-bottom: 200px;
+}
+.openings-place h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+.openings-place p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 25px 0;
+}
+.openings h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.openings p {
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid black;
+  width: max-content;
+}
+.order {
+  order: -1;
+}

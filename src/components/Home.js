@@ -408,16 +408,16 @@ function Home() {
         </div>
       </main>
       <section className="bottom-list">
-        <div className="hover-container">
+        <div className="middle hover-container">
           <img className="hover-img" src={mountainDwe} alt="img" />
           <a href="/culture">Our</a>
         </div>
-        <div className="middle hover-container">
+        <div className="hover-container">
           <a href="/culture" className="light">
             Collectives's
           </a>
         </div>
-        <div className="hover-container">
+        <div className="middle hover-container">
           <a href="/culture">Culture</a>
         </div>
       </section>
