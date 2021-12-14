@@ -77,9 +77,12 @@
   width: 100%;
 }
 
-.row div {
-  flex-basis: 45%;
+@media (min-width: 1024px) {
+  .row div {
+    flex-basis: 45%;
+  }
 }
+
 .openings-container {
   align-items: center;
   margin: 100px 0;
@@ -117,4 +120,18 @@
 }
 .order {
   order: -1;
+}
+
+@media (max-width: 1024px) {
+  .openings-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .imgs-box-container {
+    order: -1;
+  }
+  .imgs-box .img {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
 }

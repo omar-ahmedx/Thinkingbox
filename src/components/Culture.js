@@ -1,3 +1,4 @@
+import { useEffect } from "react/cjs/react.development";
 import "../styles/culture.css";
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
@@ -5,21 +6,102 @@ import gif3 from "../styles/gifs/gif3.webp";
 
 import Footer from "./global/Footer";
 function Culture() {
+  useEffect(() => {
+    // get the slider
+    var theSlider = document.querySelector(".slider-all-items");
+    // get the items in the slider
+    var sliderItem = document.querySelectorAll(".slider-item");
+
+    // variables saved for later
+    var sliderWidth;
+    var sliderRight;
+    var pos1, pos3, pos2, sliderLeft;
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos3 = e.clientX;
+
+      // set the element's new position:
+      theSlider.style.left = theSlider.offsetLeft - pos1 + "px";
+    }
+
+    function closeDragElement() {
+      // get each item width
+      sliderWidth = theSlider.getBoundingClientRect().width / sliderItem.length;
+      // get the right side position of the slider
+      sliderRight = theSlider.getBoundingClientRect().right;
+      // get the left side position of the slider
+      sliderLeft = theSlider.getBoundingClientRect().left;
+
+      if (sliderLeft >= 0) {
+        theSlider.style.left = "0px";
+      }
+
+      if (sliderRight <= sliderWidth) {
+        theSlider.style.left =
+          -Math.abs(sliderWidth * sliderItem.length - sliderWidth) + "px";
+      }
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+
+    function dragElement(theSlider) {
+      pos1 = 0;
+      pos3 = 0;
+      theSlider.onmousedown = dragMouseDown;
+      theSlider.addEventListener("resize", closeDragElement);
+    }
+
+    dragElement(theSlider);
+
+    /* global ResizeObserver */
+
+    const ro = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        closeDragElement();
+      }
+    });
+
+    ro.observe(theSlider); //<-- NOTICE HERE
+  });
   return (
-    <div>
+    <div className="sections-padding">
       <header className="culture-header">
-        <h1>Made to make.</h1>
-        <h2>
-          <span>
-            <p>
-              Kindly refrain from calling us an "agency". We are a collective
-              built by artists, engineers, and makers; united by a shared
-              passion for cultural relevance and timeless creative
-            </p>
-          </span>
-        </h2>
+        <div className="slide-header">
+          <h1>Made to make.</h1>
+          <h2>
+            <span>
+              <p>
+                Kindly refrain from calling us an "agency". We are a collective
+                built by artists, engineers, and makers; united by a shared
+                passion for cultural relevance and timeless creative
+              </p>
+            </span>
+          </h2>
+        </div>
       </header>
-      <section></section>
+      <section>
+        <div data-item="slider-full" className="slider-container">
+          <div className="slider-all-items">
+            <div className="slider-item slider-item1"></div>
+            <div className="slider-item slider-item2"></div>
+            <div className="slider-item slider-item3"></div>
+          </div>
+        </div>
+      </section>
       <section className="we-are-container">
         <p className="we-are">
           We are an international team with 5 offices across North America, made
@@ -33,7 +115,7 @@ function Culture() {
         <ol>
           <li className="row making-section">
             <div>
-              <h2>Strategic Thinking</h2>{" "}
+              <h2>Strategic Thinking</h2>
             </div>
             <div className="gif">
               <img src={gif1} alt="gif" />
@@ -51,7 +133,7 @@ function Culture() {
           </li>
           <li className="row making-section">
             <div>
-              <h2>Craft & Artistry</h2>{" "}
+              <h2>Craft & Artistry</h2>
             </div>
             <div className="gif">
               <img src={gif2} alt="gif" />

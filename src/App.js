@@ -93,10 +93,25 @@ function App() {
     };
     cursor.init();
   });
+  useEffect(() => {
+    document.querySelector("body").classList.add("loaded");
+    document.querySelector("nav").classList.add("animate-nav");
+    if (document.querySelector(".slide-header")) {
+      document.querySelector(".slide-header").classList.add("animate-header");
+    }
+  }, []);
   return (
     <div className="App">
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+
       <div className="cursor-dot-outline"></div>
       <div className="cursor-dot"></div>
+
       <Nav />
     </div>
   );

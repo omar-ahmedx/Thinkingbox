@@ -8,6 +8,14 @@
   max-width: 1220px;
   margin-top: 150px;
 }
+@media (max-width: 1024px) {
+  .work {
+    margin-top: 20px;
+    grid-template-columns: 100%;
+    padding: 0 40px;
+  }
+}
+
 .work-container {
   margin: 20px 0;
 }
@@ -69,8 +77,25 @@
 }
 .archive-btn {
   margin: 200px 0;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+.btn-link {
+  width: 50%;
+  margin: 0 auto;
 }
 .work-footer {
   padding-top: 100px;
   border-top: 1px solid #c7c7c7;
+}
+
+@media (max-width: 1024px) {
+  .archive-btn {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .archive-div {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

@@ -28,7 +28,7 @@ function Work() {
     });
   }, []);
   return (
-    <div className="work-section">
+    <div className="work-section sections-padding">
       <main className="work">
         <div className="work-container">
           <div className="work-shape-wrapper">
@@ -337,7 +337,7 @@ function Work() {
         </div>
 
         <div className="btn-container archive-btn">
-          <div>
+          <div className="btn-link">
             <a href="/archive">
               <div className="btn">
                 <div className="line-btn"></div> <div>The Archive</div>

@@ -87,3 +87,13 @@
   display: inline-block;
   margin: 0 30px;
 }
+
+@media (max-width: 1024px) {
+  .sec-nav-container {
+    flex-direction: column;
+    width: 70%;
+  }
+  .work-with {
+    width: 256px;
+  }
+}

@@ -29,7 +29,7 @@ function Home() {
     const videoContainerFull = document.querySelectorAll(".full-wrapper");
     videoContainerFull.forEach((wrapper) => {
       wrapper.addEventListener("mouseover", (e) => {
-        e.target.nextSibling.style = "left:15%";
+        e.target.nextSibling.style = "margin-left:14%";
         e.target.previousSibling.style.cssText =
           "font-size: 700%; opacity: 1; top: -100px;";
       });
@@ -44,87 +44,81 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const page = document.querySelector(".move-container");
-    const area = document.querySelector(".shape");
-    const box = document.querySelector(".shape-container");
+    let maxDeltaX = 30,
+      maxDeltaY = 30;
+    let shapeWrapper = document.querySelectorAll(".shape-wrapper");
+    shapeWrapper.forEach((shape) => {
+      shape.addEventListener("mousemove", (e) => {
+        let shapeWidth = shape.clientWidth,
+          shapeHeight = shape.clientHeight;
 
-    //const width = document.querySelector(".shape").clientWidth;
-    //const height = document.querySelector(".shape").clientHeight;
+        let mouseX = (e.layerX / shapeWidth) * 2 - 1,
+          mouseY = (e.layerY / shapeHeight) * 2 - 1;
 
-    // we want to move the object by 50px at most
-    const maxDeltaX = 50;
-    const maxDeltaY = 50;
+        let translateX = mouseX * maxDeltaX,
+          translateY = mouseY * maxDeltaY;
 
-    let pageBox = page.getBoundingClientRect();
-    let pageTopLeft = {
-      x: pageBox.x,
-      y: pageBox.y,
-    };
+        let nextWidth = shape.nextSibling.clientWidth,
+          nextHeight = shape.nextSibling.clientHeight;
 
-    let areaBox = area.getBoundingClientRect();
-    let areaRange = {
-      w: areaBox.width / 2.0,
-      h: areaBox.height / 2.0,
-    };
+        let mouseXNext = translateX,
+          mouseYNext = translateY / (shapeHeight / nextHeight);
+        console.log(shape);
 
-    let boxBox = box.getBoundingClientRect();
-    let transformOrigin = {
-      x: boxBox.x + boxBox.width / 2.0,
-      y: boxBox.y + boxBox.height / 2.0,
-    };
+        shape.childNodes[0].style.cssText = `transform: translate3D(${translateX}px, ${translateY}px,0 )`;
 
-    // multipliers allow the full delta displacement within the hover area range
-    let multX = maxDeltaX / areaRange.w;
-    let multY = maxDeltaY / areaRange.h;
+        shape.nextSibling.style.cssText = `transform: translate3D(${
+          mouseXNext + 0.14 * shape.nextSibling.clientWidth
+        }px, ${(translateY / (shapeHeight / nextHeight)) * 10}px,0 )`;
+      });
+      shape.addEventListener("mouseout", (e) => {
+        shape.childNodes[0].style.cssText = `transform: translate(0, 0)`;
+      });
+    });
+  }, []);
 
-    area.addEventListener("mousemove", onMove);
-    area.addEventListener("mouseleave", onLeave);
-
-    // mouse coords are computed wrt the wrapper top left corner and their distance from the object center is normalized
-    function onMove(e) {
-      let dx = e.clientX - pageTopLeft.x - transformOrigin.x;
-      let dy = e.clientY - pageTopLeft.y - transformOrigin.y;
-      box.style.transform =
-        "translate3d(" + dx * multX + "px, " + dy * multY + "px, 0)";
-
-      box.style.transform =
-        "translate3d(" + dx * multX + "px, " + dy * multY + "px, 0)";
-    }
-
-    function onLeave(e) {
-      box.style.transform = "translate3d(0, 0, 0)";
-    }
-  });
   useEffect(() => {
     const sliderImages = document.querySelectorAll(".shape");
     document.addEventListener("scroll", () => {
       sliderImages.forEach((e, i) => {
         let top = e.getBoundingClientRect().top;
         if (top < 1600) {
-          e.classList.add("active");
-          console.log(e);
+          e.classList.add("shape-active");
         }
       });
     });
   }, []);
+
+  useEffect(() => {
+    let list = document.querySelectorAll(".hover-container");
+    list.forEach((item) => {
+      item.addEventListener("mousemove", (e) => {
+        item.childNodes[0].style.cssText = `left: ${
+          e.layerX - 350 / 2
+        }px; top: ${e.layerY - 350 / 2}px;`;
+      });
+    });
+  }, []);
   return (
-    <div className="home-container">
+    <div className="sections-padding">
       <header>
-        <h1>
-          <span className="scribble">
-            <span className="scribble-text">We are a globa</span>
-            <span className="scribble-container"></span>
-          </span>
-          l
-          <br />
-          <span>creative collective.</span>
-        </h1>
-        <h2>
-          <span>
-            <p>We shape the future of brands</p>
-            <p>through craft and curiosity</p>
-          </span>
-        </h2>
+        <div className="slide-header">
+          <h1>
+            <span className="scribble">
+              <span className="scribble-text">We are a globa</span>
+              <span className="scribble-container"></span>
+            </span>
+            l
+            <br />
+            <span>creative collective.</span>
+          </h1>
+          <h2>
+            <span>
+              <p>We shape the future of brands</p>
+              <p>through craft and curiosity</p>
+            </span>
+          </h2>
+        </div>
       </header>
       <main className="home-main">
         <div className="move-container full">
@@ -413,11 +407,13 @@ function Home() {
           <a href="/culture">Our</a>
         </div>
         <div className="hover-container">
+          <img className="hover-img" src={mountainDwe} alt="img" />
           <a href="/culture" className="light">
             Collectives's
           </a>
         </div>
         <div className="middle hover-container">
+          <img className="hover-img" src={mountainDwe} alt="img" />
           <a href="/culture">Culture</a>
         </div>
       </section>

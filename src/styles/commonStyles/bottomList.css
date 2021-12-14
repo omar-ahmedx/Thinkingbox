@@ -36,10 +36,11 @@
 }
 
 .hover-img {
+  pointer-events: none;
   opacity: 0;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  transition: opacity 1s;
+  width: 350px;
+  height: 350px;
+  transition: opacity 0.9s, left 0.2s linear, top 0.2s linear;
   z-index: 2;
 }

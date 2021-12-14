@@ -32,22 +32,24 @@ function Careers() {
     });
   }, []);
   return (
-    <div>
+    <div className="sections-padding">
       <header className="contact-header">
-        <h1>
-          <span className="scribble">Love the hustle.</span>
-          <br />
-        </h1>
-        <h2>
-          <span>
-            <p>
-              we balue <span className="scribble-text">diversity</span> and a
-              multicultural team. We believe different points of view make our
-              work stronger and more impactful. Join us.
-              <span className="scribble-container"></span>
-            </p>
-          </span>
-        </h2>
+        <div className="slide-header">
+          <h1>
+            <span className="scribble">Love the hustle.</span>
+            <br />
+          </h1>
+          <h2>
+            <span>
+              <p>
+                we balue <span className="scribble-text">diversity</span> and a
+                multicultural team. We believe different points of view make our
+                work stronger and more impactful. Join us.
+                <span className="scribble-container"></span>
+              </p>
+            </span>
+          </h2>
+        </div>
       </header>
       <main>
         <p className="small-text">

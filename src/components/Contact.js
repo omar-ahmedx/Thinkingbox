@@ -2,24 +2,27 @@ import "../styles/contact.css";
 import Footer from "./global/Footer";
 function Contact() {
   return (
-    <div>
+    <div className="sections-padding">
       <header className="contact-header">
-        <h1>
-          <span className="scribble">
-            Hello. Hej.
-            <span className="scribble-text">Howdy.</span>
-            <span className="scribble-container"></span>
-          </span>
-          <br />
-        </h1>
-        <h2>
-          <span>
-            <p>Could you be our newest friend?</p>
-            <p>
-              We certainly hope so. Don't hesitate to say hi and meet out team.
-            </p>
-          </span>
-        </h2>
+        <div className="slide-header">
+          <h1>
+            <span className="scribble">
+              Hello. Hej.
+              <span className="scribble-text">Howdy.</span>
+              <span className="scribble-container"></span>
+            </span>
+            <br />
+          </h1>
+          <h2>
+            <span>
+              <p>Could you be our newest friend?</p>
+              <p>
+                We certainly hope so. Don't hesitate to say hi and meet out
+                team.
+              </p>
+            </span>
+          </h2>
+        </div>
       </header>
       <main>
         <section className="staff-container">

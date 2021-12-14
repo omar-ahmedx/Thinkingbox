@@ -1,8 +1,14 @@
-nav {
+nav,
+.mobile-nav-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 95px;
+}
+.pc-nav {
+  padding-top: 95px;
+}
+.animate-nav {
+  animation: show 1s 0.2s 1 ease-in;
 }
 .logo {
   flex-basis: 270px;
@@ -16,9 +22,22 @@ nav {
   flex-basis: 50%;
   font-size: 1.2rem;
 }
+.mobile-nav-icon {
+  display: none;
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .links {
+    display: none;
+  }
+  .mobile-nav-icon {
+    display: block;
+  }
+}
 .links a {
   text-decoration: none;
   color: black;
+  margin: 0 10px;
 }
 /*--- Nav transation ---*/
 .deconstructed {
@@ -29,6 +48,9 @@ nav {
   font-family: "Cambay", sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.03em;
+}
+nav a {
+  padding-bottom: 10px;
 }
 
 .deconstructed > div {
@@ -151,4 +173,48 @@ nav {
   100% {
     transform: translateY(135%);
   }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mobile-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -9;
+  background-color: #222222;
+  opacity: 0;
+  transition: all 200ms linear;
+}
+
+.mobile-nav-exit svg {
+  fill: white;
+}
+.mobile-nav-top {
+  padding: 30px 10px;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-links a {
+  width: fit-content;
+  color: white;
+  margin: 20px;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.mobile-links a:hover {
+  border-bottom: 2px solid white;
+}
+.show {
+  opacity: 1;
+  z-index: 9;
 }

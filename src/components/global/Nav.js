@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import "../../styles/commonStyles/nav.css";
 import logo from "../../styles/imgs/logo.png";
 import Home from "../Home";
@@ -7,18 +12,78 @@ import Contact from "../Contact";
 import Archive from "../Archive";
 import Careers from "../Careers";
 import Culture from "../Culture";
+import { useEffect } from "react/cjs/react.development";
 function Nav() {
+  const open = () => {
+    document.querySelector(".mobile-nav-icon").addEventListener("click", () => {
+      document.querySelector(".mobile-nav").classList.add("show");
+    });
+  };
+  const close = () => {
+    document.querySelector(".mobile-nav-exit").addEventListener("click", () => {
+      document.querySelector(".mobile-nav").classList.remove("show");
+    });
+    document.querySelectorAll(".mobile-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelector(".mobile-nav").classList.remove("show");
+      });
+    });
+  };
+  useEffect(() => {
+    open();
+    close();
+  }, []);
   return (
     <div>
       <Router>
-        <nav>
+        <div className="mobile-nav">
+          <div className="mobile-nav-top">
+            <div className="logo">
+              <NavLink to="/">
+                <img src={logo} alt="Thinking box" />
+              </NavLink>
+            </div>
+            <div className="mobile-nav-exit">
+              <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="90" height="10"></rect>
+                <rect y="30" width="90" height="10"></rect>
+                <rect y="60" width="90" height="10"></rect>
+              </svg>
+            </div>
+          </div>
+          <div className="mobile-links">
+            <NavLink to="/work">Work</NavLink>
+            <NavLink to="/culture">Culture</NavLink>
+            <NavLink to="/careers">Careers</NavLink>
+
+            <NavLink to="/contact">Contact</NavLink>
+
+            <NavLink to="/archive">Archive</NavLink>
+          </div>
+        </div>
+
+        <nav className="pc-nav">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src={logo} alt="Thinking box" />
-            </Link>
+            </NavLink>
+          </div>
+          <div className="mobile-nav-icon">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="90" height="10"></rect>
+              <rect y="30" width="90" height="10"></rect>
+              <rect y="60" width="90" height="10"></rect>
+            </svg>
           </div>
           <div className="links">
-            <Link to="/work">
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/work"
+            >
               <div className="deconstructed">
                 Work
                 <div>Work</div>
@@ -26,8 +91,15 @@ function Nav() {
                 <div>Work</div>
                 <div>Work</div>
               </div>
-            </Link>
-            <Link to="/culture">
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/culture"
+            >
               <div className="deconstructed">
                 Culture
                 <div>Culture</div>
@@ -35,8 +107,15 @@ function Nav() {
                 <div>Culture</div>
                 <div>Culture</div>
               </div>
-            </Link>
-            <Link to="/careers">
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/careers"
+            >
               <div className="deconstructed">
                 Careers
                 <div>Careers</div>
@@ -44,9 +123,16 @@ function Nav() {
                 <div>Careers</div>
                 <div>Careers</div>
               </div>
-            </Link>
+            </NavLink>
 
-            <Link to="/contact">
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/contact"
+            >
               <div className="deconstructed">
                 Contact
                 <div>Contact</div>
@@ -54,9 +140,16 @@ function Nav() {
                 <div>Contact</div>
                 <div>Contact</div>
               </div>
-            </Link>
+            </NavLink>
 
-            <Link to="/archive">
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="/archive"
+            >
               <div className="deconstructed">
                 Archive
                 <div>Archive</div>
@@ -64,7 +157,7 @@ function Nav() {
                 <div>Archive</div>
                 <div>Archive</div>
               </div>
-            </Link>
+            </NavLink>
           </div>
         </nav>
         <Routes>
