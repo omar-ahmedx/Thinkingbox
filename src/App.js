@@ -120,26 +120,6 @@ function App() {
         setDelay(true);
       });
     });
-    let sliders = document.querySelectorAll(".slider-container");
-    sliders.forEach((slide) => {
-      slide.addEventListener("mouseenter", () => {
-        document.querySelector(".drag").style.display = "flex";
-        document.querySelector(".cursor-dot").style.backgroundColor =
-          "transparent";
-        document
-          .querySelector(".cursor-dot-outline")
-          .classList.add("eye-outline");
-        setDelay(false);
-      });
-      slide.addEventListener("mouseleave", () => {
-        document.querySelector(".drag").style.display = "none";
-        document.querySelector(".cursor-dot").style.backgroundColor = "#f49578";
-        document
-          .querySelector(".cursor-dot-outline")
-          .classList.remove("eye-outline");
-        setDelay(true);
-      });
-    });
   });
 
   /*useCurtains((curtains) => {

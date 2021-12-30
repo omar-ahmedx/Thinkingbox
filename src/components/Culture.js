@@ -43,64 +43,64 @@ import team17 from "../styles/imgs/TEAM/team17.png";
 import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
-function Culture() {
-  // get the slider
-  var theSlider = document.querySelectorAll(".slider-all-items");
-  theSlider.forEach((slider) => {
-    dragElement(slider);
-  });
-  // run the function
+function Culture(props) {
+  useEffect(() => {
+    // get the slider
+    var theSlider = document.querySelectorAll(".slider-all-items");
+    theSlider.forEach((slider) => {
+      dragElement(slider);
+    });
+    // run the function
 
-  function dragElement(theSlider) {
-    var pos1 = 0,
-      pos3 = 0;
-    theSlider.onmousedown = dragMouseDown;
+    function dragElement(theSlider) {
+      var pos1 = 0,
+        pos3 = 0;
+      theSlider.onmousedown = dragMouseDown;
 
-    function dragMouseDown(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // get the mouse cursor position at startup:
-      pos3 = e.clientX;
-      document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
-      document.onmousemove = elementDrag;
-    }
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
 
-    function elementDrag(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // calculate the new cursor position:
-      pos1 = pos3 - e.clientX;
-      pos3 = e.clientX;
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos3 = e.clientX;
 
-      // set the element's new position:
-      if (theSlider.offsetLeft - pos1 >= 0) {
-        theSlider.style.left = 0;
-      } else if (theSlider.offsetLeft - pos1 < -2515) {
-        closeDragElement();
-        theSlider.style.left = "-2500px";
-      } else {
-        theSlider.style.left = theSlider.offsetLeft - pos1 + "px";
+        // set the element's new position:
+        if (theSlider.offsetLeft - pos1 >= 0) {
+          theSlider.style.left = 0;
+        } else if (theSlider.offsetLeft - pos1 < -2515) {
+          closeDragElement();
+          theSlider.style.left = "-2500px";
+        } else {
+          theSlider.style.left = theSlider.offsetLeft - pos1 + "px";
+        }
+      }
+
+      function closeDragElement() {
+        // get each item width
+
+        // get the right side position of the slider
+
+        // delay 0.5s, then remove the class .shifting when finished checking and styling
+        // .shifting {transition: all 0.5s ease;}
+        setTimeout(() => {
+          theSlider.classList.remove("shifting");
+        }, 500);
+
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
       }
     }
-
-    function closeDragElement() {
-      // get each item width
-
-      // get the right side position of the slider
-
-      // delay 0.5s, then remove the class .shifting when finished checking and styling
-      // .shifting {transition: all 0.5s ease;}
-      setTimeout(() => {
-        theSlider.classList.remove("shifting");
-      }, 500);
-
-      // stop moving when mouse button is released:
-      document.onmouseup = null;
-      document.onmousemove = null;
-    }
-  }
-  useEffect(() => {
     let list = document.querySelectorAll(".hover-container");
     list.forEach((item) => {
       item.addEventListener("mousemove", (e) => {
@@ -110,7 +110,28 @@ function Culture() {
         }px; top: ${e.layerY - 350 / 2}px;`;
       });
     });
-  }, []);
+    let sliders = document.querySelectorAll(".slider-container");
+    sliders.forEach((slide) => {
+      slide.addEventListener("mouseenter", () => {
+        document.querySelector(".drag").style.display = "flex";
+        document.querySelector(".cursor-dot").style.backgroundColor =
+          "transparent";
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        props.delay(false);
+      });
+      slide.addEventListener("mouseleave", () => {
+        document.querySelector(".drag").style.display = "none";
+        document.querySelector(".cursor-dot").style.backgroundColor = "#f49578";
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        props.delay(true);
+      });
+    });
+  });
+
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="culture-header">
