@@ -9,7 +9,6 @@ import Contact from "../Contact";
 import Archive from "../Archive";
 import Careers from "../Careers";
 import Culture from "../Culture";
-import { useEffect } from "react/cjs/react.development";
 function Nav(props) {
   const location = useLocation();
   let prevScrollpos = window.pageYOffset;
