@@ -42,7 +42,7 @@ function Work() {
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
-          <a href="./indie">
+          <a href="/indie">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case1} />
@@ -108,7 +108,7 @@ function Work() {
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="frontend">
+          <a href="/frontend">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case4} />
@@ -130,7 +130,7 @@ function Work() {
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="socialmedia">
+          <a href="/socialmedia">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case5} />
@@ -152,7 +152,7 @@ function Work() {
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="artwork">
+          <a href="/artwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case6} />
