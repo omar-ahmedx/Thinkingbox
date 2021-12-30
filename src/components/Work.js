@@ -98,7 +98,11 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case5} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
+                  <video
+                    className="work-video black-bg"
+                    loop="True"
+                    muted="True"
+                  >
                     <source src={socialCase} type="video/mp4" />
                   </video>
                 </div>

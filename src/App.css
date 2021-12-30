@@ -1,6 +1,7 @@
 #root {
   width: 1220px;
   margin: 0 25px;
+  padding-top: 90px;
 }
 @media (max-width: 1240px) {
   #root {
