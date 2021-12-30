@@ -306,7 +306,7 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team3} />
+                <img alt="style" src={team4} />
               </div>
             </div>
 
@@ -324,7 +324,7 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team17} />
+                <img alt="style" src={team3} />
               </div>
             </div>
 
@@ -339,6 +339,7 @@ function Culture(props) {
               people. #LivingTheDream"
             </div>
           </div>
+
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
@@ -375,24 +376,7 @@ function Culture(props) {
               people. #LivingTheDream"
             </div>
           </div>
-          <div className="work-container">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={team4} />
-              </div>
-            </div>
 
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-            <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
-            </div>
-          </div>
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
