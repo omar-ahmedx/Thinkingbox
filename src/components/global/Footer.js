@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import "../../styles/commonStyles/footer.css";
 import logo from "../../styles/imgs/LOGO.png";
+
 function Footer() {
   return (
     <footer>
@@ -44,11 +46,11 @@ function Footer() {
         </div>
 
         <div>
-          <a href="./contact">
+          <NavLink to="/contact">
             <div className="work-with mouse-hover">
               <div className="line"></div> <div>Work With Us</div>
             </div>
-          </a>
+          </NavLink>
           <div></div>
         </div>
       </div>
@@ -149,9 +151,9 @@ function Footer() {
       <div className="privacy">
         <span>
           Cheesecake 2021 <span className="small-dot"></span>{" "}
-          <a className="mouse-hover" href="/terms-and-conditions">
+          <NavLink className="mouse-hover" to="/terms-and-conditions">
             Terms And Conditions
-          </a>{" "}
+          </NavLink>{" "}
           <span className="small-dot"></span>{" "}
           <a className="mouse-hover" href="/privacy-policy">
             Privacy Policy

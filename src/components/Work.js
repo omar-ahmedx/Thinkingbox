@@ -13,6 +13,7 @@ import case4 from "../styles/imgs/FRONTEND/Clone Artist website THUMBNAIL.png";
 import case5 from "../styles/imgs/SOCIAL MEDIA STRATEGY/strategy thumbnail.png";
 
 import case6 from "../styles/imgs/WEBSITE ARTWORK/Thumbnail.png";
+import { NavLink } from "react-router-dom";
 
 function Work() {
   useEffect(() => {
@@ -42,7 +43,7 @@ function Work() {
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
-          <a href="/indie">
+          <NavLink to="/indie">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case1} />
@@ -60,11 +61,11 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="/kite">
+          <NavLink to="/kite">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case2} />
@@ -82,11 +83,11 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="/portfolio">
+          <NavLink to="/portfolio">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case3} />
@@ -104,11 +105,11 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="/frontend">
+          <NavLink to="/frontend">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case4} />
@@ -126,11 +127,11 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="/socialmedia">
+          <NavLink to="/socialmedia">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case5} />
@@ -148,11 +149,11 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         <div className="work-container mouse-hover">
-          <a href="/artwork">
+          <NavLink to="/artwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={case6} />
@@ -170,16 +171,16 @@ function Work() {
                 PepsiCo <span className="dot"></span> Digital
               </p>
             </div>
-          </a>
+          </NavLink>
         </div>
 
         {/* <div className="btn-container archive-btn">
           <div className="btn-link">
-            <a href="/archive">
+            <NavLink to="/archive">
               <div className="btn">
                 <div className="line-btn"></div> <div>The Archive</div>
               </div>
-            </a>
+            </NavLink>
           </div>
   </div>*/}
       </main>
