@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Footer from "./global/Footer";
 import dragonVideo from "../styles/videos/dragon.mp4";
+
 import "../styles/work.css";
 import { motion } from "framer-motion";
 

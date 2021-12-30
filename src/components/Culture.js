@@ -11,9 +11,7 @@ import img8 from "../styles/imgs/CULTURE/Asset8.png";
 import img9 from "../styles/imgs/CULTURE/Asset9.png";
 import img10 from "../styles/imgs/CULTURE/Asset10.png";
 import img11 from "../styles/imgs/CULTURE/Asset11.png";
-import img12 from "../styles/imgs/CULTURE/Asset12.JPG";
 import img13 from "../styles/imgs/CULTURE/Asset13.png";
-import img14 from "../styles/imgs/CULTURE/Asset14.png";
 import img15 from "../styles/imgs/CULTURE/Asset15.png";
 
 import gif1 from "../styles/gifs/gif1.webp";
