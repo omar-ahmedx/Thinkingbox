@@ -17,9 +17,13 @@ import frontEndvideo from "../styles/videos/frontEnd.mp4";
 import creativeArtworkvideo from "../styles/videos/creativeArtwork.mp4";
 import socialMediavideo from "../styles/videos/socialMedia.mp4";
 
+import gif1 from "../styles/gifs/gif1.webp";
+import gif2 from "../styles/gifs/gif2.webp";
+import gif3 from "../styles/gifs/gif3.webp";
+
 import { motion } from "framer-motion";
 
-import Animation from "./an";
+/*import Animation from "./an";*/
 import gsap from "gsap";
 import { useCurtains } from "react-curtains";
 
@@ -68,11 +72,11 @@ function Home() {
         let translateX = mouseX * maxDeltaX,
           translateY = mouseY * maxDeltaY;
 
-        let nextWidth = shape.nextSibling.clientWidth,
+        let /*nextWidth = shape.nextSibling.clientWidth,*/
           nextHeight = shape.nextSibling.clientHeight;
 
-        let mouseXNext = translateX,
-          mouseYNext = translateY / (shapeHeight / nextHeight);
+        let mouseXNext = translateX; /*,
+          mouseYNext = translateY / (shapeHeight / nextHeight)*/
 
         shape.childNodes[0].style.cssText = `transform: translate3D(${translateX}px, ${translateY}px,0 )`;
 
@@ -98,16 +102,16 @@ function Home() {
     });
   }, []);
 
-  /*useEffect(() => {
+  useEffect(() => {
     let list = document.querySelectorAll(".hover-container");
     list.forEach((item) => {
       item.addEventListener("mousemove", (e) => {
-        document.querySelector("#canvas").style.cssText = `left: ${
+        item.nextElementSibling[0].style.cssText = `left: ${
           e.layerX - 350 / 2
         }px; top: ${e.layerY - 350 / 2}px;`;
       });
     });
-  }, []);*/
+  }, []);
   useCurtains((curtains) => {
     // use gsap ticker to render our curtains scene
     gsap.ticker.add(curtains.render.bind(curtains));
@@ -325,17 +329,17 @@ function Home() {
           <Animation />
   </div>*/}
         <div className="middle hover-container mouse-hover">
-          <img className="hover-img" src={UIUXimage} alt="img" />
+          <img className="hover-img" src={gif1} alt="img" />
           <a href="/culture">Our</a>
         </div>
         <div className="hover-container mouse-hover">
-          <img className="hover-img" src={UIUXimage} alt="img" />
+          <img className="hover-img" src={gif2} alt="img" />
           <a href="/culture" className="light">
             Collectives's
           </a>
         </div>
         <div className="middle hover-container mouse-hover">
-          <img className="hover-img" src={UIUXimage} alt="img" />
+          <img className="hover-img" src={gif3} alt="img" />
           <a href="/culture">Culture</a>
         </div>
       </section>
