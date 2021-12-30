@@ -35,34 +35,25 @@ function Nav(props) {
   };
 
   const open = () => {
-    document.querySelector(".mobile-nav-icon").addEventListener("click", () => {
-      document.querySelector(".mobile-nav").classList.add("show");
-      document
-        .querySelector(".first-line")
-        .classList.add("first-line-transition");
-      document.querySelector(".sec-line").classList.add("sec-line-transition");
-    });
+    document.querySelector(".mobile-nav").classList.add("show");
+    document
+      .querySelector(".first-line")
+      .classList.add("first-line-transition");
+    document.querySelector(".sec-line").classList.add("sec-line-transition");
   };
   const close = () => {
-    document.querySelector(".mobile-nav-exit").addEventListener("click", () => {
-      document.querySelector(".mobile-nav").classList.remove("show");
-      document
-        .querySelector(".first-line")
-        .classList.remove("first-line-transition");
-      document
-        .querySelector(".sec-line")
-        .classList.remove("sec-line-transition");
-    });
+    document.querySelector(".mobile-nav").classList.remove("show");
+    document
+      .querySelector(".first-line")
+      .classList.remove("first-line-transition");
+    document.querySelector(".sec-line").classList.remove("sec-line-transition");
+
     document.querySelectorAll(".mobile-links a").forEach((link) => {
       link.addEventListener("click", () => {
         document.querySelector(".mobile-nav").classList.remove("show");
       });
     });
   };
-  useEffect(() => {
-    open();
-    close();
-  }, []);
 
   return (
     <div>
@@ -73,7 +64,7 @@ function Nav(props) {
               <img src={logo} alt="Thinking box" />
             </NavLink>
           </div>
-          <div className="mobile-nav-exit">
+          <div className="mobile-nav-exit" onClick={close}>
             <svg viewBox="0 0 100 80" width="40" height="40">
               <rect
                 className="first-line"
@@ -116,7 +107,7 @@ function Nav(props) {
               <img src={logo} alt="Thinking box" />
             </NavLink>
           </div>
-          <div className="mobile-nav-icon">
+          <div className="mobile-nav-icon" onClick={open}>
             <svg viewBox="0 0 100 80" width="40" height="40">
               <rect x="20" y="30" width="65" height="7"></rect>
               <rect y="50" width="65" height="7"></rect>

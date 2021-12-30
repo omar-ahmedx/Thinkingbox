@@ -106,7 +106,8 @@ function Home() {
     let list = document.querySelectorAll(".hover-container");
     list.forEach((item) => {
       item.addEventListener("mousemove", (e) => {
-        item.nextElementSibling[0].style.cssText = `left: ${
+        console.log();
+        item.childNodes[0].style.cssText = `left: ${
           e.layerX - 350 / 2
         }px; top: ${e.layerY - 350 / 2}px;`;
       });
