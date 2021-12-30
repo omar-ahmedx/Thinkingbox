@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import Footer from "./global/Footer";
 import dragonVideo from "../styles/videos/dragon.mp4";
+import kite from "../styles/videos/kite.mp4";
+import portfolio from "../styles/videos/portfolio.mp4";
+import indie from "../styles/videos/indie.mp4";
 
 import "../styles/work.css";
 import { motion } from "framer-motion";
@@ -50,7 +53,7 @@ function Work() {
                 <img alt="style" src={case1} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={indie} type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -72,7 +75,7 @@ function Work() {
                 <img alt="style" src={case2} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={kite} type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -94,7 +97,7 @@ function Work() {
                 <img alt="style" src={case3} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={portfolio} type="video/mp4" />
                   </video>
                 </div>
               </div>
