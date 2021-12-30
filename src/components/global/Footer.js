@@ -44,9 +44,11 @@ function Footer() {
         </div>
 
         <div>
-          <div className="work-with mouse-hover">
-            <div className="line"></div> <div>Work With Us</div>
-          </div>
+          <a href="./contact">
+            <div className="work-with mouse-hover">
+              <div className="line"></div> <div>Work With Us</div>
+            </div>
+          </a>
           <div></div>
         </div>
       </div>

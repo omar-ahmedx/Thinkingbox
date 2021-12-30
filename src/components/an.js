@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+/*import React, { useRef, useState, useEffect } from "react";
 import { Plane, useCurtains } from "react-curtains";
 import gsap from "gsap";
 import { vertexShader, fragmentShader } from "./shaders/shaders";
@@ -131,3 +131,4 @@ function Animation() {
 }
 
 export default Animation;
+*/

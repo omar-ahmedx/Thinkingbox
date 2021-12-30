@@ -1,8 +1,9 @@
 .full-img {
   position: relative;
-  left: -50%;
-  transform: translateX(10%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
+  margin: 30px 0;
 }
 
 .case-text {
@@ -19,7 +20,8 @@
   line-height: 2;
 }
 
-.normal-img {
-  width: 100%;
-  margin: 40px 0;
+@media screen and (max-width: 900px) {
+  .case-text {
+    padding: 0 40px;
+  }
 }

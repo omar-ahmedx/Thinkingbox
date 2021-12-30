@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import gsap from "gsap";
-import { useCurtains } from "react-curtains";
+//import gsap from "gsap";
+//import { useCurtains } from "react-curtains";
 import "./App.css";
 import "./styles/commonStyles/mouse.css";
 import Nav from "./components/global/Nav";
@@ -142,10 +142,11 @@ function App() {
     });
   });
 
-  useCurtains((curtains) => {
+  /*useCurtains((curtains) => {
     // use gsap ticker to render our curtains scene
     gsap.ticker.add(curtains.render.bind(curtains));
-  });
+  });*/
+
   return (
     <div className="App">
       <div id="loader-wrapper">

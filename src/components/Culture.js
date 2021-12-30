@@ -1,4 +1,4 @@
-import { useEffect } from "react/cjs/react.development";
+//import { useEffect } from "react/cjs/react.development";
 import "../styles/culture.css";
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
@@ -31,60 +31,58 @@ import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
 function Culture() {
-  useEffect(() => {
-    // get the slider
-    var theSlider = document.querySelectorAll(".slider-all-items");
-    theSlider.forEach((slider) => {
-      dragElement(slider);
-    });
-    // run the function
-
-    function dragElement(theSlider) {
-      var pos1 = 0,
-        pos3 = 0;
-      theSlider.onmousedown = dragMouseDown;
-
-      function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // get the mouse cursor position at startup:
-        pos3 = e.clientX;
-        document.onmouseup = closeDragElement;
-        // call a function whenever the cursor moves:
-        document.onmousemove = elementDrag;
-      }
-
-      function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // calculate the new cursor position:
-        pos1 = pos3 - e.clientX;
-        pos3 = e.clientX;
-
-        // set the element's new position:
-        theSlider.style.left =
-          theSlider.offsetLeft - pos1 >= 0
-            ? 0
-            : theSlider.offsetLeft - pos1 + "px";
-      }
-
-      function closeDragElement() {
-        // get each item width
-
-        // get the right side position of the slider
-
-        // delay 0.5s, then remove the class .shifting when finished checking and styling
-        // .shifting {transition: all 0.5s ease;}
-        setTimeout(() => {
-          theSlider.classList.remove("shifting");
-        }, 500);
-
-        // stop moving when mouse button is released:
-        document.onmouseup = null;
-        document.onmousemove = null;
-      }
-    }
+  // get the slider
+  var theSlider = document.querySelectorAll(".slider-all-items");
+  theSlider.forEach((slider) => {
+    dragElement(slider);
   });
+  // run the function
+
+  function dragElement(theSlider) {
+    var pos1 = 0,
+      pos3 = 0;
+    theSlider.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos3 = e.clientX;
+
+      // set the element's new position:
+      theSlider.style.left =
+        theSlider.offsetLeft - pos1 >= 0
+          ? 0
+          : theSlider.offsetLeft - pos1 + "px";
+    }
+
+    function closeDragElement() {
+      // get each item width
+
+      // get the right side position of the slider
+
+      // delay 0.5s, then remove the class .shifting when finished checking and styling
+      // .shifting {transition: all 0.5s ease;}
+      setTimeout(() => {
+        theSlider.classList.remove("shifting");
+      }, 500);
+
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="culture-header">

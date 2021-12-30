@@ -10,6 +10,12 @@ import Archive from "../Archive";
 import Careers from "../Careers";
 import Culture from "../Culture";
 import Case1 from "../cases/case1";
+import Case2 from "../cases/case2";
+import Case3 from "../cases/case3";
+import Case4 from "../cases/case4";
+import Case5 from "../cases/case5";
+import Case6 from "../cases/case6";
+
 function Nav(props) {
   const location = useLocation();
   let prevScrollpos = window.pageYOffset;
@@ -79,11 +85,15 @@ function Nav(props) {
         </div>
         <div className="mobile-links">
           <div className="links-container">
-            <NavLink to="/work">Work</NavLink>
+            <NavLink to="/work" onClick={close}>
+              Work
+            </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           <div className="links-container">
-            <NavLink to="/culture">Culture</NavLink>
+            <NavLink to="/culture" onClick={close}>
+              Culture
+            </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           {/*<div className="links-container">
@@ -91,7 +101,9 @@ function Nav(props) {
               <div className="nav-border-expand"></div>
   </div>*/}
           <div className="links-container">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" onClick={close}>
+              Contact
+            </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           {/*<div className="links-container">
@@ -100,6 +112,7 @@ function Nav(props) {
   </div>*/}
         </div>
       </div>
+
       <div className="pc-nav-container">
         <nav className="pc-nav">
           <div className="logo">
@@ -199,6 +212,7 @@ function Nav(props) {
           </div>
         </nav>
       </div>
+
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route exact path="/" element={<Home delay={props.delay} />}></Route>
@@ -212,6 +226,11 @@ function Nav(props) {
           <Route exact path="/archive" element={<Archive />}></Route>
           <Route exact path="/culture" element={<Culture />}></Route>
           <Route exact path="/indie" element={<Case1 />}></Route>
+          <Route exact path="/kite" element={<Case2 />}></Route>
+          <Route exact path="/portfolio" element={<Case3 />}></Route>
+          <Route exact path="/frontend" element={<Case4 />}></Route>
+          <Route exact path="/socialmedia" element={<Case5 />}></Route>
+          <Route exact path="/artwork" element={<Case6 />}></Route>
         </Routes>
       </AnimatePresence>
     </div>

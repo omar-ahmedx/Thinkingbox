@@ -24,8 +24,6 @@ import gif3 from "../styles/gifs/gif3.webp";
 import { motion } from "framer-motion";
 
 /*import Animation from "./an";*/
-import gsap from "gsap";
-import { useCurtains } from "react-curtains";
 
 function Home() {
   useEffect(() => {
@@ -113,10 +111,7 @@ function Home() {
       });
     });
   }, []);
-  useCurtains((curtains) => {
-    // use gsap ticker to render our curtains scene
-    gsap.ticker.add(curtains.render.bind(curtains));
-  });
+
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header>

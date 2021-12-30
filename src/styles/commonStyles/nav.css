@@ -10,8 +10,10 @@ nav {
   padding: 10px 0;
   padding-right: 15px;
 }
+.pc-nav {
+  margin: 0 auto;
+}
 .pc-nav-container {
-  width: 100vw;
   background-color: #f4f4f4;
 }
 .animate-nav {
@@ -43,6 +45,11 @@ nav {
   }
   .pc-nav {
     padding: 10px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
   }
 }
 .links a {
@@ -215,6 +222,7 @@ nav a {
 .mobile-links {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 .links-container {
   width: fit-content;
@@ -241,11 +249,13 @@ nav a {
 }
 
 .scroll {
+  width: 100vw;
   position: fixed;
   z-index: 9;
   transition: top 0.3s;
   background-color: #f4f4f4;
   top: 0;
+  left: 0;
 }
 .first-line {
   transform: rotate(45deg) translate(100%, -30%);

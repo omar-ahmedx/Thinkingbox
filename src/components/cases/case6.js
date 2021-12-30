@@ -2,23 +2,21 @@ import Footer from "../global/Footer";
 import "../../styles/cases/case.css";
 import "../../styles/commonStyles/header.css";
 import { motion } from "framer-motion";
-import img1 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-01.png";
-import img2 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-02.png";
-import img3 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-03.png";
-import img4 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-04.png";
-import img5 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-05.png";
-import img6 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-06.png";
-import img7 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-07.png";
-import img8 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-08.png";
-import img9 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-09.png";
-import img10 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-10.png";
-import img11 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-11.png";
-import img12 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-12.png";
-import img13 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-13.png";
-import img14 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-14.png";
-import img15 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-15.png";
-import img16 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-16.png";
-import img17 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-17.png";
+import img1 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-01.png";
+import img2 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-02.png";
+import img3 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-03.png";
+import img4 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-04.png";
+import img5 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-06.png";
+import img6 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-07.png";
+import img7 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-08.png";
+import img8 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-09.png";
+import img9 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-10.png";
+import img10 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-12.png";
+import img11 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-13.png";
+import img12 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-14.png";
+import img13 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-15.png";
+import img14 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-16.png";
+import img15 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-18.png";
 
 function Case1() {
   return (
@@ -127,12 +125,6 @@ function Case1() {
         </div>
         <div>
           <img className="full-img" src={img15} alt="" />
-        </div>
-        <div>
-          <img className="full-img" src={img16} alt="" />
-        </div>
-        <div>
-          <img className="full-img" src={img17} alt="" />
         </div>
       </main>
 
