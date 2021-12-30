@@ -3,6 +3,8 @@ import Footer from "./global/Footer";
 import dragon from "../styles/imgs/dragon.webp";
 import dragonVideo from "../styles/videos/dragon.mp4";
 import "../styles/work.css";
+import { motion } from "framer-motion";
+
 function Work() {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".work-shape-wrapper");
@@ -28,9 +30,9 @@ function Work() {
     });
   }, []);
   return (
-    <div className="work-section sections-padding">
+    <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -49,7 +51,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -68,7 +70,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -87,7 +89,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -106,7 +108,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -125,7 +127,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -144,7 +146,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -163,7 +165,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
               <img alt="style" src={dragon} />
@@ -183,7 +185,7 @@ function Work() {
           </div>
         </div>
 
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -202,7 +204,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -221,7 +223,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -240,7 +242,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -259,7 +261,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -278,7 +280,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -297,7 +299,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -316,7 +318,7 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container">
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape slide">
               <img alt="style" src={dragon} />
@@ -349,7 +351,7 @@ function Work() {
       <div className="work-footer">
         <Footer />
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default Work;

@@ -1,8 +1,10 @@
 import "../styles/contact.css";
 import Footer from "./global/Footer";
+import { motion } from "framer-motion";
+
 function Contact() {
   return (
-    <div className="sections-padding">
+    <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="contact-header">
         <div className="slide-header">
           <h1>
@@ -32,7 +34,9 @@ function Contact() {
               <div>
                 <p>James O'Brien</p>
                 <p>Chief Marketing Officer</p>
-                <p className="border-bottom">james@thinkingbox.com</p>
+                <p className="border-bottom mouse-hover">
+                  james@thinkingbox.com
+                </p>
               </div>
             </div>
             <div className="staff">
@@ -40,7 +44,9 @@ function Contact() {
               <div>
                 <p>Farah Tozy</p>
                 <p>Marketing Manager</p>
-                <p className="border-bottom">farah@thinkingbox.com</p>
+                <p className="border-bottom mouse-hover">
+                  farah@thinkingbox.com
+                </p>
               </div>
             </div>
           </div>
@@ -51,13 +57,17 @@ function Contact() {
               <div>
                 <p>Elisha Zagerman</p>
                 <p>Senior Manager, Talent Acquisition</p>
-                <p className="border-bottom">elisha@thinkingbox.com</p>
+                <p className="border-bottom mouse-hover">
+                  elisha@thinkingbox.com
+                </p>
               </div>
             </div>
             <div className="staff">
               <h2>Hello</h2>
               <div>
-                <p className="border-bottom">hello@thinkingbox.com</p>
+                <p className="border-bottom mouse-hover">
+                  hello@thinkingbox.com
+                </p>
               </div>
             </div>
           </div>
@@ -96,7 +106,7 @@ function Contact() {
               </label>
             </form>
             <div>
-              <button className="work-with" type="submit">
+              <button className="work-with mouse-hover" type="submit">
                 <div className="line"></div> <div>Let's Talk</div>
               </button>
             </div>
@@ -157,7 +167,7 @@ function Contact() {
         </section>
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 export default Contact;

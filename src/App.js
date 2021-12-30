@@ -1,12 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import gsap from "gsap";
+import { useCurtains } from "react-curtains";
 import "./App.css";
 import "./styles/commonStyles/mouse.css";
 import Nav from "./components/global/Nav";
-
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
+  const [delay, setDelay] = useState(true);
   useEffect(() => {
     var cursor = {
-      delay: 8,
+      delay: delay ? 8 : 1,
       _x: 0,
       _y: 0,
       endX: window.innerWidth / 2,
@@ -93,26 +96,75 @@ function App() {
     };
     cursor.init();
   });
+
   useEffect(() => {
     document.querySelector("body").classList.add("loaded");
     document.querySelector("nav").classList.add("animate-nav");
     if (document.querySelector(".slide-header")) {
       document.querySelector(".slide-header").classList.add("animate-header");
     }
-  }, []);
+    let list = document.querySelectorAll(".mouse-hover");
+    list.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        document.querySelector(".cursor-dot").classList.add("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        setDelay(false);
+      });
+      item.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor-dot").classList.remove("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        setDelay(true);
+      });
+    });
+    let sliders = document.querySelectorAll(".slider-container");
+    sliders.forEach((slide) => {
+      slide.addEventListener("mouseenter", () => {
+        document.querySelector(".drag").style.display = "flex";
+        document.querySelector(".cursor-dot").style.backgroundColor =
+          "transparent";
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        setDelay(false);
+      });
+      slide.addEventListener("mouseleave", () => {
+        document.querySelector(".drag").style.display = "none";
+        document.querySelector(".cursor-dot").style.backgroundColor = "#f49578";
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        setDelay(true);
+      });
+    });
+  });
+
+  useCurtains((curtains) => {
+    // use gsap ticker to render our curtains scene
+    gsap.ticker.add(curtains.render.bind(curtains));
+  });
   return (
     <div className="App">
       <div id="loader-wrapper">
         <div id="loader"></div>
 
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+        <div className="loader-section section-left"></div>
+        <div className="loader-section section-right"></div>
       </div>
 
       <div className="cursor-dot-outline"></div>
-      <div className="cursor-dot"></div>
-
-      <Nav />
+      <div className="cursor-dot">
+        <p className="drag">
+          <span className="arrow-left"></span>DRAG
+          <span className="arrow-right"></span>
+        </p>
+      </div>
+      <Router>
+        <Nav delay={setDelay} />
+      </Router>
     </div>
   );
 }

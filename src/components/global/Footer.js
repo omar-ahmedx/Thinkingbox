@@ -1,25 +1,50 @@
 import "../../styles/commonStyles/footer.css";
+import logo from "../../styles/imgs/LOGO.png";
 function Footer() {
   return (
     <footer>
       <div className="sec-nav-container">
         <div className="sec-nav">
           <div>
-            <a href="/home">Home</a>
-            <a href="/work">Work</a>
-            <a href="/culture">Culture</a>
-            <a href="/careers">Careers</a>
-            <a href="/contact">Contact</a>
-            <a href="/archive">Archive</a>
+            <div className="footer-links-container mouse-hover">
+              <a href="/home">Home</a>
+              <div className="border-expand"></div>
+            </div>
+            <div className="footer-links-container mouse-hover">
+              <a href="/work">Work</a>
+              <div className="border-expand"></div>
+            </div>
+            <div className="footer-links-container mouse-hover">
+              <a href="/culture">Culture</a>
+              <div className="border-expand"></div>
+            </div>
+            {/*<div className="footer-links-container mouse-hover">
+              <a href="/careers">Careers</a>
+              <div className="border-expand"></div>
+  </div> */}
+            <div className="footer-links-container mouse-hover">
+              <a href="/contact">Contact</a>
+              <div className="border-expand"></div>
+            </div>
+            {/* <div className="footer-links-container mouse-hover">
+              <a href="/archive">Archive</a>
+              <div className="border-expand"></div>
+            </div> */}
           </div>
           <div>
-            <a href="/AntiSocial">AntiSocial</a>
-            <a href="/talknerdy">Talk Nerdy</a>
+            <div className="footer-links-container mouse-hover">
+              <a href="/AntiSocial">AntiSocial</a>
+              <div className="border-expand"></div>
+            </div>
+            {/*<div className="footer-links-container mouse-hover">
+              <a href="/talknerdy">Talk Nerdy</a>
+              <div className="border-expand"></div>
+          </div>*/}
           </div>
         </div>
 
         <div>
-          <div className="work-with">
+          <div className="work-with mouse-hover">
             <div className="line"></div> <div>Work With Us</div>
           </div>
           <div></div>
@@ -29,52 +54,92 @@ function Footer() {
       <div className="loop-outer-container">
         <div className="loop-inner-container">
           <div>
-            <span>THINK.</span>
-            <span className="orange-dot"></span>
-            <span>THINK!</span>
-            <span className="orange-dot"></span>
-            <span>THINK,</span>
-            <span className="orange-dot"></span>
-            <span>THINK?</span>
-            <span className="orange-dot"></span>
-            <span>"THINK"</span>
-            <span className="orange-dot"></span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
           </div>
           <div>
-            <span>THINK.</span>
-            <span className="orange-dot"></span>
-            <span>THINK!</span>
-            <span className="orange-dot"></span>
-            <span>THINK,</span>
-            <span className="orange-dot"></span>
-            <span>THINK?</span>
-            <span className="orange-dot"></span>
-            <span>"THINK"</span>
-            <span className="orange-dot"></span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
           </div>
           <div>
-            <span>THINK.</span>
-            <span className="orange-dot"></span>
-            <span>THINK!</span>
-            <span className="orange-dot"></span>
-            <span>THINK,</span>
-            <span className="orange-dot"></span>
-            <span>THINK?</span>
-            <span className="orange-dot"></span>
-            <span>"THINK"</span>
-            <span className="orange-dot"></span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
           </div>
           <div>
-            <span>THINK.</span>
-            <span className="orange-dot"></span>
-            <span>THINK!</span>
-            <span className="orange-dot"></span>
-            <span>THINK,</span>
-            <span className="orange-dot"></span>
-            <span>THINK?</span>
-            <span className="orange-dot"></span>
-            <span>"THINK"</span>
-            <span className="orange-dot"></span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
+            <span>cheesecake</span>
+            <span className="line-logo">
+              <img src={logo} alt="cheesecake" />
+            </span>
           </div>
         </div>
       </div>
@@ -82,9 +147,13 @@ function Footer() {
       <div className="privacy">
         <span>
           Thinking box 2021 <span className="small-dot"></span>{" "}
-          <a href="/terms-and-conditions">Terms And Conditions</a>{" "}
+          <a className="mouse-hover" href="/terms-and-conditions">
+            Terms And Conditions
+          </a>{" "}
           <span className="small-dot"></span>{" "}
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a className="mouse-hover" href="/privacy-policy">
+            Privacy Policy
+          </a>
         </span>
         <img src="" alt="" />
       </div>

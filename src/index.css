@@ -42,7 +42,11 @@ a {
   color: black;
   font-size: 20px;
   padding: 15px 15px;
-  border: 2px solid black;
+  outline: 2px solid black;
+  transition: all 0.25s ease 0s;
+}
+.btn:hover {
+  outline-offset: 4px;
 }
 .line-btn {
   width: 60px;
@@ -55,4 +59,33 @@ a {
 }
 .small-text {
   font-size: 20px;
+}
+.drag {
+  display: none;
+  position: relative;
+  font-size: 14px;
+  transform: rotate(-45deg);
+  align-items: center;
+  justify-content: space-between;
+  left: -18px;
+  bottom: -17px;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #f49578;
+  margin-left: 5px;
+}
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #f49578;
+  margin-right: 5px;
 }

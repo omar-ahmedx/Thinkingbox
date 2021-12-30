@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Curtains
       pixelRatio={Math.min(1.5, window.devicePixelRatio)}
-      autoRender={false}
+      autoRender={false} // we'll use gsap ticker in App.js instead
     >
       <App />
     </Curtains>

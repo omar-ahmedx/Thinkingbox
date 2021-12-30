@@ -3,8 +3,26 @@ import Footer from "./global/Footer";
 import "../styles/home.css";
 import "../styles/commonStyles/header.css";
 import "../styles/commonStyles/bottomList.css";
-import mountainDwe from "../styles/imgs/mountainDwe.webp";
-import mountainDweVideo from "../styles/videos/MountainDew.mp4";
+import UIUXimage from "../styles/imgs/uiUX.png";
+import UIUXimagesmall from "../styles/imgs/uiUxsmall.png";
+import frontEndimage from "../styles/imgs/frontEnd.png";
+import frontEndimagesmall from "../styles/imgs/frontEndsmall.png";
+import creativeArtworkimage from "../styles/imgs/creativeArtwork.png";
+import creativeArtworkimagesmall from "../styles/imgs/creativeArtworksmall.png";
+import socialMediaimage from "../styles/imgs/socialMedia.png";
+import socialMediaimagesmall from "../styles/imgs/socialMediasmall.png";
+
+import UIUXVideo from "../styles/videos/uiUx.mp4";
+import frontEndvideo from "../styles/videos/frontEnd.mp4";
+import creativeArtworkvideo from "../styles/videos/creativeArtwork.mp4";
+import socialMediavideo from "../styles/videos/socialMedia.mp4";
+
+import { motion } from "framer-motion";
+
+import Animation from "./an";
+import gsap from "gsap";
+import { useCurtains } from "react-curtains";
+
 function Home() {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".shape-wrapper");
@@ -14,15 +32,11 @@ function Home() {
         e.target.querySelector(".shape-video").play();
 
         e.target.nextSibling.style = "left:15%";
-        e.target.previousSibling.style.cssText =
-          "font-size: 300%; opacity: 1; top:-50px;";
       });
     });
     videoContainer.forEach((wrapper) => {
       wrapper.addEventListener("mouseleave", (e) => {
         e.target.nextSibling.style = "left:0";
-        e.target.previousSibling.style.cssText =
-          "font-size: 0; opacity: 0; top:30px;";
       });
     });
 
@@ -30,15 +44,11 @@ function Home() {
     videoContainerFull.forEach((wrapper) => {
       wrapper.addEventListener("mouseover", (e) => {
         e.target.nextSibling.style = "margin-left:14%";
-        e.target.previousSibling.style.cssText =
-          "font-size: 700%; opacity: 1; top: -100px;";
       });
     });
     videoContainerFull.forEach((wrapper) => {
       wrapper.addEventListener("mouseleave", (e) => {
         e.target.nextSibling.style = "left:0";
-        e.target.previousSibling.style.cssText =
-          "font-size: 0; opacity: 0; top:0;";
       });
     });
   }, []);
@@ -63,7 +73,6 @@ function Home() {
 
         let mouseXNext = translateX,
           mouseYNext = translateY / (shapeHeight / nextHeight);
-        console.log(shape);
 
         shape.childNodes[0].style.cssText = `transform: translate3D(${translateX}px, ${translateY}px,0 )`;
 
@@ -89,18 +98,22 @@ function Home() {
     });
   }, []);
 
-  useEffect(() => {
+  /*useEffect(() => {
     let list = document.querySelectorAll(".hover-container");
     list.forEach((item) => {
       item.addEventListener("mousemove", (e) => {
-        item.childNodes[0].style.cssText = `left: ${
+        document.querySelector("#canvas").style.cssText = `left: ${
           e.layerX - 350 / 2
         }px; top: ${e.layerY - 350 / 2}px;`;
       });
     });
-  }, []);
+  }, []);*/
+  useCurtains((curtains) => {
+    // use gsap ticker to render our curtains scene
+    gsap.ticker.add(curtains.render.bind(curtains));
+  });
   return (
-    <div className="sections-padding">
+    <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header>
         <div className="slide-header">
           <h1>
@@ -123,123 +136,19 @@ function Home() {
       <main className="home-main">
         <div className="move-container full">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper full-wrapper">
+            <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={UIUXimage} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={UIUXVideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="move-container">
-          <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
-              <div className="shape">
-                <img alt="style" src={mountainDwe} />
-                <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="belive">
-          <p>
-            Belive <br /> in the <br />
-            making
-          </p>
-        </div>
-
-        <div className="move-container">
-          <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
-              <div className="shape">
-                <img alt="style" src={mountainDwe} />
-                <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="move-container minus-margin">
-          <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
-              <div className="shape">
-                <img alt="style" src={mountainDwe} />
-                <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="move-container right-col">
-          <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
-              <div className="shape">
-                <img alt="style" src={mountainDwe} />
-                <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>UI UX</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -249,21 +158,62 @@ function Home() {
 
         <div className="move-container full">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper full-wrapper">
+            <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={frontEndimage} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={frontEndvideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Front End</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="move-container full">
+          <div className="shape-container">
+            <div className="shape-wrapper mouse-hover full-wrapper">
+              <div className="shape">
+                <img alt="style" src={creativeArtworkimage} />
+                <div>
+                  <video className="shape-video" loop="True" muted="True">
+                    <source src={creativeArtworkvideo} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Creative Artwork</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="move-container full">
+          <div className="shape-container">
+            <div className="shape-wrapper mouse-hover full-wrapper">
+              <div className="shape">
+                <img alt="style" src={socialMediaimage} />
+                <div>
+                  <video className="shape-video" loop="True" muted="True">
+                    <source src={socialMediavideo} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Social Media Strategy</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -273,21 +223,19 @@ function Home() {
 
         <div className="move-container">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
+            <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={UIUXimagesmall} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={UIUXVideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>UI UX</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -297,21 +245,19 @@ function Home() {
 
         <div className="move-container sec-right-col">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
+            <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={socialMediaimagesmall} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={socialMediavideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Social Media Strategy</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -319,23 +265,21 @@ function Home() {
           </div>
         </div>
 
-        <div className="move-container">
+        <div className="move-container right-col">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
+            <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={frontEndimagesmall} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={frontEndvideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Front End</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -343,47 +287,21 @@ function Home() {
           </div>
         </div>
 
-        <div className="move-container">
+        <div className="move-container minus-margin">
           <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
+            <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={mountainDwe} />
+                <img alt="style" src={creativeArtworkimagesmall} />
                 <div>
                   <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
+                    <source src={creativeArtworkvideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="move-container last-row">
-          <div className="shape-container">
-            <div className="back-header">Mountain Dew</div>
-
-            <div className="shape-wrapper">
-              <div className="shape">
-                <img alt="style" src={mountainDwe} />
-                <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={mountainDweVideo} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Creative Artwork</p>
               <p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
               </p>
@@ -394,31 +312,35 @@ function Home() {
         <div className="all-projects">
           <div>
             <a href="/work">
-              <div className="btn">
+              <div className="btn mouse-hover">
                 <div className="line-btn"></div> <div>All Projects</div>
               </div>
             </a>
           </div>
         </div>
       </main>
+
       <section className="bottom-list">
-        <div className="middle hover-container">
-          <img className="hover-img" src={mountainDwe} alt="img" />
+        {/*<div id="canvas">
+          <Animation />
+  </div>*/}
+        <div className="middle hover-container mouse-hover">
+          <img className="hover-img" src={UIUXimage} alt="img" />
           <a href="/culture">Our</a>
         </div>
-        <div className="hover-container">
-          <img className="hover-img" src={mountainDwe} alt="img" />
+        <div className="hover-container mouse-hover">
+          <img className="hover-img" src={UIUXimage} alt="img" />
           <a href="/culture" className="light">
             Collectives's
           </a>
         </div>
-        <div className="middle hover-container">
-          <img className="hover-img" src={mountainDwe} alt="img" />
+        <div className="middle hover-container mouse-hover">
+          <img className="hover-img" src={UIUXimage} alt="img" />
           <a href="/culture">Culture</a>
         </div>
       </section>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

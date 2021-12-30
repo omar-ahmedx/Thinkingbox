@@ -14,12 +14,36 @@
   width: 10px;
   height: 10px;
   background-color: #ff9c7d;
-  z-index: 22;
+  transform: rotate(45deg) translate(-70%);
+  z-index: 30;
 }
 
 .cursor-dot-outline {
-  width: 40px;
-  height: 40px;
-  background-color: #fa8a6854;
-  z-index: 22;
+  width: 70px;
+  height: 70px;
+  background-color: #fa8a683b;
+  z-index: 30;
+}
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: #ff9c7d;
+  border-radius: 75% 15%;
+  position: absolute;
+}
+.eye:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye-outline {
+  background-color: white;
+  transition: none;
 }

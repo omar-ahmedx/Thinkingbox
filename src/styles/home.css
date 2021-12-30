@@ -9,7 +9,7 @@
   column-gap: 6rem;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  max-width: 1220px;
+  max-width: 1300px;
 }
 @media (max-width: 1024px) {
   .home-main {
@@ -17,7 +17,7 @@
   }
 }
 .move-container {
-  margin: 60px 0;
+  margin: 90px 0;
 }
 .full {
   grid-column: 1/-1;
@@ -26,14 +26,17 @@
   position: relative;
 }
 .back-header {
-  position: absolute;
   white-space: nowrap;
-  opacity: 0;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
   transition: all 1s;
   z-index: -1;
+  text-align: center;
+  margin: 20px 0;
+}
+.back-header-big {
+  font-size: 700%;
+}
+.back-header-small {
+  font-size: 300%;
 }
 
 .shape img {
@@ -48,6 +51,8 @@
   width: 100%;
   left: 0;
   top: 0;
+  bottom: 0;
+  right: 0;
   opacity: 0;
   transition: transform 0.6s;
   transition: opacity 0.8s;
@@ -77,15 +82,8 @@
   overflow: hidden;
 }
 .shape-wrapper:hover .shape {
-  -webkit-clip-path: polygon(
-    85% 15%,
-    30% 15%,
-    15% 35%,
-    15% 90%,
-    70% 90%,
-    85% 70%
-  );
-  clip-path: polygon(85% 15%, 30% 15%, 15% 35%, 15% 90%, 70% 90%, 85% 70%);
+  -webkit-clip-path: polygon(95% 5%, 20% 5%, 5% 25%, 5% 95%, 80% 95%, 95% 80%);
+  clip-path: polygon(95% 5%, 20% 5%, 5% 25%, 5% 95%, 80% 95%, 95% 80%);
 }
 .shape-wrapper:hover {
   transform: scale(1.05);
@@ -129,22 +127,17 @@
 }
 
 .minus-margin {
-  margin-top: -190px;
+  margin-top: 100px;
 }
 .right-col {
   grid-column-start: 2;
-  margin-top: -170px;
+  margin-top: 490px;
 }
 .sec-right-col {
   grid-row-start: 6;
   grid-row-end: span 6;
   grid-column-start: 2;
-  margin-top: 230px;
-}
-.last-row {
-  grid-column-start: 2;
-  grid-row-start: 8;
-  margin-top: -170px;
+  margin-top: 490px;
 }
 
 .all-projects {
@@ -160,22 +153,22 @@
     display: none;
   }
   .right-col {
-    margin-top: 0;
+    margin-top: 60px;
     grid-column-start: 1;
     grid-row-start: auto;
   }
   .last-row {
-    margin-top: 0;
+    margin-top: 60px;
     grid-column-start: 1;
     grid-row-start: auto;
   }
   .minus-margin {
-    margin: 0;
+    margin: 60px 0;
     grid-column-start: 1;
     grid-row-start: auto;
   }
   .sec-right-col {
-    margin: 0;
+    margin: 60px 0;
     grid-column-start: 1;
     grid-row-start: auto;
   }

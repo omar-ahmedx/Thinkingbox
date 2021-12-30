@@ -3,82 +3,90 @@ import "../styles/culture.css";
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
 import gif3 from "../styles/gifs/gif3.webp";
+import partner1 from "../styles/imgs/CLIENTS/partner1.png";
+import partner2 from "../styles/imgs/CLIENTS/partner2.png";
+import partner3 from "../styles/imgs/CLIENTS/partner3.png";
+import partner4 from "../styles/imgs/CLIENTS/partner4.png";
+
+import team1 from "../styles/imgs/TEAM/team1.png";
+import team2 from "../styles/imgs/TEAM/team2.png";
+import team3 from "../styles/imgs/TEAM/team3.png";
+import team4 from "../styles/imgs/TEAM/team4.png";
+import team5 from "../styles/imgs/TEAM/team5.png";
+import team6 from "../styles/imgs/TEAM/team6.png";
+import team7 from "../styles/imgs/TEAM/team7.png";
+import team8 from "../styles/imgs/TEAM/team8.png";
+import team9 from "../styles/imgs/TEAM/team9.png";
+import team10 from "../styles/imgs/TEAM/team10.png";
+import team11 from "../styles/imgs/TEAM/team11.png";
+import team12 from "../styles/imgs/TEAM/team12.png";
+import team13 from "../styles/imgs/TEAM/team13.png";
+import team14 from "../styles/imgs/TEAM/team14.png";
+import team15 from "../styles/imgs/TEAM/team15.png";
+import team16 from "../styles/imgs/TEAM/team16.png";
+import team17 from "../styles/imgs/TEAM/team17.png";
+
+import img from "../styles/imgs/slide.webp";
+import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
 function Culture() {
   useEffect(() => {
     // get the slider
-    var theSlider = document.querySelector(".slider-all-items");
-    // get the items in the slider
-    var sliderItem = document.querySelectorAll(".slider-item");
-
-    // variables saved for later
-    var sliderWidth;
-    var sliderRight;
-    var pos1, pos3, pos2, sliderLeft;
-    function dragMouseDown(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // get the mouse cursor position at startup:
-      pos3 = e.clientX;
-      document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
-      document.onmousemove = elementDrag;
-    }
-
-    function elementDrag(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // calculate the new cursor position:
-      pos1 = pos3 - e.clientX;
-      pos3 = e.clientX;
-
-      // set the element's new position:
-      theSlider.style.left = theSlider.offsetLeft - pos1 + "px";
-    }
-
-    function closeDragElement() {
-      // get each item width
-      sliderWidth = theSlider.getBoundingClientRect().width / sliderItem.length;
-      // get the right side position of the slider
-      sliderRight = theSlider.getBoundingClientRect().right;
-      // get the left side position of the slider
-      sliderLeft = theSlider.getBoundingClientRect().left;
-
-      if (sliderLeft >= 0) {
-        theSlider.style.left = "0px";
-      }
-
-      if (sliderRight <= sliderWidth) {
-        theSlider.style.left =
-          -Math.abs(sliderWidth * sliderItem.length - sliderWidth) + "px";
-      }
-      // stop moving when mouse button is released:
-      document.onmouseup = null;
-      document.onmousemove = null;
-    }
+    var theSlider = document.querySelectorAll(".slider-all-items");
+    theSlider.forEach((slider) => {
+      dragElement(slider);
+    });
+    // run the function
 
     function dragElement(theSlider) {
-      pos1 = 0;
-      pos3 = 0;
+      var pos1 = 0,
+        pos3 = 0;
       theSlider.onmousedown = dragMouseDown;
-      theSlider.addEventListener("resize", closeDragElement);
-    }
 
-    dragElement(theSlider);
-
-    /* global ResizeObserver */
-
-    const ro = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        closeDragElement();
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
       }
-    });
 
-    ro.observe(theSlider); //<-- NOTICE HERE
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos3 = e.clientX;
+
+        // set the element's new position:
+        theSlider.style.left =
+          theSlider.offsetLeft - pos1 >= 0
+            ? 0
+            : theSlider.offsetLeft - pos1 + "px";
+      }
+
+      function closeDragElement() {
+        // get each item width
+
+        // get the right side position of the slider
+
+        // delay 0.5s, then remove the class .shifting when finished checking and styling
+        // .shifting {transition: all 0.5s ease;}
+        setTimeout(() => {
+          theSlider.classList.remove("shifting");
+        }, 500);
+
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
   });
   return (
-    <div className="sections-padding">
+    <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="culture-header">
         <div className="slide-header">
           <h1>Made to make.</h1>
@@ -93,21 +101,38 @@ function Culture() {
           </h2>
         </div>
       </header>
-      <section>
-        <div data-item="slider-full" className="slider-container">
-          <div className="slider-all-items">
-            <div className="slider-item slider-item1"></div>
-            <div className="slider-item slider-item2"></div>
-            <div className="slider-item slider-item3"></div>
+
+      <section className="slider-wrapper">
+        <div>
+          <div data-item="slider-full" className="slider-container">
+            <div className="slider-all-items">
+              <div className="slider-item">
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+                <img src={img} alt="img" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section className="we-are-container">
         <p className="we-are">
           We are an international team with 5 offices across North America, made
           up of 29 nationalities, speaking 21 languages.
         </p>
       </section>
+
       <section className="make-container">
         <p className="small-text">
           <strong>How</strong> we make fun stuff.
@@ -187,8 +212,343 @@ function Culture() {
           <p className="light">Social</p>
         </div>
       </section>
+
+      <section className="partners">
+        <p className="small-text">
+          <strong>who</strong> is in our friendzone
+        </p>
+        <div className="partner-container">
+          <div>
+            <img src={partner1} alt="img" />
+          </div>
+          <div>
+            <img src={partner2} alt="img" />
+          </div>
+          <div>
+            <img src={partner3} alt="img" />
+          </div>
+          <div>
+            <img src={partner4} alt="img" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p className="small-text">
+          <strong>Who</strong> leads these party people.
+        </p>
+        <div className="people">
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team1} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team2} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team3} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team4} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team5} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team6} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team7} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team8} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team9} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team10} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team11} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team12} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team13} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team14} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team15} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team16} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team17} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 export default Culture;
