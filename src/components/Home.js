@@ -22,6 +22,7 @@ import gif2 from "../styles/gifs/gif2.webp";
 import gif3 from "../styles/gifs/gif3.webp";
 
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 /*import Animation from "./an";*/
 
@@ -311,11 +312,11 @@ function Home() {
 
         <div className="all-projects">
           <div>
-            <a href="/work">
+            <NavLink to="/work">
               <div className="btn mouse-hover">
                 <div className="line-btn"></div> <div>All Projects</div>
               </div>
-            </a>
+            </NavLink>
           </div>
         </div>
       </main>

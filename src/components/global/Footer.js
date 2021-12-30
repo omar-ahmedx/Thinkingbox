@@ -11,37 +11,37 @@ function Footer() {
         <div className="sec-nav">
           <div>
             <div className="footer-links-container mouse-hover">
-              <a href="/home">Home</a>
+              <NavLink to="/home">Home</NavLink>
               <div className="border-expand"></div>
             </div>
             <div className="footer-links-container mouse-hover">
-              <a href="/work">Work</a>
+              <NavLink to="/work">Work</NavLink>
               <div className="border-expand"></div>
             </div>
             <div className="footer-links-container mouse-hover">
-              <a href="/culture">Culture</a>
+              <NavLink to="/culture">Culture</NavLink>
               <div className="border-expand"></div>
             </div>
             {/*<div className="footer-links-container mouse-hover">
-              <a href="/careers">Careers</a>
+              <NavLink to="/careers">Careers</NavLink>
               <div className="border-expand"></div>
   </div> */}
             <div className="footer-links-container mouse-hover">
-              <a href="/contact">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
               <div className="border-expand"></div>
             </div>
             {/* <div className="footer-links-container mouse-hover">
-              <a href="/archive">Archive</a>
+              <NavLink to="/archive">Archive</NavLink>
               <div className="border-expand"></div>
             </div> */}
           </div>
           <div>
-            <div className="footer-links-container mouse-hover">
-              <a href="/AntiSocial">AntiSocial</a>
+            {/*<div className="footer-links-container mouse-hover">
+              <NavLink to="/AntiSocial">AntiSocial</NavLink>
               <div className="border-expand"></div>
             </div>
-            {/*<div className="footer-links-container mouse-hover">
-              <a href="/talknerdy">Talk Nerdy</a>
+            /*<div className="footer-links-container mouse-hover">
+              <NavLink to="/talknerdy">Talk Nerdy</NavLink>
               <div className="border-expand"></div>
           </div>*/}
           </div>

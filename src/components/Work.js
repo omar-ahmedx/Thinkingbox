@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import Footer from "./global/Footer";
-import dragonVideo from "../styles/videos/dragon.mp4";
 import kite from "../styles/videos/kite.mp4";
 import portfolio from "../styles/videos/portfolio.mp4";
 import indie from "../styles/videos/indie.mp4";
+import frontEndvideo from "../styles/videos/frontendCase.mp4";
+import creativeCase from "../styles/videos/creativeCase.mp4";
+import socialCase from "../styles/videos/socialCase.mp4";
 
 import "../styles/work.css";
 import { motion } from "framer-motion";
@@ -47,50 +49,6 @@ function Work() {
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
-          <NavLink to="/indie">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={case1} />
-                <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={indie} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>INDIE</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </NavLink>
-        </div>
-
-        <div className="work-container mouse-hover">
-          <NavLink to="/kite">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={case2} />
-                <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={kite} type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>KITE</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-          </NavLink>
-        </div>
-
-        <div className="work-container mouse-hover">
           <NavLink to="/portfolio">
             <div className="work-shape-wrapper">
               <div className="work-shape">
@@ -119,7 +77,7 @@ function Work() {
                 <img alt="style" src={case4} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={frontEndvideo} type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -141,7 +99,7 @@ function Work() {
                 <img alt="style" src={case5} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={socialCase} type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -163,7 +121,7 @@ function Work() {
                 <img alt="style" src={case6} />
                 <div>
                   <video className="work-video" loop="True" muted="True">
-                    <source src={dragonVideo} type="video/mp4" />
+                    <source src={creativeCase} type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -178,6 +136,48 @@ function Work() {
           </NavLink>
         </div>
 
+        <div className="work-container mouse-hover">
+          <NavLink to="/indie">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={case1} />
+                <div>
+                  <video className="work-video" loop="True" muted="True">
+                    <source src={indie} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>INDIE</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/kite">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={case2} />
+                <div>
+                  <video className="work-video" loop="True" muted="True">
+                    <source src={kite} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>KITE</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </NavLink>
+        </div>
         {/* <div className="btn-container archive-btn">
           <div className="btn-link">
             <NavLink to="/archive">

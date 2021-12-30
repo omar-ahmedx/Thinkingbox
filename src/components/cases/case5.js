@@ -49,12 +49,14 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img2} alt="" />
-        </div>
-        <div>
-          <video className="full-img" controls>
-            <source src={vid1} type="vido/mp4" />
-          </video>
+          <video
+            className="full-img"
+            autoplay="true"
+            loop="infinite"
+            muted="true"
+            src={vid1}
+            type="vido/mp4"
+          />
         </div>
 
         <div className="case-text">
@@ -70,20 +72,35 @@ function Case1() {
         </div>
 
         <div className="fullImg-container">
-          <video className="full-img" controls>
-            <source src={vid2} type="vido/mp4" />
-          </video>
+          <video
+            className="full-img"
+            autoplay="true"
+            loop="infinite"
+            muted="true"
+            src={vid2}
+            type="vido/mp4"
+          />
         </div>
         <div className="fullImg-container">
-          <video className="full-img" controls>
-            <source src={vid3} type="vido/mp4" />
-          </video>
+          <video
+            className="full-img"
+            autoplay="true"
+            loop="infinite"
+            muted="true"
+            src={vid3}
+            type="vido/mp4"
+          />
         </div>
 
         <div>
-          <video className="full-img" controls>
-            <source src={vid4} type="vido/mp4" />
-          </video>
+          <video
+            className="full-img"
+            autoplay="true"
+            loop="infinite"
+            muted="true"
+            src={vid4}
+            type="vido/mp4"
+          />
         </div>
 
         <div className="case-text">

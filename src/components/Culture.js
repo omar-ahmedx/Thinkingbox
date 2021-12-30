@@ -1,4 +1,4 @@
-//import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import "../styles/culture.css";
 import img1 from "../styles/imgs/CULTURE/Asset1.png";
 import img2 from "../styles/imgs/CULTURE/Asset2.png";
@@ -100,6 +100,17 @@ function Culture() {
       document.onmousemove = null;
     }
   }
+  useEffect(() => {
+    let list = document.querySelectorAll(".hover-container");
+    list.forEach((item) => {
+      item.addEventListener("mousemove", (e) => {
+        console.log();
+        item.childNodes[0].style.cssText = `left: ${
+          e.layerX - 350 / 2
+        }px; top: ${e.layerY - 350 / 2}px;`;
+      });
+    });
+  }, []);
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="culture-header">
@@ -218,12 +229,12 @@ function Culture() {
           <p className="light">Digital</p>
         </div>
         <div className="middle hover-container">
+          <img className="hover-img" src={gif2} alt="img" />
           <p className="light">Experiential</p>
         </div>
-        <div className="hover-container">
-          <p className="light">Content</p>
-        </div>
+
         <div className="middle hover-container">
+          <img className="hover-img" src={gif3} alt="img" />
           <p className="light">Social</p>
         </div>
       </section>
@@ -256,6 +267,60 @@ function Culture() {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
+                <img alt="style" src={team17} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team3} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team17} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
                 <img alt="style" src={team1} />
               </div>
             </div>
@@ -275,24 +340,6 @@ function Culture() {
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={team2} />
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-            <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
-            </div>
-          </div>
-          <div className="work-container">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={team3} />
               </div>
             </div>
 
@@ -397,7 +444,6 @@ function Culture() {
               people. #LivingTheDream"
             </div>
           </div>
-
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
@@ -528,24 +574,6 @@ function Culture() {
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={team16} />
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-            <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
-            </div>
-          </div>
-          <div className="work-container">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={team17} />
               </div>
             </div>
 
