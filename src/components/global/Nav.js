@@ -218,19 +218,19 @@ function Nav(props) {
           <Route exact path="/" element={<Home delay={props.delay} />}></Route>
           <Route
             exact
-            path="./work"
+            path="/work"
             element={<Work delay={props.delay} />}
           ></Route>
-          <Route exact path="./careers" element={<Careers />}></Route>
-          <Route exact path="./contact" element={<Contact />}></Route>
-          <Route exact path="./archive" element={<Archive />}></Route>
-          <Route exact path="./culture" element={<Culture />}></Route>
-          <Route exact path="./indie" element={<Case1 />}></Route>
-          <Route exact path="./kite" element={<Case2 />}></Route>
-          <Route exact path="./portfolio" element={<Case3 />}></Route>
-          <Route exact path="./frontend" element={<Case4 />}></Route>
-          <Route exact path="./socialmedia" element={<Case5 />}></Route>
-          <Route exact path="./artwork" element={<Case6 />}></Route>
+          <Route exact path="/careers" element={<Careers />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/archive" element={<Archive />}></Route>
+          <Route exact path="/culture" element={<Culture />}></Route>
+          <Route exact path="/indie" element={<Case1 />}></Route>
+          <Route exact path="/kite" element={<Case2 />}></Route>
+          <Route exact path="/portfolio" element={<Case3 />}></Route>
+          <Route exact path="/frontend" element={<Case4 />}></Route>
+          <Route exact path="/socialmedia" element={<Case5 />}></Route>
+          <Route exact path="/artwork" element={<Case6 />}></Route>
         </Routes>
       </AnimatePresence>
     </div>
