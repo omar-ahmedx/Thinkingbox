@@ -48,7 +48,7 @@
   transition: none;
 }
 
-@media only screen {
+@media (max-width: 1020px) {
   .cursor-dot,
   .cursor-dot-outline {
     display: none;
