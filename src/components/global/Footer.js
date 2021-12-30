@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "../../styles/commonStyles/footer.css";
 import logo from "../../styles/imgs/LOGO.png";
+import { BsInstagram, BsLinkedin, BsVimeo } from "react-icons/bs";
+import { FaMedium } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -51,7 +53,9 @@ function Footer() {
               <div className="line"></div> <div>Work With Us</div>
             </div>
           </NavLink>
-          <div></div>
+          <div className="footer-icons">
+            <BsInstagram /> <BsLinkedin /> <BsVimeo /> <FaMedium />
+          </div>
         </div>
       </div>
 

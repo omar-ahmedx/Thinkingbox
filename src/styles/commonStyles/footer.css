@@ -123,3 +123,9 @@
 .footer-links-container:hover .border-expand {
   transform: translateX(0);
 }
+.footer-icons {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}

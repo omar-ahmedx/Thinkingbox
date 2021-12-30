@@ -1,5 +1,21 @@
 //import { useEffect } from "react/cjs/react.development";
 import "../styles/culture.css";
+import img1 from "../styles/imgs/CULTURE/Asset1.png";
+import img2 from "../styles/imgs/CULTURE/Asset2.png";
+import img3 from "../styles/imgs/CULTURE/Asset3.png";
+import img4 from "../styles/imgs/CULTURE/Asset4.png";
+import img5 from "../styles/imgs/CULTURE/Asset5.png";
+import img6 from "../styles/imgs/CULTURE/Asset6.png";
+import img7 from "../styles/imgs/CULTURE/Asset7.png";
+import img8 from "../styles/imgs/CULTURE/Asset8.png";
+import img9 from "../styles/imgs/CULTURE/Asset9.png";
+import img10 from "../styles/imgs/CULTURE/Asset10.png";
+import img11 from "../styles/imgs/CULTURE/Asset11.png";
+import img12 from "../styles/imgs/CULTURE/Asset12.JPG";
+import img13 from "../styles/imgs/CULTURE/Asset13.png";
+import img14 from "../styles/imgs/CULTURE/Asset14.png";
+import img15 from "../styles/imgs/CULTURE/Asset15.png";
+
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
 import gif3 from "../styles/gifs/gif3.webp";
@@ -26,7 +42,6 @@ import team15 from "../styles/imgs/TEAM/team15.png";
 import team16 from "../styles/imgs/TEAM/team16.png";
 import team17 from "../styles/imgs/TEAM/team17.png";
 
-import img from "../styles/imgs/slide.webp";
 import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
@@ -61,10 +76,14 @@ function Culture() {
       pos3 = e.clientX;
 
       // set the element's new position:
-      theSlider.style.left =
-        theSlider.offsetLeft - pos1 >= 0
-          ? 0
-          : theSlider.offsetLeft - pos1 + "px";
+      if (theSlider.offsetLeft - pos1 >= 0) {
+        theSlider.style.left = 0;
+      } else if (theSlider.offsetLeft - pos1 < -2515) {
+        closeDragElement();
+        theSlider.style.left = "-2500px";
+      } else {
+        theSlider.style.left = theSlider.offsetLeft - pos1 + "px";
+      }
     }
 
     function closeDragElement() {
@@ -105,19 +124,19 @@ function Culture() {
           <div data-item="slider-full" className="slider-container">
             <div className="slider-all-items">
               <div className="slider-item">
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
-                <img src={img} alt="img" />
+                <img className="img1" src={img1} alt="img" />
+                <img className="img2" src={img10} alt="img" />
+                <img className="img3" src={img2} alt="img" />
+                <img className="img4" src={img4} alt="img" />
+                <img className="img5" src={img3} alt="img" />
+                <img className="img6" src={img13} alt="img" />
+                <img className="img7" src={img5} alt="img" />
+                <img className="img8" src={img8} alt="img" />
+                <img className="img9" src={img9} alt="img" />
+                <img className="img10" src={img11} alt="img" />
+                <img className="img11" src={img6} alt="img" />
+                <img className="img12" src={img7} alt="img" />
+                <img className="img13" src={img15} alt="img" />
               </div>
             </div>
           </div>
