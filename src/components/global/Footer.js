@@ -146,7 +146,7 @@ function Footer() {
 
       <div className="privacy">
         <span>
-          Thinking box 2021 <span className="small-dot"></span>{" "}
+          Cheesecake 2021 <span className="small-dot"></span>{" "}
           <a className="mouse-hover" href="/terms-and-conditions">
             Terms And Conditions
           </a>{" "}

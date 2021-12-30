@@ -1,9 +1,18 @@
 import { useEffect } from "react";
 import Footer from "./global/Footer";
-import dragon from "../styles/imgs/dragon.webp";
 import dragonVideo from "../styles/videos/dragon.mp4";
 import "../styles/work.css";
 import { motion } from "framer-motion";
+
+import case1 from "../styles/imgs/UI UX/INDIE/THUMBNAIL.png";
+import case2 from "../styles/imgs/UI UX/KITE/THUMBNAIL.png";
+import case3 from "../styles/imgs/UI UX/PORTFOLIO WEBSITE/PORTFOLIO WEBSITE.png";
+
+import case4 from "../styles/imgs/FRONTEND/Clone Artist website THUMBNAIL.png";
+
+import case5 from "../styles/imgs/SOCIAL MEDIA STRATEGY/strategy thumbnail.png";
+
+import case6 from "../styles/imgs/WEBSITE ARTWORK/Thumbnail.png";
 
 function Work() {
   useEffect(() => {
@@ -33,9 +42,69 @@ function Work() {
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
+          <a href="./indie">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={case1} />
+                <div>
+                  <video className="work-video" loop="True" muted="True">
+                    <source src={dragonVideo} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>INDIE</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
-              <img alt="style" src={dragon} />
+              <img alt="style" src={case2} />
+              <div>
+                <video className="work-video" loop="True" muted="True">
+                  <source src={dragonVideo} type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div className="info">
+            <p>KITE</p>
+            <p className="sub-info">
+              PepsiCo <span className="dot"></span> Digital
+            </p>
+          </div>
+        </div>
+        <div className="work-container mouse-hover">
+          <div className="work-shape-wrapper">
+            <div className="work-shape">
+              <img alt="style" src={case3} />
+              <div>
+                <video className="work-video" loop="True" muted="True">
+                  <source src={dragonVideo} type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div className="info">
+            <p>Portofolio</p>
+            <p className="sub-info">
+              PepsiCo <span className="dot"></span> Digital
+            </p>
+          </div>
+        </div>
+        <div className="work-container mouse-hover">
+          <div className="work-shape-wrapper">
+            <div className="work-shape">
+              <img alt="style" src={case4} />
               <div>
                 <video className="work-video" loop="True" muted="True">
                   <source src={dragonVideo} type="video/mp4" />
@@ -51,86 +120,11 @@ function Work() {
             </p>
           </div>
         </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
 
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
         <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape">
-              <img alt="style" src={dragon} />
+              <img alt="style" src={case5} />
               <div>
                 <video className="work-video" loop="True" muted="True">
                   <source src={dragonVideo} type="video/mp4" />
@@ -149,26 +143,7 @@ function Work() {
         <div className="work-container mouse-hover">
           <div className="work-shape-wrapper">
             <div className="work-shape">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape">
-              <img alt="style" src={dragon} />
+              <img alt="style" src={case6} />
               <div>
                 <video className="work-video" loop="True" muted="True">
                   <source src={dragonVideo} type="video/mp4" />
@@ -185,160 +160,7 @@ function Work() {
           </div>
         </div>
 
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-        <div className="work-container mouse-hover">
-          <div className="work-shape-wrapper">
-            <div className="work-shape slide">
-              <img alt="style" src={dragon} />
-              <div>
-                <video className="work-video" loop="True" muted="True">
-                  <source src={dragonVideo} type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div className="info">
-            <p>Mountain Dew Rise</p>
-            <p className="sub-info">
-              PepsiCo <span className="dot"></span> Digital
-            </p>
-          </div>
-        </div>
-
-        <div className="btn-container archive-btn">
+        {/* <div className="btn-container archive-btn">
           <div className="btn-link">
             <a href="/archive">
               <div className="btn">
@@ -346,7 +168,7 @@ function Work() {
               </div>
             </a>
           </div>
-        </div>
+  </div>*/}
       </main>
       <div className="work-footer">
         <Footer />

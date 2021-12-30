@@ -1,0 +1,25 @@
+.full-img {
+  position: relative;
+  left: -50%;
+  transform: translateX(10%);
+  width: 100vw;
+}
+
+.case-text {
+  margin: 400px 0;
+  padding: 0 150px;
+}
+.case-text h2 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+.case-text p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.normal-img {
+  width: 100%;
+  margin: 40px 0;
+}

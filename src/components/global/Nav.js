@@ -9,6 +9,7 @@ import Contact from "../Contact";
 import Archive from "../Archive";
 import Careers from "../Careers";
 import Culture from "../Culture";
+import Case1 from "../cases/case1";
 function Nav(props) {
   const location = useLocation();
   let prevScrollpos = window.pageYOffset;
@@ -210,6 +211,7 @@ function Nav(props) {
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/archive" element={<Archive />}></Route>
           <Route exact path="/culture" element={<Culture />}></Route>
+          <Route exact path="/indie" element={<Case1 />}></Route>
         </Routes>
       </AnimatePresence>
     </div>
