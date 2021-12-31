@@ -154,14 +154,15 @@ function Footer() {
 
       <div className="privacy">
         <span>
-          Cheesecake 2021 <span className="small-dot"></span>{" "}
-          <NavLink className="mouse-hover" to="/terms-and-conditions">
+          Cheesecake 2021{" "}
+          {/*<span className="small-dot"></span>{" "}
+           <NavLink className="mouse-hover" to="/terms-and-conditions">
             Terms And Conditions
           </NavLink>{" "}
           <span className="small-dot"></span>{" "}
           <a className="mouse-hover" href="/privacy-policy">
             Privacy Policy
-          </a>
+        </a>*/}
         </span>
         <img src="" alt="" />
       </div>
