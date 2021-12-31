@@ -221,8 +221,16 @@ function Nav(props) {
             path="/work"
             element={<Work delay={props.delay} />}
           ></Route>
-          <Route exact path="/careers" element={<Careers />}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route
+            exact
+            path="/careers"
+            element={<Careers delay={props.delay} />}
+          ></Route>
+          <Route
+            exact
+            path="/contact"
+            element={<Contact delay={props.delay} />}
+          ></Route>
           <Route exact path="/archive" element={<Archive />}></Route>
           <Route
             exact

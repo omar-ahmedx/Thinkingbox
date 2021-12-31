@@ -21,7 +21,7 @@ import case5 from "../styles/imgs/SOCIAL MEDIA STRATEGY/strategy thumbnail.png";
 import case6 from "../styles/imgs/WEBSITE ARTWORK/Thumbnail.png";
 import { NavLink } from "react-router-dom";
 
-function Work() {
+function Work(props) {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".work-shape-wrapper");
     videoContainer.forEach((wrapper) => {
@@ -45,6 +45,30 @@ function Work() {
       });
     });
   }, []);
+  useEffect(() => {
+    document.querySelector("body").classList.add("loaded");
+    document.querySelector("nav").classList.add("animate-nav");
+    if (document.querySelector(".slide-header")) {
+      document.querySelector(".slide-header").classList.add("animate-header");
+    }
+    let list = document.querySelectorAll(".mouse-hover");
+    list.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        document.querySelector(".cursor-dot").classList.add("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        props.delay(false);
+      });
+      item.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor-dot").classList.remove("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        props.delay(true);
+      });
+    });
+  });
   return (
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
@@ -54,9 +78,13 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case3} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={portfolio} type="video/mp4" />
-                  </video>
+                  <video
+                    className="work-video black-bg"
+                    loop="True"
+                    muted="True"
+                    src={portfolio}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -76,9 +104,13 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case4} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={frontEndvideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="work-video black-bg"
+                    loop="True"
+                    muted="True"
+                    src={frontEndvideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -102,9 +134,9 @@ function Work() {
                     className="work-video black-bg"
                     loop="True"
                     muted="True"
-                  >
-                    <source src={socialCase} type="video/mp4" />
-                  </video>
+                    src={socialCase}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -124,9 +156,13 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case6} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={creativeCase} type="video/mp4" />
-                  </video>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={creativeCase}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -146,9 +182,13 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case1} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={indie} type="video/mp4" />
-                  </video>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={indie}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -167,9 +207,13 @@ function Work() {
               <div className="work-shape">
                 <img alt="style" src={case2} />
                 <div>
-                  <video className="work-video" loop="True" muted="True">
-                    <source src={kite} type="video/mp4" />
-                  </video>
+                  <video
+                    className="work-video grey-bg"
+                    loop="True"
+                    muted="True"
+                    src={kite}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>

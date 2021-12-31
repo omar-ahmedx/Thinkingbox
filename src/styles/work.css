@@ -29,8 +29,8 @@
 .work-video {
   pointer-events: none;
   position: absolute;
-  width: 100%;
-  left: 0;
+  width: 80%;
+  left: 30px;
   top: 0;
   opacity: 0;
   transition: transform 0.6s;
@@ -106,4 +106,10 @@ a {
 }
 .black-bg {
   background-color: black;
+}
+.white-bg {
+  background-color: white;
+}
+.grey-bg {
+  background-color: #cccccc;
 }

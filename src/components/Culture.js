@@ -131,6 +131,30 @@ function Culture(props) {
       });
     });
   });
+  useEffect(() => {
+    document.querySelector("body").classList.add("loaded");
+    document.querySelector("nav").classList.add("animate-nav");
+    if (document.querySelector(".slide-header")) {
+      document.querySelector(".slide-header").classList.add("animate-header");
+    }
+    let list = document.querySelectorAll(".mouse-hover");
+    list.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        document.querySelector(".cursor-dot").classList.add("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        props.delay(false);
+      });
+      item.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor-dot").classList.remove("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        props.delay(true);
+      });
+    });
+  });
 
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
@@ -245,16 +269,16 @@ function Culture(props) {
         <p className="small-text">
           <strong>What</strong> we craft.
         </p>
-        <div className="top hover-container">
+        <div className="top hover-container mouse-hover">
           <img className="hover-img" src={gif1} alt="img" />
           <p className="light">Digital</p>
         </div>
-        <div className="middle hover-container">
+        <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif2} alt="img" />
           <p className="light">Experiential</p>
         </div>
 
-        <div className="middle hover-container">
+        <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif3} alt="img" />
           <p className="light">Social</p>
         </div>
@@ -324,6 +348,24 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
+                <img alt="style" src={team1} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
                 <img alt="style" src={team3} />
               </div>
             </div>
@@ -340,24 +382,6 @@ function Culture(props) {
             </div>
           </div>
 
-          <div className="work-container">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img alt="style" src={team1} />
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
-            </div>
-            <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
-            </div>
-          </div>
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">

@@ -1,8 +1,33 @@
 import "../styles/contact.css";
 import Footer from "./global/Footer";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
-function Contact() {
+function Contact(props) {
+  useEffect(() => {
+    document.querySelector("body").classList.add("loaded");
+    document.querySelector("nav").classList.add("animate-nav");
+    if (document.querySelector(".slide-header")) {
+      document.querySelector(".slide-header").classList.add("animate-header");
+    }
+    let list = document.querySelectorAll(".mouse-hover");
+    list.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        document.querySelector(".cursor-dot").classList.add("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        props.delay(false);
+      });
+      item.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor-dot").classList.remove("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        props.delay(true);
+      });
+    });
+  });
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="contact-header">
@@ -112,7 +137,7 @@ function Contact() {
             </div>
           </div>
         </section>
-
+        {/*
         <section className="places-container">
           <div className="places row border">
             <div>LA</div>
@@ -164,7 +189,7 @@ function Contact() {
               <p>info.van@thinkingbox.com</p>
             </div>
           </div>
-        </section>
+</section>*/}
       </main>
       <Footer />
     </motion.div>

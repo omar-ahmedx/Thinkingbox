@@ -26,7 +26,7 @@ import { NavLink } from "react-router-dom";
 
 /*import Animation from "./an";*/
 
-function Home() {
+function Home(props) {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".shape-wrapper");
     videoContainer.forEach((wrapper) => {
@@ -113,6 +113,30 @@ function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    document.querySelector("body").classList.add("loaded");
+    document.querySelector("nav").classList.add("animate-nav");
+    if (document.querySelector(".slide-header")) {
+      document.querySelector(".slide-header").classList.add("animate-header");
+    }
+    let list = document.querySelectorAll(".mouse-hover");
+    list.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        document.querySelector(".cursor-dot").classList.add("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.add("eye-outline");
+        props.delay(false);
+      });
+      item.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor-dot").classList.remove("eye");
+        document
+          .querySelector(".cursor-dot-outline")
+          .classList.remove("eye-outline");
+        props.delay(true);
+      });
+    });
+  });
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header>
@@ -141,9 +165,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={UIUXimage} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={UIUXVideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={UIUXVideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -163,9 +191,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={frontEndimage} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={frontEndvideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={frontEndvideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -184,9 +216,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={creativeArtworkimage} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={creativeArtworkvideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={creativeArtworkvideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -206,9 +242,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={socialMediaimage} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={socialMediavideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={socialMediavideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -228,9 +268,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={UIUXimagesmall} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={UIUXVideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={UIUXVideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -250,9 +294,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={socialMediaimagesmall} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={socialMediavideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={socialMediavideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -272,9 +320,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={frontEndimagesmall} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={frontEndvideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={frontEndvideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
@@ -294,9 +346,13 @@ function Home() {
               <div className="shape">
                 <img alt="style" src={creativeArtworkimagesmall} />
                 <div>
-                  <video className="shape-video" loop="True" muted="True">
-                    <source src={creativeArtworkvideo} type="video/mp4" />
-                  </video>
+                  <video
+                    className="shape-video"
+                    loop="True"
+                    muted="True"
+                    src={creativeArtworkvideo}
+                    type="video/mp4"
+                  />
                 </div>
               </div>
             </div>
