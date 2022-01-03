@@ -5,6 +5,8 @@ import "./App.css";
 import "./styles/commonStyles/mouse.css";
 import Nav from "./components/global/Nav";
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollTop from "./components/scroll";
+
 function App() {
   const [delay, setDelay] = useState(true);
   useEffect(() => {
@@ -144,7 +146,9 @@ function App() {
         </p>
       </div>
       <Router>
-        <Nav delay={setDelay} />
+        <ScrollTop>
+          <Nav delay={setDelay} />
+        </ScrollTop>
       </Router>
     </div>
   );
