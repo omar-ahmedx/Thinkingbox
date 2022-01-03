@@ -39,6 +39,8 @@ import team14 from "../styles/imgs/TEAM/team14.png";
 import team15 from "../styles/imgs/TEAM/team15.png";
 import team16 from "../styles/imgs/TEAM/team16.png";
 import team17 from "../styles/imgs/TEAM/team17.png";
+import team18 from "../styles/imgs/TEAM/team18.png";
+import team19 from "../styles/imgs/TEAM/team19.png";
 
 import { motion } from "framer-motion";
 
@@ -603,6 +605,42 @@ function Culture(props) {
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img alt="style" src={team16} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team18} />
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+            <div className="quote">
+              "I've always just wanted to work on crazy projects with cool
+              people. #LivingTheDream"
+            </div>
+          </div>
+          <div className="work-container">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={team19} />
               </div>
             </div>
 
