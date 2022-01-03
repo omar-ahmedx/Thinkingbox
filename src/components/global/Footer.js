@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "../../styles/commonStyles/footer.css";
 import logo from "../../styles/imgs/LOGO.png";
-import { BsInstagram, BsLinkedin, BsVimeo } from "react-icons/bs";
-import { FaMedium } from "react-icons/fa";
+import {
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsPinterest,
+} from "react-icons/bs";
 
 function Footer() {
   return (
@@ -54,7 +58,27 @@ function Footer() {
             </div>
           </NavLink>
           <div className="footer-icons">
-            <BsInstagram /> <BsLinkedin /> <BsVimeo /> <FaMedium />
+            <a
+              href="https://www.instagram.com/_cheesee_cake_/"
+              className="mouse-hover"
+            >
+              <BsInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cheese-cake-6b6b55207/"
+              className="mouse-hover"
+            >
+              <BsLinkedin />
+            </a>
+            <a href="https://pin.it/2104Ce2" className="mouse-hover">
+              <BsPinterest />
+            </a>
+            <a
+              href="https://twitter.com/cheeese_cake__"
+              className="mouse-hover"
+            >
+              <BsTwitter />
+            </a>
           </div>
         </div>
       </div>
