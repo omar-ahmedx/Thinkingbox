@@ -6,6 +6,8 @@ import indie from "../styles/videos/indie.mp4";
 import frontEndvideo from "../styles/videos/frontendCase.mp4";
 import creativeCase from "../styles/videos/creativeCase.mp4";
 import socialCase from "../styles/videos/socialCase.mp4";
+import kiteArtwork from "../styles/videos/KITE SOCIAL MEDIA CASE STUDY VIDEO.mp4";
+import techniekArtwork from "../styles/videos/TECHNIEK SOCIAL MEDIA CASE STUDY VIDEO.mp4";
 
 import "../styles/work.css";
 import { motion } from "framer-motion";
@@ -161,6 +163,56 @@ function Work(props) {
                     loop="True"
                     muted="True"
                     src={creativeCase}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/kiteArtwork">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={case6} />
+                <div>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={kiteArtwork}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Mountain Dew Rise</p>
+              <p className="sub-info">
+                PepsiCo <span className="dot"></span> Digital
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/techniekArtwork">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img alt="style" src={case6} />
+                <div>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={techniekArtwork}
                     type="video/mp4"
                   />
                 </div>

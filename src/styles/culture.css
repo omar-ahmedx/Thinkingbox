@@ -1,10 +1,22 @@
 .culture-header {
   padding: 265px 0;
 }
+@media (max-width: 730px) {
+  .culture-header {
+    padding: 220px 0;
+  }
+}
 .we-are {
   font-size: 4.5rem;
   line-height: 1.8;
   margin: 250px 0;
+}
+@media (max-width: 1024px) {
+  .we-are {
+    font-size: 6vw;
+    line-height: 1.8;
+    margin-top: 200px;
+  }
 }
 .making-section {
   position: relative;
@@ -38,6 +50,14 @@ li:first-child {
 }
 .section-text h3 {
   font-size: 30px;
+}
+@media (max-width: 1024px) {
+  .making-section h2 {
+    font-size: 8vw;
+  }
+  .making-section h3 {
+    visibility: hidden;
+  }
 }
 .section-text p {
   font-size: 16px;

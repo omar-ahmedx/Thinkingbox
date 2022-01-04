@@ -8,6 +8,11 @@
     width: 100%;
   }
 }
+@media (max-width: 730px) {
+  #root {
+    padding-top: 0;
+  }
+}
 #loader-wrapper {
   position: fixed;
   top: 0;

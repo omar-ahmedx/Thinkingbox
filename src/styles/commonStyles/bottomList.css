@@ -46,3 +46,10 @@
   z-index: 2;
   transform: translate(-15%, -12%);
 }
+
+@media (max-width: 730px) {
+  .bottom-list div a,
+  .bottom-list div p {
+    font-size: 14vw;
+  }
+}

@@ -15,6 +15,8 @@ import Case3 from "../cases/case3";
 import Case4 from "../cases/case4";
 import Case5 from "../cases/case5";
 import Case6 from "../cases/case6";
+import Case7 from "../cases/case7";
+import Case8 from "../cases/case8";
 
 function Nav(props) {
   const location = useLocation();
@@ -243,6 +245,8 @@ function Nav(props) {
           <Route exact path="/frontend" element={<Case4 />}></Route>
           <Route exact path="/socialmedia" element={<Case5 />}></Route>
           <Route exact path="/artwork" element={<Case6 />}></Route>
+          <Route exact path="/kiteArtwork" element={<Case7 />}></Route>
+          <Route exact path="/techniekArtwork" element={<Case8 />}></Route>
         </Routes>
       </AnimatePresence>
     </div>
