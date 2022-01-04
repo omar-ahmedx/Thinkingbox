@@ -21,6 +21,8 @@ import case4 from "../styles/imgs/FRONTEND/Clone Artist website THUMBNAIL.png";
 import case5 from "../styles/imgs/SOCIAL MEDIA STRATEGY/strategy thumbnail.png";
 
 import case6 from "../styles/imgs/WEBSITE ARTWORK/Thumbnail.png";
+import case7 from "../styles/imgs/KITE SOCIAL MEDIA ARTWORK/kiteThumbnail.png";
+import case8 from "../styles/imgs/TECHNIEK SOCIAL MEDIA ARTWORK CASE STUDY/techniekThumbnail.png";
 import { NavLink } from "react-router-dom";
 
 function Work(props) {
@@ -181,7 +183,7 @@ function Work(props) {
           <NavLink to="/kiteArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case6} />
+                <img alt="style" src={case7} />
                 <div>
                   <video
                     className="work-video white-bg"
@@ -206,7 +208,7 @@ function Work(props) {
           <NavLink to="/techniekArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case6} />
+                <img alt="style" src={case8} />
                 <div>
                   <video
                     className="work-video white-bg"

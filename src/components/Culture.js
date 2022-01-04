@@ -65,9 +65,10 @@ function Culture(props) {
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         document.onmouseup = closeDragElement;
+        document.ontouchend = closeDragElement;
 
         // call a function whenever the cursor moves:
-        document.ondblclick = elementDrag;
+        document.ontouchmove = elementDrag;
         document.onmousemove = elementDrag;
       }
 
