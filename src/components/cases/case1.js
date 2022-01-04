@@ -44,8 +44,9 @@ function Case1() {
       </header>
 
       <main className="case-container">
-        <div className="fullImg-container">
+        <div className="overlap">
           <img className="full-img" src={img1} alt="" />
+          <img className="full-img img-top" src={img2} alt="" />
         </div>
         <div className="case-text">
           <h2>Rise and shine</h2>
@@ -59,9 +60,6 @@ function Case1() {
           </p>
         </div>
 
-        <div>
-          <img className="full-img" src={img2} alt="" />
-        </div>
         <div>
           <img className="full-img" src={img3} alt="" />
         </div>

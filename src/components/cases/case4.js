@@ -3,7 +3,6 @@ import "../../styles/cases/case.css";
 import "../../styles/commonStyles/header.css";
 import { motion } from "framer-motion";
 import img1 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website THUMBNAIL.png";
-import img2 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-01 a.png";
 import img3 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-02.png";
 import img4 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-03.png";
 import img5 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-04.png";
@@ -48,9 +47,6 @@ function Case1() {
           </p>
         </div>
 
-        <div>
-          <img className="full-img" src={img2} alt="" />
-        </div>
         <div>
           <img className="full-img" src={img3} alt="" />
         </div>

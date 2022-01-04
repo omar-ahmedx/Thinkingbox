@@ -319,10 +319,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Garima Singh</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -337,10 +334,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Ajay Singh</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -355,10 +349,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Aman Parashar</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -373,10 +364,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Mratunjay Mohan Gaur</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -392,10 +380,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Aakash Yadav</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -411,10 +396,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Parul Chauhan</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -429,10 +411,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Pawan Kumar Yadav</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -447,10 +426,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Yash Parashar</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -465,10 +441,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Himanshu Sachan</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -483,10 +456,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Kaushiki Chaturvedi</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -501,10 +471,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Bubul Deka</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -519,10 +486,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Puneet Soni</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -537,10 +501,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Nandini Chauhan</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -555,10 +516,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Ritu Shukla</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -573,10 +531,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Ishu Dhama</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -591,10 +546,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Shivam Pandey</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -609,10 +561,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Girish Chand Joshi</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -627,10 +576,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Anshika Jain</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
@@ -645,10 +591,7 @@ function Culture(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Aman Verma</p>
             </div>
             <div className="quote">
               "I've always just wanted to work on crazy projects with cool
