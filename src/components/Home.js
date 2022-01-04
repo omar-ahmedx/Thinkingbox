@@ -149,15 +149,14 @@ function Home(props) {
             </span>
             <br />
             <span className="small-header">
-              Your trusted technology partner
+              The web is beautiful and so is your website
             </span>
           </h1>
           <h2>
             <span>
               <p>
-                We are an innovative, smart and inventive virtual assistant for
-                your aspiring business. Virtual assistant that solves real life
-                problems in an intelligent way.
+                Design and create the best user experiences and user interfaces
+                that are meaningful, memorable and delightful.
               </p>
             </span>
           </h2>

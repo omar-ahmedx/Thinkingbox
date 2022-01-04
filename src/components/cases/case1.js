@@ -23,26 +23,6 @@ import img17 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-17.png";
 function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
-      <header>
-        <div className="slide-header">
-          <h1>
-            <span className="scribble">
-              <span className="scribble-text">We are a globa</span>
-              <span className="scribble-container"></span>
-            </span>
-            l
-            <br />
-            <span>creative collective.</span>
-          </h1>
-          <h2>
-            <span>
-              <p>We shape the future of brands</p>
-              <p>through craft and curiosity</p>
-            </span>
-          </h2>
-        </div>
-      </header>
-
       <main className="case-container">
         <div className="overlap">
           <img className="full-img" src={img1} alt="" />

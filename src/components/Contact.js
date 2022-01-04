@@ -57,20 +57,24 @@ function Contact(props) {
             <div className="staff">
               <h2>New Business</h2>
               <div>
-                <p>James O'Brien</p>
-                <p>Chief Marketing Officer</p>
+                <p>Stuti Singh</p>
+                <p>Marketing Manager</p>
                 <p className="border-bottom mouse-hover">
-                  james@thinkingbox.com
+                  <a href="mailto:stuti@cheesecake.agency">
+                    stuti@cheesecake.agency
+                  </a>
                 </p>
               </div>
             </div>
             <div className="staff">
-              <h2>Press</h2>
+              <h2>B2B collaboration</h2>
               <div>
-                <p>Farah Tozy</p>
-                <p>Marketing Manager</p>
+                <p>Aman Parashar </p>
+                <p>Chief Operating Officer</p>
                 <p className="border-bottom mouse-hover">
-                  farah@thinkingbox.com
+                  <a href="mailto:Aman@cheesecake.agency">
+                    Aman@cheesecake.agency
+                  </a>
                 </p>
               </div>
             </div>
@@ -80,10 +84,12 @@ function Contact(props) {
             <div className="staff">
               <h2>Careers</h2>
               <div>
-                <p>Elisha Zagerman</p>
-                <p>Senior Manager, Talent Acquisition</p>
+                <p>Garima Singh </p>
+                <p>Chief executive officer</p>
                 <p className="border-bottom mouse-hover">
-                  elisha@thinkingbox.com
+                  <a href="mailto:garima@cheesecake.agency">
+                    garima@cheesecake.agency
+                  </a>
                 </p>
               </div>
             </div>
@@ -91,7 +97,9 @@ function Contact(props) {
               <h2>Hello</h2>
               <div>
                 <p className="border-bottom mouse-hover">
-                  hello@thinkingbox.com
+                  <a href="mailto: hello@cheesecake.agency">
+                    hello@cheesecake.agency
+                  </a>
                 </p>
               </div>
             </div>
