@@ -143,17 +143,22 @@ function Home(props) {
         <div className="slide-header">
           <h1>
             <span className="scribble">
-              <span className="scribble-text">We are a globa</span>
-              <span className="scribble-container"></span>
+              <span className="scribble-text">
+                We are global creative collective
+              </span>
             </span>
-            l
             <br />
-            <span>creative collective.</span>
+            <span className="small-header">
+              Your trusted technology partner
+            </span>
           </h1>
           <h2>
             <span>
-              <p>We shape the future of brands</p>
-              <p>through craft and curiosity</p>
+              <p>
+                We are an innovative, smart and inventive virtual assistant for
+                your aspiring business. Virtual assistant that solves real life
+                problems in an intelligent way.
+              </p>
             </span>
           </h2>
         </div>
@@ -178,9 +183,6 @@ function Home(props) {
 
             <div className="info">
               <p>UI UX</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -204,9 +206,6 @@ function Home(props) {
 
             <div className="info">
               <p>Front End</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -229,9 +228,6 @@ function Home(props) {
 
             <div className="info">
               <p>Creative Artwork</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -255,9 +251,6 @@ function Home(props) {
 
             <div className="info">
               <p>Social Media Strategy</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -281,9 +274,6 @@ function Home(props) {
 
             <div className="info">
               <p>UI UX</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -307,9 +297,6 @@ function Home(props) {
 
             <div className="info">
               <p>Social Media Strategy</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -333,9 +320,6 @@ function Home(props) {
 
             <div className="info">
               <p>Front End</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
@@ -359,9 +343,6 @@ function Home(props) {
 
             <div className="info">
               <p>Creative Artwork</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
             </div>
           </div>
         </div>
