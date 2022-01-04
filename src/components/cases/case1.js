@@ -24,20 +24,18 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
+        <div className="case-text">
+          <h2>Indie: The hub for all Subscriptions </h2>
+          <p>
+            Most of the applications that you come across in your day to day
+            life, follow the same pattern. It’s fine and professionals can
+            understand this rule. But when it comes to subscription based
+            services, things change.
+          </p>
+        </div>
         <div className="overlap">
           <img className="full-img" src={img1} alt="" />
           <img className="full-img img-top" src={img2} alt="" />
-        </div>
-        <div className="case-text">
-          <h2>Rise and shine</h2>
-          <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
-          </p>
         </div>
 
         <div>
@@ -45,14 +43,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Journey And wireframes</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            An online subscription purchasing application offers a variety of
+            benefits over traditional methods. The user interface is the face of
+            the application, so it is important that it reflects professionalism
+            and reliability. This post looks at the UI in order to provide
+            insight into this specific design challenge.
           </p>
         </div>
 
@@ -68,14 +65,14 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Capability of UI and UX</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Investing in a huge redesign of your website might seem like a quick
+            fix for improving your UI and overall UX. In fact, not long ago the
+            old blog design was upgraded for the ultimate UIs and UXes. And what
+            happened? Not a lot. Even though the web design was everything it
+            could possibly be with the best images for faster UIs and super
+            smooth UXes.
           </p>
         </div>
 
@@ -94,6 +91,16 @@ function Case1() {
         <div>
           <img className="full-img" src={img11} alt="" />
         </div>
+        <div className="case-text">
+          <h2>All in one services possible with UI and UX</h2>
+          <p>
+            The design of the UI and UX of a subscription purchasing application
+            is fundamentally important to customers. While you think they will
+            be most influenced by the actual purchase, you may be incorrect. A
+            good design can mean not just less refunds, but also more sales at a
+            higher revenue.
+          </p>
+        </div>
         <div>
           <img className="full-img" src={img12} alt="" />
         </div>
@@ -111,6 +118,16 @@ function Case1() {
         </div>
         <div>
           <img className="full-img" src={img17} alt="" />
+        </div>
+        <div className="case-text">
+          <h2>Conclusion</h2>
+          <p>
+            Most of the websites that you come across in your day to day life,
+            follow the same pattern. It’s fine and professionals can understand
+            this rule. But when it comes to subscription based services, things
+            change. A converging user experience with a different approach is
+            taken.
+          </p>
         </div>
       </main>
 
