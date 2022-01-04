@@ -7,7 +7,7 @@
 }
 
 .case-text {
-  margin: 400px 0;
+  margin: 30% 0;
   padding: 0 150px;
 }
 .case-text h2 {
@@ -32,6 +32,7 @@
 }
 .overlap {
   position: relative;
+  margin-bottom: 90%;
 }
 .img-top {
   position: absolute;
