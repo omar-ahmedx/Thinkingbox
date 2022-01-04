@@ -68,7 +68,7 @@ function Culture(props) {
         document.ontouchend = closeDragElement;
 
         // call a function whenever the cursor moves:
-        document.ontouchmove = elementDrag;
+        document.ontouchstart = elementDrag;
         document.onmousemove = elementDrag;
       }
 
