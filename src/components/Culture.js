@@ -68,7 +68,7 @@ function Culture(props) {
         document.ontouchend = closeDragElement;
 
         // call a function whenever the cursor moves:
-        document.ontouchstart = elementDrag;
+        document.ontouchmove = elementDrag;
         document.onmousemove = elementDrag;
       }
 
@@ -104,6 +104,7 @@ function Culture(props) {
         // stop moving when mouse button is released:
         document.onmouseup = null;
         document.onmousemove = null;
+        document.ontouchend = null;
       }
     }
     let list = document.querySelectorAll(".hover-container");
