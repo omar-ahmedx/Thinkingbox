@@ -15,7 +15,7 @@ function Footer() {
         <div className="sec-nav">
           <div>
             <div className="footer-links-container mouse-hover">
-              <NavLink to="/home">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
               <div className="border-expand"></div>
             </div>
             <div className="footer-links-container mouse-hover">
