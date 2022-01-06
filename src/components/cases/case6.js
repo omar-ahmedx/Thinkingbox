@@ -18,12 +18,21 @@ import img13 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_C
 import img14 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-16.png";
 import img15 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-18.png";
 
+import holder from "../../styles/imgs/holder.jpg";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="fullImg-container">
-          <img className="full-img" src={img1} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img1}
+            alt=""
+          />
         </div>
         <div className="case-text">
           <h2>Rise and shine</h2>
@@ -38,10 +47,22 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img2} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img2}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img3} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img3}
+            alt=""
+          />
         </div>
 
         <div className="case-text">
@@ -57,14 +78,32 @@ function Case1() {
         </div>
 
         <div className="fullImg-container">
-          <img className="full-img" src={img4} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img4}
+            alt=""
+          />
         </div>
         <div className="fullImg-container">
-          <img className="full-img" src={img5} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img5}
+            alt=""
+          />
         </div>
 
         <div>
-          <img className="full-img" src={img6} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img6}
+            alt=""
+          />
         </div>
 
         <div className="case-text">
@@ -80,31 +119,85 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img7} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img7}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img8} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img8}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img9} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img9}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img10} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img10}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img11} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img11}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img12} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img12}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img13} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img13}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img14} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img14}
+            alt=""
+          />
         </div>
         <div>
-          <img className="full-img" src={img15} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img15}
+            alt=""
+          />
         </div>
       </main>
 

@@ -25,6 +25,11 @@ import case7 from "../styles/imgs/KITE SOCIAL MEDIA ARTWORK/kiteThumbnail.png";
 import case8 from "../styles/imgs/TECHNIEK SOCIAL MEDIA ARTWORK CASE STUDY/techniekThumbnail.png";
 import { NavLink } from "react-router-dom";
 
+import holder from "../styles/imgs/holder.jpg";
+
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 function Work(props) {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".work-shape-wrapper");
@@ -73,6 +78,7 @@ function Work(props) {
       });
     });
   });
+
   return (
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
@@ -80,7 +86,13 @@ function Work(props) {
           <NavLink to="/portfolio">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case3} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case3}
+                />
                 <div>
                   <video
                     className="work-video black-bg"
@@ -106,7 +118,13 @@ function Work(props) {
           <NavLink to="/frontend">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case4} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case4}
+                />
                 <div>
                   <video
                     className="work-video black-bg"
@@ -132,7 +150,13 @@ function Work(props) {
           <NavLink to="/socialmedia">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case5} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case5}
+                />
                 <div>
                   <video
                     className="work-video black-bg"
@@ -158,7 +182,13 @@ function Work(props) {
           <NavLink to="/artwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case6} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case6}
+                />
                 <div>
                   <video
                     className="work-video white-bg"
@@ -183,7 +213,13 @@ function Work(props) {
           <NavLink to="/kiteArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case7} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case7}
+                />
                 <div>
                   <video
                     className="work-video white-bg"
@@ -208,7 +244,13 @@ function Work(props) {
           <NavLink to="/techniekArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case8} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case8}
+                />
                 <div>
                   <video
                     className="work-video white-bg"
@@ -234,7 +276,13 @@ function Work(props) {
           <NavLink to="/indie">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case1} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case1}
+                />
                 <div>
                   <video
                     className="work-video white-bg"
@@ -259,7 +307,13 @@ function Work(props) {
           <NavLink to="/kite">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={case2} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={case2}
+                />
                 <div>
                   <video
                     className="work-video grey-bg"

@@ -9,12 +9,21 @@ import vid3 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Soci
 import vid4 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Social Media Startegy Case Study-05.mp4";
 import img2 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Social Media Startegy Case Study-06.png";
 
+import holder from "../../styles/imgs/holder.jpg";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="fullImg-container">
-          <img className="full-img" src={img1} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img1}
+            alt=""
+          />
         </div>
         <div className="case-text">
           <h2>Rise and shine</h2>
@@ -96,7 +105,13 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img2} alt="" />
+          <img
+            className="full-img lazyload"
+            src={holder}
+            data-sizes="auto"
+            data-src={img2}
+            alt=""
+          />
         </div>
       </main>
 

@@ -2,6 +2,8 @@ import "../styles/contact.css";
 import Footer from "./global/Footer";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact(props) {
   useEffect(() => {
@@ -28,6 +30,27 @@ function Contact(props) {
       });
     });
   });
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_rqzvnhb",
+        "template_6c0qfnq",
+        form.current,
+        "user_U1WAViONvoh3IWln5NcVR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="contact-header">
@@ -69,11 +92,11 @@ function Contact(props) {
             <div className="staff">
               <h2>B2B collaboration</h2>
               <div>
-                <p>Aman Parashar </p>
-                <p>Chief Operating Officer</p>
+                <p>Shivam Pandey</p>
+                <p>Search Engine Optimization Executive</p>
                 <p className="border-bottom mouse-hover">
-                  <a href="mailto:Aman@cheesecake.agency">
-                    Aman@cheesecake.agency
+                  <a href="mailto:shivam@cheesecake.agency">
+                    shivam@cheesecake.agency
                   </a>
                 </p>
               </div>
@@ -110,39 +133,58 @@ function Contact(props) {
           <h2>Still Curious?</h2>
           <p>Need help saying hello, try our contact form</p>
           <div className="form-container">
-            <form method="POST">
+            <form ref={form} onSubmit={sendEmail}>
               <div className="row">
                 <label>
                   <div>Email |</div>
-                  <input type="email" placeholder="hello@youlooknice.com" />
+                  <input
+                    name="user_email"
+                    type="email"
+                    placeholder="hello@youlooknice.com"
+                  />
                 </label>
                 <label>
                   <div>Subject |</div>
-                  <input type="text" placeholder="tell us about your dream" />
+                  <input
+                    name="subject"
+                    type="text"
+                    placeholder="tell us about your dream"
+                  />
                 </label>
               </div>
 
               <div className="row">
                 <label>
                   <div>First Name |</div>
-                  <input type="text" placeholder="your given name" />
+                  <input
+                    name="fisrt_name"
+                    type="text"
+                    placeholder="your given name"
+                  />
                 </label>
                 <label>
                   <div>Last Name |</div>
-                  <input type="text" placeholder="your family name" />
+                  <input
+                    name="last_name"
+                    type="text"
+                    placeholder="your family name"
+                  />
                 </label>
               </div>
               <label className="textarea-label">
                 <div>Message | </div>
                 <br />
-                <textarea placeholder="We are excited to hear from you. Truly. It makes our day. Maybe, you need a website, or a social campaign; perhaps, it's a large museum installation, a super bowl spot or a vending machine that shoots lasers. Whatever the scenario, we are ready to make something amazing with you."></textarea>
+                <textarea
+                  name="message"
+                  placeholder="We are excited to hear from you. Truly. It makes our day. Maybe, you need a website, or a social campaign; perhaps, it's a large museum installation, a super bowl spot or a vending machine that shoots lasers. Whatever the scenario, we are ready to make something amazing with you."
+                ></textarea>
               </label>
+              <div>
+                <button className="work-with mouse-hover" type="submit">
+                  <div className="line"></div> <div>Let's Talk</div>
+                </button>
+              </div>
             </form>
-            <div>
-              <button className="work-with mouse-hover" type="submit">
-                <div className="line"></div> <div>Let's Talk</div>
-              </button>
-            </div>
           </div>
         </section>
         {/*

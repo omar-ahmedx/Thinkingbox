@@ -8,12 +8,22 @@ import img4 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_
 import img5 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-04.png";
 import img6 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-05.png";
 import img7 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-06.png";
+
+import holder from "../../styles/imgs/holder.jpg";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="fullImg-container">
-          <img className="full-img" src={img1} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img1}
+            alt=""
+          />
         </div>
         <div className="case-text">
           <h2>Rise and shine</h2>
@@ -28,7 +38,13 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img3} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img3}
+            alt=""
+          />
         </div>
 
         <div className="case-text">
@@ -44,14 +60,32 @@ function Case1() {
         </div>
 
         <div className="fullImg-container">
-          <img className="full-img" src={img4} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img4}
+            alt=""
+          />
         </div>
         <div className="fullImg-container">
-          <img className="full-img" src={img5} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img5}
+            alt=""
+          />
         </div>
 
         <div>
-          <img className="full-img" src={img6} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img6}
+            alt=""
+          />
         </div>
 
         <div className="case-text">
@@ -67,7 +101,13 @@ function Case1() {
         </div>
 
         <div>
-          <img className="full-img" src={img7} alt="" />
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            src={holder}
+            data-src={img7}
+            alt=""
+          />
         </div>
       </main>
 

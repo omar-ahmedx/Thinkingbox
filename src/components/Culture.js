@@ -45,6 +45,11 @@ import team19 from "../styles/imgs/TEAM/team19.png";
 import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
+import holder from "../styles/imgs/holder.jpg";
+
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 function Culture(props) {
   useEffect(() => {
     // get the slider
@@ -314,7 +319,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team17} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team17}
+                />
               </div>
             </div>
 
@@ -329,7 +340,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team4} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team4}
+                />
               </div>
             </div>
 
@@ -344,7 +361,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team1} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team1}
+                />
               </div>
             </div>
 
@@ -359,7 +382,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team3} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team3}
+                />
               </div>
             </div>
 
@@ -375,7 +404,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team2} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team2}
+                />
               </div>
             </div>
 
@@ -391,7 +426,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team5} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team5}
+                />
               </div>
             </div>
 
@@ -406,7 +447,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team6} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team6}
+                />
               </div>
             </div>
 
@@ -421,7 +468,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team7} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team7}
+                />
               </div>
             </div>
 
@@ -436,7 +489,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team8} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team8}
+                />
               </div>
             </div>
 
@@ -451,7 +510,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team9} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team9}
+                />
               </div>
             </div>
 
@@ -466,7 +531,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team10} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team10}
+                />
               </div>
             </div>
 
@@ -481,7 +552,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team11} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team11}
+                />
               </div>
             </div>
 
@@ -496,7 +573,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team12} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team12}
+                />
               </div>
             </div>
 
@@ -511,7 +594,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team13} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team13}
+                />
               </div>
             </div>
 
@@ -526,7 +615,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team14} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team14}
+                />
               </div>
             </div>
 
@@ -541,7 +636,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team15} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team15}
+                />
               </div>
             </div>
 
@@ -556,7 +657,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team16} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team16}
+                />
               </div>
             </div>
 
@@ -571,7 +678,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team18} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team18}
+                />
               </div>
             </div>
 
@@ -586,7 +699,13 @@ function Culture(props) {
           <div className="work-container">
             <div className="work-shape-wrapper">
               <div className="work-shape">
-                <img alt="style" src={team19} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={team19}
+                />
               </div>
             </div>
 

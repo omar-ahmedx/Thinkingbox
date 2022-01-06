@@ -20,9 +20,13 @@ import socialMediavideo from "../styles/videos/socialMedia.mp4";
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
 import gif3 from "../styles/gifs/gif3.webp";
+import holder from "../styles/imgs/holder.jpg";
 
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 /*import Animation from "./an";*/
 
@@ -167,7 +171,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={UIUXimage} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={UIUXimage}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -190,7 +200,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={frontEndimage} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={frontEndimage}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -212,7 +228,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={creativeArtworkimage} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={creativeArtworkimage}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -235,7 +257,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover full-wrapper">
               <div className="shape">
-                <img alt="style" src={socialMediaimage} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={socialMediaimage}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -258,7 +286,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={UIUXimagesmall} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={UIUXimagesmall}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -281,7 +315,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={socialMediaimagesmall} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={socialMediaimagesmall}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -304,7 +344,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={frontEndimagesmall} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={frontEndimagesmall}
+                />
                 <div>
                   <video
                     className="shape-video"
@@ -327,7 +373,13 @@ function Home(props) {
           <div className="shape-container">
             <div className="shape-wrapper mouse-hover">
               <div className="shape">
-                <img alt="style" src={creativeArtworkimagesmall} />
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  src={holder}
+                  data-src={creativeArtworkimagesmall}
+                />
                 <div>
                   <video
                     className="shape-video"
