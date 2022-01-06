@@ -20,8 +20,6 @@ import img15 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-15.png";
 import img16 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-16.png";
 import img17 from "../../styles/imgs/UI UX/INDIE/CASE STUDY/INDIE-17.png";
 
-import holder from "../../styles/imgs/holder.jpg";
-
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
@@ -42,7 +40,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img1}
-            src={holder}
             alt=""
           />
           <img className="full-img img-top" src={img2} alt="" />
@@ -53,7 +50,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img3}
-            src={holder}
             alt=""
           />
         </div>
@@ -74,7 +70,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img4}
-            src={holder}
             alt=""
           />
         </div>
@@ -83,7 +78,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img5}
-            src={holder}
             alt=""
           />
         </div>
@@ -93,7 +87,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img6}
-            src={holder}
             alt=""
           />
         </div>
@@ -115,7 +108,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img7}
-            src={holder}
             alt=""
           />
         </div>
@@ -124,7 +116,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img8}
-            src={holder}
             alt=""
           />
         </div>
@@ -133,7 +124,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img9}
-            src={holder}
             alt=""
           />
         </div>
@@ -142,7 +132,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img10}
-            src={holder}
             alt=""
           />
         </div>
@@ -151,7 +140,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img11}
-            src={holder}
             alt=""
           />
         </div>
@@ -170,7 +158,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img12}
-            src={holder}
             alt=""
           />
         </div>
@@ -179,7 +166,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img13}
-            src={holder}
             alt=""
           />
         </div>
@@ -188,7 +174,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img14}
-            src={holder}
             alt=""
           />
         </div>
@@ -197,7 +182,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img15}
-            src={holder}
             alt=""
           />
         </div>
@@ -206,7 +190,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img16}
-            src={holder}
             alt=""
           />
         </div>
@@ -215,7 +198,6 @@ function Case1() {
             className="full-img lazyload"
             data-sizes="auto"
             data-src={img17}
-            src={holder}
             alt=""
           />
         </div>

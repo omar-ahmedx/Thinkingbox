@@ -9,7 +9,6 @@ import img5 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_
 import img6 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-05.png";
 import img7 from "../../styles/imgs/FRONTEND/CLONE WEBSITE/Clone Artist website_Case Study-06.png";
 
-import holder from "../../styles/imgs/holder.jpg";
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
@@ -20,7 +19,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img1}
             alt=""
           />
@@ -41,7 +39,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img3}
             alt=""
           />
@@ -63,7 +60,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img4}
             alt=""
           />
@@ -72,7 +68,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img5}
             alt=""
           />
@@ -82,7 +77,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img6}
             alt=""
           />
@@ -104,7 +98,6 @@ function Case1() {
           <img
             className="full-img lazyload"
             data-sizes="auto"
-            src={holder}
             data-src={img7}
             alt=""
           />

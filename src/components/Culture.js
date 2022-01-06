@@ -45,7 +45,6 @@ import team19 from "../styles/imgs/TEAM/team19.png";
 import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
-import holder from "../styles/imgs/holderTeam.jpg";
 
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
@@ -323,7 +322,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team17}
                 />
               </div>
@@ -344,7 +342,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team4}
                 />
               </div>
@@ -365,7 +362,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team1}
                 />
               </div>
@@ -386,7 +382,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team3}
                 />
               </div>
@@ -408,7 +403,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team2}
                 />
               </div>
@@ -430,7 +424,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team5}
                 />
               </div>
@@ -451,7 +444,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team6}
                 />
               </div>
@@ -472,7 +464,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team7}
                 />
               </div>
@@ -493,7 +484,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team8}
                 />
               </div>
@@ -514,7 +504,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team9}
                 />
               </div>
@@ -535,7 +524,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team10}
                 />
               </div>
@@ -556,7 +544,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team11}
                 />
               </div>
@@ -577,7 +564,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team12}
                 />
               </div>
@@ -598,7 +584,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team13}
                 />
               </div>
@@ -619,7 +604,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team14}
                 />
               </div>
@@ -640,7 +624,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team15}
                 />
               </div>
@@ -661,7 +644,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team16}
                 />
               </div>
@@ -682,7 +664,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team18}
                 />
               </div>
@@ -703,7 +684,6 @@ function Culture(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={team19}
                 />
               </div>

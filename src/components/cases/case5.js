@@ -9,7 +9,6 @@ import vid3 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Soci
 import vid4 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Social Media Startegy Case Study-05.mp4";
 import img2 from "../../styles/imgs/SOCIAL MEDIA STRATEGY/New folder/KITE - Social Media Startegy Case Study-06.png";
 
-import holder from "../../styles/imgs/holder.jpg";
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
@@ -19,7 +18,6 @@ function Case1() {
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img1}
             alt=""
@@ -107,7 +105,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img2}
             alt=""

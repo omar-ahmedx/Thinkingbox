@@ -20,7 +20,6 @@ import socialMediavideo from "../styles/videos/socialMedia.mp4";
 import gif1 from "../styles/gifs/gif1.webp";
 import gif2 from "../styles/gifs/gif2.webp";
 import gif3 from "../styles/gifs/gif3.webp";
-import holder from "../styles/imgs/holder.jpg";
 
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
@@ -175,7 +174,6 @@ function Home(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={UIUXimage}
                 />
                 <div>
@@ -204,7 +202,6 @@ function Home(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={frontEndimage}
                 />
                 <div>
@@ -232,7 +229,6 @@ function Home(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={creativeArtworkimage}
                 />
                 <div>
@@ -261,7 +257,6 @@ function Home(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={socialMediaimage}
                 />
                 <div>
@@ -291,7 +286,6 @@ function Home(props) {
                     alt="style"
                     className="lazyload"
                     data-sizes="auto"
-                    src={holder}
                     data-src={UIUXimagesmall}
                   />
                   <div>
@@ -322,7 +316,6 @@ function Home(props) {
                     alt="style"
                     className="lazyload"
                     data-sizes="auto"
-                    src={holder}
                     data-src={socialMediaimagesmall}
                   />
                   <div>
@@ -353,7 +346,6 @@ function Home(props) {
                     alt="style"
                     className="lazyload"
                     data-sizes="auto"
-                    src={holder}
                     data-src={frontEndimagesmall}
                   />
                   <div>
@@ -384,7 +376,6 @@ function Home(props) {
                     alt="style"
                     className="lazyload"
                     data-sizes="auto"
-                    src={holder}
                     data-src={creativeArtworkimagesmall}
                   />
                   <div>

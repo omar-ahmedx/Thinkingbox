@@ -25,8 +25,6 @@ import case7 from "../styles/imgs/KITE SOCIAL MEDIA ARTWORK/kiteThumbnail.png";
 import case8 from "../styles/imgs/TECHNIEK SOCIAL MEDIA ARTWORK CASE STUDY/techniekThumbnail.png";
 import { NavLink } from "react-router-dom";
 
-import holder from "../styles/imgs/holderWork.jpg";
-
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
@@ -90,7 +88,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case3}
                 />
                 <div>
@@ -122,7 +119,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case4}
                 />
                 <div>
@@ -151,7 +147,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case5}
                 />
                 <div>
@@ -183,7 +178,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case6}
                 />
                 <div>
@@ -214,7 +208,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case7}
                 />
                 <div>
@@ -245,7 +238,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case8}
                 />
                 <div>
@@ -277,7 +269,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case1}
                 />
                 <div>
@@ -308,7 +299,6 @@ function Work(props) {
                   alt="style"
                   className="lazyload"
                   data-sizes="auto"
-                  src={holder}
                   data-src={case2}
                 />
                 <div>

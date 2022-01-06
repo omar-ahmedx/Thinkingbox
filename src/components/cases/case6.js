@@ -18,7 +18,6 @@ import img13 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_C
 import img14 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-16.png";
 import img15 from "../../styles/imgs/WEBSITE ARTWORK/New folder/KITE - Web Art_Case Study 4-18.png";
 
-import holder from "../../styles/imgs/holder.jpg";
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
@@ -28,7 +27,6 @@ function Case1() {
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img1}
             alt=""
@@ -49,7 +47,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img2}
             alt=""
@@ -58,7 +55,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img3}
             alt=""
@@ -80,7 +76,6 @@ function Case1() {
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img4}
             alt=""
@@ -89,7 +84,6 @@ function Case1() {
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img5}
             alt=""
@@ -99,7 +93,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img6}
             alt=""
@@ -121,7 +114,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img7}
             alt=""
@@ -130,7 +122,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img8}
             alt=""
@@ -139,7 +130,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img9}
             alt=""
@@ -148,7 +138,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img10}
             alt=""
@@ -157,7 +146,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img11}
             alt=""
@@ -166,7 +154,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img12}
             alt=""
@@ -175,7 +162,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img13}
             alt=""
@@ -184,7 +170,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img14}
             alt=""
@@ -193,7 +178,6 @@ function Case1() {
         <div>
           <img
             className="full-img lazyload"
-            src={holder}
             data-sizes="auto"
             data-src={img15}
             alt=""

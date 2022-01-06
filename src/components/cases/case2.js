@@ -9,7 +9,6 @@ import img4 from "../../styles/imgs/UI UX/KITE/CASE STUDY/kite llc-04.png";
 import img5 from "../../styles/imgs/UI UX/KITE/CASE STUDY/kite llc-05.png";
 import img6 from "../../styles/imgs/UI UX/KITE/CASE STUDY/kite llc-06.png";
 
-import holder from "../../styles/imgs/holder.jpg";
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 function Case1() {
@@ -21,7 +20,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img1}
-            src={holder}
             alt=""
           />
         </div>
@@ -42,7 +40,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img2}
-            src={holder}
             alt=""
           />
         </div>
@@ -51,7 +48,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img3}
-            src={holder}
             alt=""
           />
         </div>
@@ -73,7 +69,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img4}
-            src={holder}
             alt=""
           />
         </div>
@@ -82,7 +77,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img5}
-            src={holder}
             alt=""
           />
         </div>
@@ -92,7 +86,6 @@ function Case1() {
             className="full-img lazyload blur-img"
             data-sizes="auto"
             data-src={img6}
-            src={holder}
             alt=""
           />
         </div>
