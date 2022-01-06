@@ -147,22 +147,14 @@ function Home(props) {
           <h1>
             <span className="scribble">
               <span className="scribble-text">
-                We are global creative collective
+                We're a global design agency
               </span>
             </span>
             <br />
             <span className="small-header">
-              The web is beautiful and so is your website
+              We design and create the best user experiences
             </span>
           </h1>
-          <h2>
-            <span>
-              <p>
-                Design and create the best user experiences and user interfaces
-                that are meaningful, memorable and delightful.
-              </p>
-            </span>
-          </h2>
         </div>
       </header>
       <main className="home-main">
@@ -419,7 +411,7 @@ function Home(props) {
         <div className="hover-container mouse-hover">
           <img className="hover-img" src={gif2} alt="img" />
           <NavLink to="/culture" className="light">
-            Collectives's
+            Collectives
           </NavLink>
         </div>
         <div className="middle hover-container mouse-hover">

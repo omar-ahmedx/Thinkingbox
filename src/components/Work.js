@@ -103,9 +103,9 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Portofolio</p>
+              <p>Portfolio</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Portfolio <span className="dot"></span> UI UX
               </p>
             </div>
           </NavLink>
@@ -135,6 +135,9 @@ function Work(props) {
 
             <div className="info">
               <p>Front End</p>
+              <p className="sub-info">
+                Kite <span className="dot"></span> Social media strategy
+              </p>
             </div>
           </NavLink>
         </div>
@@ -163,9 +166,9 @@ function Work(props) {
 
             <div className="info">
               <p>Social Media</p>
-              {/*<p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-  </p>*/}
+              <p className="sub-info">
+                Kite <span className="dot"></span> Social media strategy
+              </p>
             </div>
           </NavLink>
         </div>
@@ -193,9 +196,9 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Creative Artworks</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Kite <span className="dot"></span> creative artworks
               </p>
             </div>
           </NavLink>
@@ -223,9 +226,9 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Social Media Artwork</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Kite <span className="dot"></span> social media artworks
               </p>
             </div>
           </NavLink>
@@ -253,9 +256,9 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
+              <p>Techniek</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Techniek <span className="dot"></span> Social media creatives
               </p>
             </div>
           </NavLink>
@@ -286,7 +289,7 @@ function Work(props) {
             <div className="info">
               <p>INDIE</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Mobile app<span className="dot"></span> UI UX
               </p>
             </div>
           </NavLink>
@@ -316,7 +319,7 @@ function Work(props) {
             <div className="info">
               <p>KITE</p>
               <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
+                Web application <span className="dot"></span> UI UX
               </p>
             </div>
           </NavLink>

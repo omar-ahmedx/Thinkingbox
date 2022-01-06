@@ -166,13 +166,13 @@ function Culture(props) {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <header className="culture-header">
         <div className="slide-header">
-          <h1>Made to make.</h1>
+          <h1>Made to make</h1>
           <h2>
             <span>
               <p>
-                Kindly refrain from calling us an "agency". We are a collective
-                built by artists, engineers, and makers; united by a shared
-                passion for cultural relevance and timeless creative
+                We are a team of creative people who believe in creating
+                meaningful, memorable and delightful user experiences and
+                interfaces.
               </p>
             </span>
           </h2>
@@ -203,12 +203,12 @@ function Culture(props) {
         </div>
       </section>
 
-      <section className="we-are-container">
+      {/*<section className="we-are-container">
         <p className="we-are">
           We are an international team with 5 offices across North America, made
           up of 29 nationalities, speaking 21 languages.
         </p>
-      </section>
+  </section>*/}
 
       <section className="make-container">
         <p className="small-text">
@@ -315,7 +315,7 @@ function Culture(props) {
           <strong>Who</strong> leads these party people.
         </p>
         <div className="people">
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -331,11 +331,11 @@ function Culture(props) {
               <p>Garima Singh</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “It is an honour to work with the talented, dedicated and
+              enthusiastic faculty and staff that comprise the Cheesecake team.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -351,11 +351,10 @@ function Culture(props) {
               <p>Ajay Singh</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “Do what is appropriate in each specific situation.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -371,11 +370,11 @@ function Culture(props) {
               <p>Aman Parashar</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              Our team creates intelligent solutions to complex problems in a
+              friendly and efficient manner.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -391,12 +390,13 @@ function Culture(props) {
               <p>Mratunjay Mohan Gaur</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “Our team thrives on going beyond the norm. We approach creative
+              projects with ideas and technology that exceed client
+              expectations.”
             </div>
           </div>
 
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -412,12 +412,12 @@ function Culture(props) {
               <p>Aakash Yadav</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              In Cheesecake, we avoid the word “impossible.” We like to say we
+              are “doing the impossible.”
             </div>
           </div>
 
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -433,11 +433,12 @@ function Culture(props) {
               <p>Parul Chauhan</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “I joined Cheesecake because of the talented people here; however,
+              I stay here because of our office dogs, who inspire me every
+              single day.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -453,11 +454,12 @@ function Culture(props) {
               <p>Pawan Kumar Yadav</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “I enjoy working with a team of intelligent, motivated people. We
+              all love our jobs and are grateful to be part of a successful
+              company.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -473,11 +475,12 @@ function Culture(props) {
               <p>Yash Parashar</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “Pooling the ideas and efforts of all members of a project team
+              can often lead to solutions that no one person might have
+              considered.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -493,11 +496,11 @@ function Culture(props) {
               <p>Himanshu Sachan</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              "I have always wanted to work on "out-of-the-box" projects with
+              cutting edge people.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -513,11 +516,11 @@ function Culture(props) {
               <p>Kaushiki Chaturvedi</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “I enjoy my job because it allows me creative freedom and provides
+              opportunities for advancement.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -533,11 +536,11 @@ function Culture(props) {
               <p>Bubul Deka</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              “I enjoy working with other professionals whose work is also
+              exceptional.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -553,11 +556,11 @@ function Culture(props) {
               <p>Puneet Soni</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              Do not be afraid to take risks in life, but only make moves when
+              you are truly inspired. Live by the phrase “the sky’s the limit.”
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -573,11 +576,13 @@ function Culture(props) {
               <p>Nandini Chauhan</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              I've worked with Cheesecake for more than a year now, and I can
+              say that I've been very impressed with them. They helped my
+              company get to the next level with our UI and UX design, and they
+              continue to do so.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -593,11 +598,12 @@ function Culture(props) {
               <p>Ritu Shukla</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              Cheesecake is a design studio with a UX team that is second to
+              none. They are incredibly talented, friendly and easy to work
+              with. I can't recommend them highly enough!
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -613,11 +619,11 @@ function Culture(props) {
               <p>Ishu Dhama</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              I love them! They are very professional, and they are always in
+              contact with you. I would recommend them to anyone.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -633,11 +639,12 @@ function Culture(props) {
               <p>Shivam Pandey</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              That's what we do for our customers. We make websites that convert
+              visitors into clients. So if you have a business or an idea of
+              your own, we would love to help you bring it to life.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -653,11 +660,14 @@ function Culture(props) {
               <p>Girish Chand Joshi</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              This is a great place to work! The people are really friendly and
+              helpful, the training is amazing and you get to do loads of fun
+              projects on an ongoing basis. On top of all that, they have a
+              great rooftop terrace that they let you use to relax, chill out
+              and recharge your batteries.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -673,11 +683,13 @@ function Culture(props) {
               <p>Anshika Jain</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              The team at Cheesecake is awesome! I also thought it was going to
+              be kind of clique-y but everyone here is super friendly. Cheese
+              cake is a great company to work for. The environment is excellent
+              and people are friendly.
             </div>
           </div>
-          <div className="work-container">
+          <div className="work-container team">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -693,8 +705,8 @@ function Culture(props) {
               <p>Aman Verma</p>
             </div>
             <div className="quote">
-              "I've always just wanted to work on crazy projects with cool
-              people. #LivingTheDream"
+              Great company to work for! I really enjoy the team, environment
+              and company culture. Great people that are fun to work with.
             </div>
           </div>
         </div>

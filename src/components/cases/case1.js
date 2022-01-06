@@ -31,8 +31,9 @@ function Case1() {
           <p>
             Most of the applications that you come across in your day to day
             life, follow the same pattern. It’s fine and professionals can
-            understand this rule. But when it comes to subscription based
-            services, things change.
+            understand this rule. But when it comes to subscription-based
+            services, things change. It was a great experience for us to work
+            for Indie.
           </p>
         </div>
         <div className="overlap">
@@ -57,11 +58,11 @@ function Case1() {
         <div className="case-text">
           <h2>Journey And wireframes</h2>
           <p>
-            An online subscription purchasing application offers a variety of
-            benefits over traditional methods. The user interface is the face of
-            the application, so it is important that it reflects professionalism
-            and reliability. This post looks at the UI in order to provide
-            insight into this specific design challenge.
+            Indie is an online subscription purchasing application that offers a
+            variety of benefits over traditional methods. The user interface is
+            the face of the application, so it is important that it reflects
+            professionalism and reliability. This post looks at the UI in order
+            to provide insight into this specific design challenge.
           </p>
         </div>
 
@@ -144,7 +145,7 @@ function Case1() {
           />
         </div>
         <div className="case-text">
-          <h2>All in one services possible with UI and UX</h2>
+          <h2>Achieve everything with UI and UX</h2>
           <p>
             The design of the UI and UX of a subscription purchasing application
             is fundamentally important to customers. While you think they will
