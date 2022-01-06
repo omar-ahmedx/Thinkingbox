@@ -16,11 +16,13 @@ function Case1() {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="case-text">
-          <h2>Kite social media artworks</h2>
+          <h2>Enter into the world of digital arts</h2>
           <p>
-            We recently did some social media artworks for the Kite social media
-            artworks. Cheesecake's work for Kite shows the power of storytelling
-            in social media.
+            If you’ve been searching for digital art or vector images to spice
+            up your website or blog, Kite Digital is here to help. We offer the
+            best stock of scalable vector graphics and templates on the web. Not
+            only are they high-quality images, but they’re also affordable as
+            well.
           </p>
         </div>
         <div className="fullImg-container">
@@ -31,7 +33,16 @@ function Case1() {
             alt=""
           />
         </div>
-
+        <div className="case-text">
+          <h2>Become aesthetically active</h2>
+          <p>
+            Art for websites that engage visitors and inspire conversation is
+            disappearing. Many companies want to increase website conversions,
+            web design trends are evolving, and the content you are creating
+            needs to be painted in a new light. Getting inspired will make every
+            aspect of your website better.
+          </p>
+        </div>
         <div>
           <img
             className="full-img lazyload blur-img"
@@ -39,6 +50,15 @@ function Case1() {
             data-src={img2}
             alt=""
           />
+        </div>
+        <div className="case-text">
+          <h2>Your all-time favourite digital arts</h2>
+          <p>
+            ART is the perfect solution for those who want to do something
+            special, something that stands out. Whether you choose posters or
+            paintings, photographs or digital art, our prints will decorate your
+            home in an attractive and elegant manner.
+          </p>
         </div>
         <div>
           <img
@@ -48,17 +68,15 @@ function Case1() {
             alt=""
           />
         </div>
-
         <div className="case-text">
-          <h2>How did it begin?</h2>
+          <h2>Achieve your goals</h2>
           <p>
-            What started as a simple and straightforward request soon evolved
-            into something a lot more complex, detailed and tailored to meet our
-            own specific requirements. We’re talking about the audiovisual
-            communication strategy with the “Kite Social Media Artworks.”
+            It is important to understand the needs of the client and come up to
+            their expectations accordingly. For Kite digital arts we had to
+            think aesthetically and make the navigation easier for the users
+            who’d come to browse the site.
           </p>
         </div>
-
         <div className="fullImg-container">
           <img
             className="full-img lazyload blur-img"
@@ -68,13 +86,12 @@ function Case1() {
           />
         </div>
         <div className="case-text">
-          <h2>Where did we reach?</h2>
+          <h2>Make the correct choice</h2>
           <p>
-            Once we put our minds to it and got going with the project, several
-            unexpected obstacles arose, mainly due to the fast-growing digital
-            age! We ended up creating small and engaging reels for Kite which
-            was then uploaded on the social media handles to hit the target
-            audience who came across the post.
+            Kite Digital is a great choice for websites, professional designs
+            for art. Big selection of any kind of digital art, it's easy to
+            purchase online with our process. You can find great designs in our
+            catalogue, with full support from our team.
           </p>
         </div>
         <div className="fullImg-container">
@@ -86,12 +103,13 @@ function Case1() {
           />
         </div>
         <div className="case-text">
-          <h2>Take it easy!</h2>
+          <h2>Conclusion</h2>
           <p>
-            Cheesecake Agency helped kite with social media artworks. Our
-            clients needed detailed, but flexible designs for our social media
-            marketing graphics. It was asked to develop a series of graphic
-            artworks that would be shared on social media.
+            Kite Digital is a full-service digital art agency, specializing in
+            the creation of graphics for online use. Whatever your design needs
+            you can be sure to find an artist who fits the brief. Our artists
+            have worked on many designs including album cover artwork and
+            websites.
           </p>
         </div>
         <div>
@@ -101,19 +119,6 @@ function Case1() {
             data-src={img6}
             alt=""
           />
-        </div>
-
-        <div className="case-text">
-          <h2>Hence, satisfied!</h2>
-          <p>
-            It is always exciting when you work with a new brand for the first
-            time, especially for an agency that is just starting out. The old
-            saying 'work begets work' is 100% true. When we were approached by
-            the Kite team to create social media content for the launch of their
-            new platform, we were pretty excited! We know how much time and
-            effort goes into creating social media content and this went to be
-            no different.
-          </p>
         </div>
       </main>
 
