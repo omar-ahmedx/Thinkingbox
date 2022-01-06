@@ -209,7 +209,7 @@ function Home(props) {
             </div>
 
             <div className="info">
-              <p>Front End</p>
+              <p>Front End Websites</p>
             </div>
           </div>
         </div>
@@ -353,7 +353,7 @@ function Home(props) {
               </div>
 
               <div className="info">
-                <p>Front End</p>
+                <p>Front End Websites</p>
               </div>
             </div>
           </NavLink>

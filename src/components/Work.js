@@ -110,158 +110,6 @@ function Work(props) {
             </div>
           </NavLink>
         </div>
-        <div className="work-container mouse-hover">
-          <NavLink to="/techniekArtwork">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  data-src={case8}
-                />
-                <div>
-                  <video
-                    className="work-video white-bg"
-                    loop="True"
-                    muted="True"
-                    src={techniekArtwork}
-                    type="video/mp4"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Techniek</p>
-              <p className="sub-info">
-                Techniek <span className="dot"></span> Social media creatives
-              </p>
-            </div>
-          </NavLink>
-        </div>
-        <div className="work-container mouse-hover">
-          <NavLink to="/frontend">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  data-src={case4}
-                />
-                <div>
-                  <video
-                    className="work-video black-bg"
-                    loop="True"
-                    muted="True"
-                    src={frontEndvideo}
-                    type="video/mp4"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Front End</p>
-              <p className="sub-info">
-                Kite <span className="dot"></span> Front End Websites
-              </p>
-            </div>
-          </NavLink>
-        </div>
-
-        <div className="work-container mouse-hover">
-          <NavLink to="/socialmedia">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  data-src={case5}
-                />
-                <div>
-                  <video
-                    className="work-video black-bg"
-                    loop="True"
-                    muted="True"
-                    src={socialCase}
-                    type="video/mp4"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Social Media</p>
-              <p className="sub-info">
-                Kite <span className="dot"></span> Social media strategy
-              </p>
-            </div>
-          </NavLink>
-        </div>
-
-        <div className="work-container mouse-hover">
-          <NavLink to="/artwork">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  data-src={case6}
-                />
-                <div>
-                  <video
-                    className="work-video white-bg"
-                    loop="True"
-                    muted="True"
-                    src={creativeCase}
-                    type="video/mp4"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Creative Artworks</p>
-              <p className="sub-info">
-                Kite <span className="dot"></span> creative artworks
-              </p>
-            </div>
-          </NavLink>
-        </div>
-        <div className="work-container mouse-hover">
-          <NavLink to="/kiteArtwork">
-            <div className="work-shape-wrapper">
-              <div className="work-shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  data-src={case7}
-                />
-                <div>
-                  <video
-                    className="work-video white-bg"
-                    loop="True"
-                    muted="True"
-                    src={kiteArtwork}
-                    type="video/mp4"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="info">
-              <p>Social Media Artwork</p>
-              <p className="sub-info">
-                Kite <span className="dot"></span> social media artworks
-              </p>
-            </div>
-          </NavLink>
-        </div>
 
         <div className="work-container mouse-hover">
           <NavLink to="/indie">
@@ -323,6 +171,159 @@ function Work(props) {
             </div>
           </NavLink>
         </div>
+
+        <div className="work-container mouse-hover">
+          <NavLink to="/socialmedia">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  data-src={case5}
+                />
+                <div>
+                  <video
+                    className="work-video black-bg"
+                    loop="True"
+                    muted="True"
+                    src={socialCase}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Social Media</p>
+              <p className="sub-info">
+                Kite <span className="dot"></span> Social media strategy
+              </p>
+            </div>
+          </NavLink>
+        </div>
+
+        <div className="work-container mouse-hover">
+          <NavLink to="/kiteArtwork">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  data-src={case7}
+                />
+                <div>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={kiteArtwork}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Social Media Artwork</p>
+              <p className="sub-info">
+                Kite <span className="dot"></span> social media artworks
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/techniekArtwork">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  data-src={case8}
+                />
+                <div>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={techniekArtwork}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Techniek</p>
+              <p className="sub-info">
+                Techniek <span className="dot"></span> Social media creatives
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/frontend">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  data-src={case4}
+                />
+                <div>
+                  <video
+                    className="work-video black-bg"
+                    loop="True"
+                    muted="True"
+                    src={frontEndvideo}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Front End Websites</p>
+              <p className="sub-info">
+                Kite <span className="dot"></span> Front End Websites
+              </p>
+            </div>
+          </NavLink>
+        </div>
+        <div className="work-container mouse-hover">
+          <NavLink to="/artwork">
+            <div className="work-shape-wrapper">
+              <div className="work-shape">
+                <img
+                  alt="style"
+                  className="lazyload"
+                  data-sizes="auto"
+                  data-src={case6}
+                />
+                <div>
+                  <video
+                    className="work-video white-bg"
+                    loop="True"
+                    muted="True"
+                    src={creativeCase}
+                    type="video/mp4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="info">
+              <p>Creative Artworks</p>
+              <p className="sub-info">
+                Kite <span className="dot"></span> creative artworks
+              </p>
+            </div>
+          </NavLink>
+        </div>
+
         {/* <div className="btn-container archive-btn">
           <div className="btn-link">
             <NavLink to="/archive">

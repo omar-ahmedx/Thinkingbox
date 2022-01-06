@@ -1,11 +1,11 @@
 header {
-  padding: 200px 0;
+  padding: 270px 0;
   border-bottom: 1px solid #c7c7c7;
   margin-bottom: 50px;
   overflow-y: hidden;
 }
 header h1 {
-  font-size: 3.7em;
+  font-size: 5em;
   font-weight: normal;
 }
 .small-header {
