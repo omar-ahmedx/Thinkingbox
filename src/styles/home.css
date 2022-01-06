@@ -39,7 +39,8 @@
   font-size: 300%;
 }
 
-.shape img {
+.shape img,
+.lazyload {
   width: 100%;
   pointer-events: none;
   opacity: 1;
@@ -93,6 +94,7 @@
 }
 .shape-wrapper:hover video {
   opacity: 1;
+  z-index: 2;
   transform: scale(1.06);
 }
 .info {
