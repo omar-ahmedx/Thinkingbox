@@ -33,14 +33,13 @@ function Case1() {
           />
         </div>
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Kite: Community of Artworks</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Social media marketing is a very crowded field. Everyone is going to
+            tell you how to do things, but how do you know who to listen to?
+            Those on the bandwagon are out there and can be found easily. It is
+            those that have gone before us and gone through the ringer that we
+            should take notice of and listen to.
           </p>
         </div>
 
@@ -62,14 +61,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>The most creative and valuable place</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Social media marketing can be a valuable tool in your marketing
+            strategy as long as you know what to do and how to do it. We helped
+            Kite in enhancing their social media channels, maximize their
+            exposure and successfully ride the wave of social media marketing
+            opportunities.
           </p>
         </div>
 
@@ -100,14 +98,12 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Bring new audience everyday</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            If you want to recruit additional customers, you're going to need to
+            consider using a social media marketing platform. Social media
+            marketing is all about using popular sites like Facebook and Twitter
+            to drive traffic and generate leads.
           </p>
         </div>
 
@@ -134,6 +130,14 @@ function Case1() {
             data-src={img9}
             alt=""
           />
+        </div>
+        <div className="case-text">
+          <h2>Are you confused?</h2>
+          <p>
+            Sometimes it's hard to know exactly how to use these platforms. The
+            thing with social media is that it's fast-paced so you need the
+            right information in order to be successful.
+          </p>
         </div>
         <div>
           <img
@@ -174,6 +178,15 @@ function Case1() {
             data-src={img14}
             alt=""
           />
+        </div>
+        <div className="case-text">
+          <h2>Conclusion</h2>
+          <p>
+            The journey began on 10th may 2021 when they rolled up themselves
+            with common passion to develop a marketplace for creative people to
+            sell their unique artworks in digital format (PNG, JPG, Vector) at
+            an affordable price.
+          </p>
         </div>
         <div>
           <img

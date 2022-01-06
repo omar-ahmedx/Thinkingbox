@@ -289,7 +289,7 @@ function Work(props) {
             <div className="info">
               <p>INDIE</p>
               <p className="sub-info">
-                Mobile app<span className="dot"></span> UI UX
+                Mobile app <span className="dot"></span> UI UX
               </p>
             </div>
           </NavLink>

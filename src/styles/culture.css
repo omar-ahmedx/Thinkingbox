@@ -142,7 +142,9 @@ li:first-child {
     display: none;
   }
 }
-
+.team {
+  margin: 20px 0;
+}
 .work-container:hover .quote {
   opacity: 1;
 }

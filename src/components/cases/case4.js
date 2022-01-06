@@ -15,6 +15,15 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
+        <div className="case-text">
+          <h2>Bravo! Your front end web page is live!</h2>
+          <p>
+            When you look for a frontend development service, you need to work
+            with someone who listens to your needs and understands your vision.
+            While working for Clone, we could take pride in our communication
+            with clients.
+          </p>
+        </div>
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
@@ -22,17 +31,6 @@ function Case1() {
             data-src={img1}
             alt=""
           />
-        </div>
-        <div className="case-text">
-          <h2>Rise and shine</h2>
-          <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
-          </p>
         </div>
 
         <div>
@@ -45,14 +43,14 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Get what you deserve!</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            We take time to craft the best solution for your project and make
+            ourselves available for questions and updates throughout the
+            process. Our goal is to provide high quality interactive websites
+            that are built to last a lifetime. And, we love meeting new clients
+            and giving them an opportunity to work alongside us as we develop
+            their project together.
           </p>
         </div>
 
@@ -83,14 +81,11 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Conclusion</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Whether you’re looking to build a new site or update an old one, we
+            can point you in the right direction. We helped Clone with the
+            strongest and easiest UI UX services.
           </p>
         </div>
 
