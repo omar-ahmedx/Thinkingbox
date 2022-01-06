@@ -24,9 +24,6 @@ import gif3 from "../styles/gifs/gif3.webp";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 /*import Animation from "./an";*/
 
 function Home(props) {

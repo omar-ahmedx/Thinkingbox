@@ -25,9 +25,6 @@ import case7 from "../styles/imgs/KITE SOCIAL MEDIA ARTWORK/kiteThumbnail.png";
 import case8 from "../styles/imgs/TECHNIEK SOCIAL MEDIA ARTWORK CASE STUDY/techniekThumbnail.png";
 import { NavLink } from "react-router-dom";
 
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 function Work(props) {
   useEffect(() => {
     const videoContainer = document.querySelectorAll(".work-shape-wrapper");
@@ -105,7 +102,7 @@ function Work(props) {
             <div className="info">
               <p>Portfolio</p>
               <p className="sub-info">
-                Portfolio <span className="dot"></span> UI UX
+                Portfolio <span className="dot"></span> UI/UX
               </p>
             </div>
           </NavLink>
@@ -136,7 +133,7 @@ function Work(props) {
             <div className="info">
               <p>INDIE</p>
               <p className="sub-info">
-                Mobile app <span className="dot"></span> UI UX
+                Mobile app <span className="dot"></span> UI/UX
               </p>
             </div>
           </NavLink>
@@ -166,7 +163,7 @@ function Work(props) {
             <div className="info">
               <p>KITE</p>
               <p className="sub-info">
-                Web application <span className="dot"></span> UI UX
+                Web application <span className="dot"></span> UI/UX
               </p>
             </div>
           </NavLink>
