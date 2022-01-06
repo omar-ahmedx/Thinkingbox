@@ -44,7 +44,7 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Build a strong social media profile</h2>
+          <h2>Create a strong social media profile</h2>
           <p>
             Social media is a powerful, effective tool for reaching an
             ever-growing audience. Social networks such as Instagram and Twitter
@@ -101,7 +101,7 @@ function Case1() {
             Do you want to master social media marketing? For starters, what do
             you want to achieve with your presence on social media? Is it about
             increasing sales, or engagement with an audience, or maybe even
-            building trust.
+            building trust?
           </p>
         </div>
 
