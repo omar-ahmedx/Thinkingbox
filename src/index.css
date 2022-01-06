@@ -45,7 +45,9 @@ a {
   font-size: 20px;
   padding: 15px 15px;
   outline: 2px solid black;
-  transition: all 0.25s ease 0s;
+  transition: outline 0.25s ease 0s;
+  transition: padding 0.25s ease 0s;
+  transition: font-size 0.25s ease 0s;
 }
 .btn:hover {
   outline-offset: 4px;
