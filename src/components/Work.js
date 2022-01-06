@@ -25,7 +25,7 @@ import case7 from "../styles/imgs/KITE SOCIAL MEDIA ARTWORK/kiteThumbnail.png";
 import case8 from "../styles/imgs/TECHNIEK SOCIAL MEDIA ARTWORK CASE STUDY/techniekThumbnail.png";
 import { NavLink } from "react-router-dom";
 
-import holder from "../styles/imgs/holder.jpg";
+import holder from "../styles/imgs/holderWork.jpg";
 
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";

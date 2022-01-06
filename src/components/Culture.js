@@ -45,7 +45,7 @@ import team19 from "../styles/imgs/TEAM/team19.png";
 import { motion } from "framer-motion";
 
 import Footer from "./global/Footer";
-import holder from "../styles/imgs/holder.jpg";
+import holder from "../styles/imgs/holderTeam.jpg";
 
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
