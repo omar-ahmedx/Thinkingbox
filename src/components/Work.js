@@ -77,7 +77,7 @@ function Work(props) {
         props.delay(true);
       });
     });
-  }, []);
+  });
 
   return (
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
