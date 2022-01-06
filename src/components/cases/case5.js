@@ -16,7 +16,7 @@ function Case1() {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="case-text">
-          <h2>Develop new social media strategy with Cheesecake</h2>
+          <h2>Cheesecake: The social media strategist</h2>
           <p>
             Social media marketing is a way to get your information out to a
             large audience. Many companies are using social media marketing
@@ -101,8 +101,7 @@ function Case1() {
             Do you want to master social media marketing? For starters, what do
             you want to achieve with your presence on social media? Is it about
             increasing sales, or engagement with an audience, or maybe even
-            building trust. It was quite challenging for us to build a simple
-            yet convenient UI UX for Techniek.
+            building trust.
           </p>
         </div>
 
