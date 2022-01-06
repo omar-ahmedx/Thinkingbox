@@ -283,119 +283,127 @@ function Home(props) {
         </div>
 
         <div className="move-container">
-          <div className="shape-container">
-            <div className="shape-wrapper mouse-hover">
-              <div className="shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  src={holder}
-                  data-src={UIUXimagesmall}
-                />
-                <div>
-                  <video
-                    className="shape-video"
-                    loop="True"
-                    muted="True"
-                    src={UIUXVideo}
-                    type="video/mp4"
+          <NavLink to="/work">
+            <div className="shape-container">
+              <div className="shape-wrapper mouse-hover">
+                <div className="shape">
+                  <img
+                    alt="style"
+                    className="lazyload"
+                    data-sizes="auto"
+                    src={holder}
+                    data-src={UIUXimagesmall}
                   />
+                  <div>
+                    <video
+                      className="shape-video"
+                      loop="True"
+                      muted="True"
+                      src={UIUXVideo}
+                      type="video/mp4"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="info">
-              <p>UI UX</p>
+              <div className="info">
+                <p>UI UX</p>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="move-container sec-right-col">
-          <div className="shape-container">
-            <div className="shape-wrapper mouse-hover">
-              <div className="shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  src={holder}
-                  data-src={socialMediaimagesmall}
-                />
-                <div>
-                  <video
-                    className="shape-video"
-                    loop="True"
-                    muted="True"
-                    src={socialMediavideo}
-                    type="video/mp4"
+          <NavLink to="/work">
+            <div className="shape-container">
+              <div className="shape-wrapper mouse-hover">
+                <div className="shape">
+                  <img
+                    alt="style"
+                    className="lazyload"
+                    data-sizes="auto"
+                    src={holder}
+                    data-src={socialMediaimagesmall}
                   />
+                  <div>
+                    <video
+                      className="shape-video"
+                      loop="True"
+                      muted="True"
+                      src={socialMediavideo}
+                      type="video/mp4"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="info">
-              <p>Social Media Strategy</p>
+              <div className="info">
+                <p>Social Media Strategy</p>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="move-container right-col">
-          <div className="shape-container">
-            <div className="shape-wrapper mouse-hover">
-              <div className="shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  src={holder}
-                  data-src={frontEndimagesmall}
-                />
-                <div>
-                  <video
-                    className="shape-video"
-                    loop="True"
-                    muted="True"
-                    src={frontEndvideo}
-                    type="video/mp4"
+          <NavLink to="/work">
+            <div className="shape-container">
+              <div className="shape-wrapper mouse-hover">
+                <div className="shape">
+                  <img
+                    alt="style"
+                    className="lazyload"
+                    data-sizes="auto"
+                    src={holder}
+                    data-src={frontEndimagesmall}
                   />
+                  <div>
+                    <video
+                      className="shape-video"
+                      loop="True"
+                      muted="True"
+                      src={frontEndvideo}
+                      type="video/mp4"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="info">
-              <p>Front End</p>
+              <div className="info">
+                <p>Front End</p>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="move-container minus-margin">
-          <div className="shape-container">
-            <div className="shape-wrapper mouse-hover">
-              <div className="shape">
-                <img
-                  alt="style"
-                  className="lazyload"
-                  data-sizes="auto"
-                  src={holder}
-                  data-src={creativeArtworkimagesmall}
-                />
-                <div>
-                  <video
-                    className="shape-video"
-                    loop="True"
-                    muted="True"
-                    src={creativeArtworkvideo}
-                    type="video/mp4"
+          <NavLink to="/work">
+            <div className="shape-container">
+              <div className="shape-wrapper mouse-hover">
+                <div className="shape">
+                  <img
+                    alt="style"
+                    className="lazyload"
+                    data-sizes="auto"
+                    src={holder}
+                    data-src={creativeArtworkimagesmall}
                   />
+                  <div>
+                    <video
+                      className="shape-video"
+                      loop="True"
+                      muted="True"
+                      src={creativeArtworkvideo}
+                      type="video/mp4"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="info">
-              <p>Creative Artwork</p>
+              <div className="info">
+                <p>Creative Artwork</p>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
 
         <div className="all-projects">
@@ -415,17 +423,17 @@ function Home(props) {
   </div>*/}
         <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif1} alt="img" />
-          <a href="/culture">Our</a>
+          <NavLink to="/culture">Our</NavLink>
         </div>
         <div className="hover-container mouse-hover">
           <img className="hover-img" src={gif2} alt="img" />
-          <a href="/culture" className="light">
+          <NavLink to="/culture" className="light">
             Collectives's
-          </a>
+          </NavLink>
         </div>
         <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif3} alt="img" />
-          <a href="/culture">Culture</a>
+          <NavLink to="/culture">Culture</NavLink>
         </div>
       </section>
       <Footer />

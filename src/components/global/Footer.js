@@ -59,7 +59,7 @@ function Footer() {
           </NavLink>
           <div className="footer-icons">
             <a
-              href="https://www.instagram.com/_cheesee_cake_/"
+              href="https://www.instagram.com/cheesecake_agency/"
               className="mouse-hover"
             >
               <BsInstagram />

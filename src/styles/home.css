@@ -81,21 +81,32 @@
 
 .shape-wrapper {
   overflow: hidden;
+  margin: 0 auto;
 }
 .shape-wrapper:hover .shape {
-  -webkit-clip-path: polygon(95% 5%, 20% 5%, 5% 25%, 5% 95%, 80% 95%, 95% 80%);
-  clip-path: polygon(95% 5%, 20% 5%, 5% 25%, 5% 95%, 80% 95%, 95% 80%);
+  -webkit-clip-path: polygon(
+    101% 5%,
+    20% 5%,
+    5% 25%,
+    5% 101%,
+    80% 100%,
+    101% 80%
+  );
+  clip-path: polygon(101% 5%, 20% 5%, 5% 25%, 5% 101%, 80% 100%, 101% 80%);
 }
 .shape-wrapper:hover {
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
+  margin: 0 auto;
 }
 .shape-wrapper:hover img {
-  transform: scale(1.06);
+  /*transform: scale(1.06);*/
+  margin: 0 auto;
 }
 .shape-wrapper:hover video {
   opacity: 1;
   z-index: 2;
-  transform: scale(1.06);
+  /*transform: scale(1.06);*/
+  margin: 0 auto;
 }
 .info {
   position: relative;

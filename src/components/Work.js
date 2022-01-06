@@ -138,10 +138,7 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
-                PepsiCo <span className="dot"></span> Digital
-              </p>
+              <p>Front End</p>
             </div>
           </NavLink>
         </div>
@@ -170,10 +167,10 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Mountain Dew Rise</p>
-              <p className="sub-info">
+              <p>Social Media</p>
+              {/*<p className="sub-info">
                 PepsiCo <span className="dot"></span> Digital
-              </p>
+  </p>*/}
             </div>
           </NavLink>
         </div>

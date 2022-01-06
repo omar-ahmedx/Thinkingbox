@@ -93,7 +93,7 @@ function Contact(props) {
               <h2>B2B collaboration</h2>
               <div>
                 <p>Shivam Pandey</p>
-                <p>Search Engine Optimization Executive</p>
+                <p>SEO</p>
                 <p className="border-bottom mouse-hover">
                   <a href="mailto:shivam@cheesecake.agency">
                     shivam@cheesecake.agency
@@ -176,7 +176,7 @@ function Contact(props) {
                 <br />
                 <textarea
                   name="message"
-                  placeholder="We are excited to hear from you. Truly. It makes our day. Maybe, you need a website, or a social campaign; perhaps, it's a large museum installation, a super bowl spot or a vending machine that shoots lasers. Whatever the scenario, we are ready to make something amazing with you."
+                  placeholder="We are excited to hear from you. Truly. It makes our day. Maybe, you need a website, or a social campaign; the scenario, we are ready to make something amazing with you."
                 ></textarea>
               </label>
               <div>
