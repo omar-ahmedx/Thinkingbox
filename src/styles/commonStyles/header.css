@@ -32,6 +32,14 @@ header h2 {
   header h2 {
     font-size: 1em;
   }
+  .small-header {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 12vw;
+  }
 }
 .animate-header {
   animation: slide-up 1s 1 linear, header-opacity 2s 1 ease-in;

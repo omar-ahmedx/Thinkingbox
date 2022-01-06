@@ -24,14 +24,6 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
-        <div className="fullImg-container">
-          <img
-            className="full-img lazyload"
-            data-sizes="auto"
-            data-src={img1}
-            alt=""
-          />
-        </div>
         <div className="case-text">
           <h2>Kite: Community of Artworks</h2>
           <p>
@@ -41,6 +33,14 @@ function Case1() {
             those that have gone before us and gone through the ringer that we
             should take notice of and listen to.
           </p>
+        </div>
+        <div className="fullImg-container">
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            data-src={img1}
+            alt=""
+          />
         </div>
 
         <div>

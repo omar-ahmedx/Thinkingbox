@@ -16,14 +16,6 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
-        <div className="fullImg-container">
-          <img
-            className="full-img lazyload blur-img"
-            data-sizes="auto"
-            data-src={img1}
-            alt=""
-          />
-        </div>
         <div className="case-text">
           <h2>Rise and shine</h2>
           <p>
@@ -34,6 +26,14 @@ function Case1() {
             by Rise’s bright and bold packaging, we brought the cans and flavors
             to life in a smooth-scrolling WebGL site that is always in motion.
           </p>
+        </div>
+        <div className="fullImg-container">
+          <img
+            className="full-img lazyload blur-img"
+            data-sizes="auto"
+            data-src={img1}
+            alt=""
+          />
         </div>
 
         <div>

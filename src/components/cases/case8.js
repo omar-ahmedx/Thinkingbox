@@ -21,6 +21,14 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
+        <div className="case-text">
+          <h2>Cheesecake: The social media strategist</h2>
+          <p>
+            Social media marketing is a way to get your information out to a
+            large audience. Many companies are using social media marketing
+            because this is where potential customers reside.
+          </p>
+        </div>
         <div className="fullImg-container">
           <img
             className="full-img lazyload"
@@ -28,17 +36,6 @@ function Case1() {
             data-src={img1}
             alt=""
           />
-        </div>
-        <div className="case-text">
-          <h2>Rise and shine</h2>
-          <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
-          </p>
         </div>
 
         <div>
@@ -59,14 +56,11 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Create a strong social media profile</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Social media is a powerful, effective tool for reaching an
+            ever-growing audience. Social networks such as Instagram and Twitter
+            can be used to effectively build relationships with fans.
           </p>
         </div>
 
@@ -97,14 +91,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Analyze your customer’s opinion</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Social media marketing is the practice of interacting with customers
+            through social media sites. Companies can use social media channels
+            to research customer opinions about their products or services,
+            reach new customers and guide them through the sales process, and
+            communicate directly with consumers.
           </p>
         </div>
 
@@ -147,6 +140,15 @@ function Case1() {
             data-src={img11}
             alt=""
           />
+        </div>
+        <div className="case-text">
+          <h2>Become an ace of social media strategies</h2>
+          <p>
+            Do you want to master social media marketing? For starters, what do
+            you want to achieve with your presence on social media? Is it about
+            increasing sales, or engagement with an audience, or maybe even
+            building trust?
+          </p>
         </div>
         <div>
           <img

@@ -74,7 +74,7 @@ li:first-child {
 .slider-container {
   -moz-box-align: center;
   align-items: center;
-  width: 100%;
+  width: 200%;
   overflow: hidden;
   min-height: 70vh;
 }
@@ -101,7 +101,7 @@ li:first-child {
   height: 550px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .slider-all-items {
     position: relative;
   }

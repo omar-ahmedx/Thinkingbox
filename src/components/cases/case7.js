@@ -22,14 +22,6 @@ function Case1() {
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
-        <div className="fullImg-container">
-          <img
-            className="full-img lazyload"
-            data-sizes="auto"
-            data-src={img1}
-            alt=""
-          />
-        </div>
         <div className="case-text">
           <h2>Enter into the world of digital arts</h2>
           <p>
@@ -38,6 +30,14 @@ function Case1() {
             best stock of scalable vector graphics and templates on the web. Not
             only are they high quality images, they’re affordable as well.
           </p>
+        </div>
+        <div className="fullImg-container">
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            data-src={img1}
+            alt=""
+          />
         </div>
 
         <div>
