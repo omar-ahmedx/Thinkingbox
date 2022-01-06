@@ -99,6 +99,20 @@ li:first-child {
 .slider-item {
   height: 550px;
 }
+
+@media (max-width: 900px) {
+  .slider-all-items {
+    position: relative;
+  }
+  .slider-item {
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .slider-item::-webkit-scrollbar {
+    display: none;
+  }
+}
 .people {
   display: grid;
   grid-template-columns: repeat(4, minmax(0px, 1fr));
