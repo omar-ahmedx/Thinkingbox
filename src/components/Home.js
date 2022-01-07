@@ -267,7 +267,7 @@ function Home(props) {
         </div>
 
         <div className="move-container">
-          <NavLink to="/work">
+          <NavLink to="work">
             <div className="shape-container">
               <div className="shape-wrapper mouse-hover">
                 <div className="shape">
@@ -297,7 +297,7 @@ function Home(props) {
         </div>
 
         <div className="move-container sec-right-col">
-          <NavLink to="/work">
+          <NavLink to="work">
             <div className="shape-container">
               <div className="shape-wrapper mouse-hover">
                 <div className="shape">
@@ -327,7 +327,7 @@ function Home(props) {
         </div>
 
         <div className="move-container right-col">
-          <NavLink to="/work">
+          <NavLink to="work">
             <div className="shape-container">
               <div className="shape-wrapper mouse-hover">
                 <div className="shape">
@@ -357,7 +357,7 @@ function Home(props) {
         </div>
 
         <div className="move-container minus-margin">
-          <NavLink to="/work">
+          <NavLink to="work">
             <div className="shape-container">
               <div className="shape-wrapper mouse-hover">
                 <div className="shape">
@@ -388,7 +388,7 @@ function Home(props) {
 
         <div className="all-projects">
           <div>
-            <NavLink to="/work">
+            <NavLink to="work">
               <div className="btn mouse-hover">
                 <div className="line-btn"></div> <div>All Projects</div>
               </div>
@@ -403,17 +403,17 @@ function Home(props) {
   </div>*/}
         <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif1} alt="img" />
-          <NavLink to="/culture">Our</NavLink>
+          <NavLink to="culture">Our</NavLink>
         </div>
         <div className="hover-container mouse-hover">
           <img className="hover-img" src={gif2} alt="img" />
-          <NavLink to="/culture" className="light">
+          <NavLink to="culture" className="light">
             Collectives
           </NavLink>
         </div>
         <div className="middle hover-container mouse-hover">
           <img className="hover-img" src={gif3} alt="img" />
-          <NavLink to="/culture">Culture</NavLink>
+          <NavLink to="culture">Culture</NavLink>
         </div>
       </section>
       <Footer />

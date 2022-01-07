@@ -68,7 +68,7 @@ function Nav(props) {
       <div className="mobile-nav">
         <div className="mobile-nav-top">
           <div className="logo">
-            <NavLink to="/">
+            <NavLink to="">
               <img src={logo} alt="Thinking box" />
             </NavLink>
           </div>
@@ -87,29 +87,29 @@ function Nav(props) {
         </div>
         <div className="mobile-links">
           <div className="links-container">
-            <NavLink to="/work" onClick={close}>
+            <NavLink to="work" onClick={close}>
               Work
             </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           <div className="links-container">
-            <NavLink to="/culture" onClick={close}>
+            <NavLink to="culture" onClick={close}>
               Culture
             </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           {/*<div className="links-container">
-              <NavLink to="/careers">Careers</NavLink>
+              <NavLink to="careers">Careers</NavLink>
               <div className="nav-border-expand"></div>
   </div>*/}
           <div className="links-container">
-            <NavLink to="/contact" onClick={close}>
+            <NavLink to="contact" onClick={close}>
               Contact
             </NavLink>
             <div className="nav-border-expand"></div>
           </div>
           {/*<div className="links-container">
-              <NavLink to="/archive">Archive</NavLink>
+              <NavLink to="archive">Archive</NavLink>
               <div className="nav-border-expand"></div>
   </div>*/}
         </div>
@@ -118,7 +118,7 @@ function Nav(props) {
       <div className="pc-nav-container">
         <nav className="pc-nav">
           <div className="logo">
-            <NavLink to="/">
+            <NavLink to="">
               <img src={logo} alt="Thinking box" />
             </NavLink>
           </div>
@@ -135,7 +135,7 @@ function Nav(props) {
                   borderBottom: isActive ? "2px solid black" : "",
                 };
               }}
-              to="/work"
+              to="work"
             >
               <div className="deconstructed">
                 Work
@@ -151,7 +151,7 @@ function Nav(props) {
                   borderBottom: isActive ? "2px solid black" : "",
                 };
               }}
-              to="/culture"
+              to="culture"
             >
               <div className="deconstructed">
                 Culture
@@ -167,7 +167,7 @@ function Nav(props) {
                     borderBottom: isActive ? "2px solid black" : "",
                   };
                 }}
-                to="/careers"
+                to="careers"
               >
                 <div className="deconstructed">
                   Careers
@@ -184,7 +184,7 @@ function Nav(props) {
                   borderBottom: isActive ? "2px solid black" : "",
                 };
               }}
-              to="/contact"
+              to="contact"
             >
               <div className="deconstructed">
                 Contact
@@ -201,7 +201,7 @@ function Nav(props) {
                     borderBottom: isActive ? "2px solid black" : "",
                   };
                 }}
-                to="/archive"
+                to="archive"
               >
                 <div className="deconstructed">
                   Archive
@@ -217,34 +217,32 @@ function Nav(props) {
 
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route exact path="/" element={<Home delay={props.delay} />}>
-            <Route exact path="work" element={<Work delay={props.delay} />}>
-              <Route exact path="indie" element={<Case1 />}></Route>
-              <Route exact path="kite" element={<Case2 />}></Route>
-              <Route exact path="portfolio" element={<Case3 />}></Route>
-              <Route exact path="frontend" element={<Case4 />}></Route>
-              <Route exact path="socialmedia" element={<Case5 />}></Route>
-              <Route exact path="artwork" element={<Case6 />}></Route>
-              <Route exact path="kiteArtwork" element={<Case7 />}></Route>
-              <Route exact path="techniekArtwork" element={<Case8 />}></Route>
-            </Route>
-            <Route
-              exact
-              path="careers"
-              element={<Careers delay={props.delay} />}
-            ></Route>
-            <Route
-              exact
-              path="contact"
-              element={<Contact delay={props.delay} />}
-            ></Route>
-            <Route exact path="/archive" element={<Archive />}></Route>
-            <Route
-              exact
-              path="culture"
-              element={<Culture delay={props.delay} />}
-            ></Route>
-          </Route>
+          <Route exact path="" element={<Home delay={props.delay} />} />
+          <Route exact path="work" element={<Work delay={props.delay} />} />
+          <Route
+            exact
+            path="careers"
+            element={<Careers delay={props.delay} />}
+          />
+          <Route
+            exact
+            path="contact"
+            element={<Contact delay={props.delay} />}
+          />
+          <Route exact path="archive" element={<Archive />} />
+          <Route
+            exact
+            path="culture"
+            element={<Culture delay={props.delay} />}
+          />
+          <Route exact path="indie" element={<Case1 />} />
+          <Route exact path="kite" element={<Case2 />} />
+          <Route exact path="portfolio" element={<Case3 />} />
+          <Route exact path="frontend" element={<Case4 />} />
+          <Route exact path="socialmedia" element={<Case5 />} />
+          <Route exact path="artwork" element={<Case6 />} />
+          <Route exact path="kiteArtwork" element={<Case7 />} />
+          <Route exact path="techniekArtwork" element={<Case8 />} />
         </Routes>
       </AnimatePresence>
     </div>

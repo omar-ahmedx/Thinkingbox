@@ -78,7 +78,7 @@ function Work(props) {
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
-          <NavLink to="/portfolio">
+          <NavLink to="portfolio">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -109,7 +109,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="/indie">
+          <NavLink to="indie">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -139,7 +139,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="/kite">
+          <NavLink to="kite">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -170,7 +170,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="/socialmedia">
+          <NavLink to="socialmedia">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -201,7 +201,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="/kiteArtwork">
+          <NavLink to="kiteArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -231,7 +231,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="/techniekArtwork">
+          <NavLink to="techniekArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -261,7 +261,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="/frontend">
+          <NavLink to="frontend">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -291,7 +291,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="/artwork">
+          <NavLink to="artwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -323,7 +323,7 @@ function Work(props) {
 
         {/* <div className="btn-container archive-btn">
           <div className="btn-link">
-            <NavLink to="/archive">
+            <NavLink to="archive">
               <div className="btn">
                 <div className="line-btn"></div> <div>The Archive</div>
               </div>
