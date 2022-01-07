@@ -57,17 +57,17 @@ function Contact(props) {
         <div className="slide-header">
           <h1>
             <span className="scribble">
-              Hello. Hej.
-              <span className="scribble-text">Howdy.</span>
+              Hello! Hola!
+              <span className="scribble-text"> Howdy!</span>
               <span className="scribble-container"></span>
             </span>
             <br />
           </h1>
           <h2>
             <span>
-              <p>Could you be our newest friend?</p>
+              <p>Could you be our new friend?</p>
               <p>
-                We certainly hope so. Don't hesitate to say hi and meet out
+                We certainly hope so! Don't hesitate to say hi and meet our
                 team.
               </p>
             </span>

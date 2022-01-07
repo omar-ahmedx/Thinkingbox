@@ -25,7 +25,18 @@
     padding: 0 40px;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .case-text {
+    padding: 0;
+  }
+  .case-text h2 {
+    font-size: 11vw;
+  }
+  .case-text p {
+    font-size: 6.5vw;
+    line-height: 2;
+  }
+}
 .overlap,
 .overlap img {
   margin: 0;

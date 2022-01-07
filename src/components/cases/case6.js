@@ -182,10 +182,10 @@ function Case1() {
         <div className="case-text">
           <h2>Conclusion</h2>
           <p>
-            The journey began on 10th may 2021 when they rolled up themselves
-            with common passion to develop a marketplace for creative people to
-            sell their unique artworks in digital format (PNG, JPG, Vector) at
-            an affordable price.
+            The journey began when they rolled up themselves with common passion
+            to develop a marketplace for creative people to sell their unique
+            artworks in digital format (PNG, JPG, Vector) at an affordable
+            price.
           </p>
         </div>
         <div>

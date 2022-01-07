@@ -27,7 +27,7 @@ function Case1() {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="case-text">
-          <h2>Indie: The hub for all Subscriptions </h2>
+          <h2>Indie: The hub for all subscriptions </h2>
           <p>
             Most of the applications that you come across in your day to day
             life, follow the same pattern. It’s fine and professionals can
@@ -56,7 +56,7 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Journey And wireframes</h2>
+          <h2>Journey and wireframes</h2>
           <p>
             Indie is an online subscription purchasing application that offers a
             variety of benefits over traditional methods. The user interface is
@@ -194,14 +194,6 @@ function Case1() {
             alt=""
           />
         </div>
-        <div>
-          <img
-            className="full-img lazyload"
-            data-sizes="auto"
-            data-src={img17}
-            alt=""
-          />
-        </div>
         <div className="case-text">
           <h2>Conclusion</h2>
           <p>
@@ -211,6 +203,14 @@ function Case1() {
             change. A converging user experience with a different approach is
             taken.
           </p>
+        </div>
+        <div>
+          <img
+            className="full-img lazyload"
+            data-sizes="auto"
+            data-src={img17}
+            alt=""
+          />
         </div>
       </main>
 

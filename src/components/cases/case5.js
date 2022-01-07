@@ -16,11 +16,13 @@ function Case1() {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="case-text">
-          <h2>Develop new social media strategy with Cheesecake</h2>
+          <h2>Kite: The ace of social media strategies</h2>
           <p>
-            Social media marketing is a way to get your information out to a
-            large audience. Many companies are using social media marketing
-            because this is where potential customers reside.
+            Have you seen the Kite social media strategy? We at Cheesecake were
+            really excited to be working with them on this exciting project.
+            This is something that we would love to get involved in in the
+            future. We love a good challenge and this seems like it will
+            certainly be a tough one.
           </p>
         </div>
         <div className="fullImg-container">
@@ -44,11 +46,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Create a strong social media profile</h2>
+          <h2>Build a strong presence</h2>
           <p>
-            Social media is a powerful, effective tool for reaching an
-            ever-growing audience. Social networks such as Instagram and Twitter
-            can be used to effectively build relationships with fans.
+            One of the problems you face when creating social media strategy for
+            a client is how to structure everything in a way that different
+            users can understand. Different people have different ways of
+            perceiving and understanding things, so creating a unique strategy
+            for each client is important.
           </p>
         </div>
 
@@ -64,13 +68,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Analyze your customer’s opinion</h2>
+          <h2>The social media hype!</h2>
           <p>
-            Social media marketing is the practice of interacting with customers
-            through social media sites. Companies can use social media channels
-            to research customer opinions about their products or services,
-            reach new customers and guide them through the sales process, and
-            communicate directly with consumers.
+            For many businesses and brands, social media is one of the most
+            effective tools available to reach new audiences and connect with
+            existing fans and followers. However, many new and small businesses
+            actually underestimate the power that can be unlocked by leveraging
+            social media effectively.
           </p>
         </div>
         <div className="fullImg-container">
@@ -96,12 +100,12 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Become an ace of social media</h2>
+          <h2>Our journey with Kite</h2>
           <p>
-            Do you want to master social media marketing? For starters, what do
-            you want to achieve with your presence on social media? Is it about
-            increasing sales, or engagement with an audience, or maybe even
-            building trust?
+            Cheesecake design agency helped Kite social media strategy enhance
+            the UI and UX of the website. As a partner agency, we were able to
+            help Kite’s social media strategy with user experience and UI design
+            ideas that lead to a much more streamlined user experience.
           </p>
         </div>
 
