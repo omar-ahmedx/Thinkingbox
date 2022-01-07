@@ -235,14 +235,14 @@ function Nav(props) {
             path="culture"
             element={<Culture delay={props.delay} />}
           />
-          <Route exact path="indie" element={<Case1 />} />
-          <Route exact path="kite" element={<Case2 />} />
-          <Route exact path="portfolio" element={<Case3 />} />
-          <Route exact path="frontend" element={<Case4 />} />
-          <Route exact path="socialmedia" element={<Case5 />} />
-          <Route exact path="artwork" element={<Case6 />} />
-          <Route exact path="kiteArtwork" element={<Case7 />} />
-          <Route exact path="techniekArtwork" element={<Case8 />} />
+          <Route exact path="work/indie" element={<Case1 />} />
+          <Route exact path="work/kite" element={<Case2 />} />
+          <Route exact path="work/portfolio" element={<Case3 />} />
+          <Route exact path="work/frontend" element={<Case4 />} />
+          <Route exact path="work/socialmedia" element={<Case5 />} />
+          <Route exact path="work/artwork" element={<Case6 />} />
+          <Route exact path="work/kiteArtwork" element={<Case7 />} />
+          <Route exact path="work/techniekArtwork" element={<Case8 />} />
         </Routes>
       </AnimatePresence>
     </div>
