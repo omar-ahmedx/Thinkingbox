@@ -217,36 +217,34 @@ function Nav(props) {
 
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route exact path="/" element={<Home delay={props.delay} />}></Route>
-          <Route
-            exact
-            path="/work"
-            element={<Work delay={props.delay} />}
-          ></Route>
-          <Route
-            exact
-            path="/careers"
-            element={<Careers delay={props.delay} />}
-          ></Route>
-          <Route
-            exact
-            path="/contact"
-            element={<Contact delay={props.delay} />}
-          ></Route>
-          <Route exact path="/archive" element={<Archive />}></Route>
-          <Route
-            exact
-            path="/culture"
-            element={<Culture delay={props.delay} />}
-          ></Route>
-          <Route exact path="/indie" element={<Case1 />}></Route>
-          <Route exact path="/kite" element={<Case2 />}></Route>
-          <Route exact path="/portfolio" element={<Case3 />}></Route>
-          <Route exact path="/frontend" element={<Case4 />}></Route>
-          <Route exact path="/socialmedia" element={<Case5 />}></Route>
-          <Route exact path="/artwork" element={<Case6 />}></Route>
-          <Route exact path="/kiteArtwork" element={<Case7 />}></Route>
-          <Route exact path="/techniekArtwork" element={<Case8 />}></Route>
+          <Route exact path="/" element={<Home delay={props.delay} />}>
+            <Route exact path="work" element={<Work delay={props.delay} />}>
+              <Route exact path="indie" element={<Case1 />}></Route>
+              <Route exact path="kite" element={<Case2 />}></Route>
+              <Route exact path="portfolio" element={<Case3 />}></Route>
+              <Route exact path="frontend" element={<Case4 />}></Route>
+              <Route exact path="socialmedia" element={<Case5 />}></Route>
+              <Route exact path="artwork" element={<Case6 />}></Route>
+              <Route exact path="kiteArtwork" element={<Case7 />}></Route>
+              <Route exact path="techniekArtwork" element={<Case8 />}></Route>
+            </Route>
+            <Route
+              exact
+              path="careers"
+              element={<Careers delay={props.delay} />}
+            ></Route>
+            <Route
+              exact
+              path="contact"
+              element={<Contact delay={props.delay} />}
+            ></Route>
+            <Route exact path="/archive" element={<Archive />}></Route>
+            <Route
+              exact
+              path="culture"
+              element={<Culture delay={props.delay} />}
+            ></Route>
+          </Route>
         </Routes>
       </AnimatePresence>
     </div>
