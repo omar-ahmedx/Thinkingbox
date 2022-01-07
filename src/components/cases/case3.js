@@ -17,14 +17,14 @@ function Case1() {
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
       <main className="case-container">
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Highly interactive website</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            In today's tech-savvy world, improving user interfaces and
+            experiences is crucial to staying competitive. a single or one-page
+            website has only one HTML page. One page websites are more
+            responsive, attractive and mobile-friendly. Cheesecake is proud to
+            offer an array of UI UX design services to help your business
+            generate better revenue.
           </p>
         </div>
         <div className="fullImg-container">
@@ -54,14 +54,13 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>The UI Hub</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Have you ever had trouble finding design inspiration? You’re not
+            alone. I’m sure you’ve created an amazing website, but still don’t
+            know how to improve UI/UX for your users. I frequently find myself
+            in that dilemma and I know a lot of people are too embarrassed to
+            ask for help.
           </p>
         </div>
 
@@ -72,6 +71,16 @@ function Case1() {
             data-src={img4}
             alt=""
           />
+        </div>
+        <div className="case-text">
+          <h2>Design System</h2>
+          <p>
+            One of the things that make the user interface design work is
+            iconography. A lot of people think that icons are just a way to make
+            buttons and interfaces look better. The main purpose, however, is
+            quite different. Frontend Development Company can improve how users
+            interact with your website and make it easier to understand and use.
+          </p>
         </div>
         <div className="fullImg-container">
           <img
@@ -92,14 +101,12 @@ function Case1() {
         </div>
 
         <div className="case-text">
-          <h2>Rise and shine</h2>
+          <h2>Conclusion</h2>
           <p>
-            Mountain Dew wanted to launch their new mental-boosting,
-            immune-supporting, no-sugar-added morning beverage with a bang, so
-            we created a dynamic, kinetic and shoppable web experience. Working
-            with agency partners Laundry Service, who provided a design inspired
-            by Rise’s bright and bold packaging, we brought the cans and flavors
-            to life in a smooth-scrolling WebGL site that is always in motion.
+            Achieving the best user experience is the trend of modern web
+            development. When it comes to solving any task and reaching success,
+            a good UI UX design firm can be really helpful. Here we suggest to
+            you our advanced UI UX design services.
           </p>
         </div>
 

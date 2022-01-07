@@ -192,7 +192,7 @@ function Work(props) {
             </div>
 
             <div className="info">
-              <p>Social Media</p>
+              <p>Social Media Strategy</p>
               <p className="sub-info">
                 Kite <span className="dot"></span> Social media strategy
               </p>
