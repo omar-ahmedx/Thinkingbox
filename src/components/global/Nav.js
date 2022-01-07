@@ -217,7 +217,7 @@ function Nav(props) {
 
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route exact path="" element={<Home delay={props.delay} />} />
+          <Route exact path="/" element={<Home delay={props.delay} />} />
           <Route exact path="work" element={<Work delay={props.delay} />} />
           <Route
             exact
