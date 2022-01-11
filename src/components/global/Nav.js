@@ -108,6 +108,12 @@ function Nav(props) {
             </NavLink>
             <div className="nav-border-expand"></div>
           </div>
+          <div className="links-container">
+            <NavLink to="blog" onClick={close}>
+              blog
+            </NavLink>
+            <div className="nav-border-expand"></div>
+          </div>
           {/*<div className="links-container">
               <NavLink to="archive">Archive</NavLink>
               <div className="nav-border-expand"></div>
@@ -192,6 +198,22 @@ function Nav(props) {
                 <div>Contact</div>
                 <div>Contact</div>
                 <div>Contact</div>
+              </div>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  borderBottom: isActive ? "2px solid black" : "",
+                };
+              }}
+              to="blog"
+            >
+              <div className="deconstructed">
+                Blog
+                <div>Blog</div>
+                <div>Blog</div>
+                <div>Blog</div>
+                <div>Blog</div>
               </div>
             </NavLink>
 

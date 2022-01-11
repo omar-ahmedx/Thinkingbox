@@ -74,11 +74,18 @@ function Work(props) {
     });
   });
 
+  const eyeRemove = () => {
+    document.querySelector(".cursor-dot").classList.remove("eye");
+    document
+      .querySelector(".cursor-dot-outline")
+      .classList.remove("eye-outline");
+    props.delay(true);
+  };
   return (
     <motion.div exit={{ opacity: 0 }} className="work-section sections-padding">
       <main className="work">
         <div className="work-container mouse-hover">
-          <NavLink to="portfolio">
+          <NavLink onClick={eyeRemove} to="portfolio">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -109,7 +116,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="indie">
+          <NavLink onClick={eyeRemove} to="indie">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -139,7 +146,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="kite">
+          <NavLink onClick={eyeRemove} to="kite">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -170,7 +177,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="socialmedia">
+          <NavLink onClick={eyeRemove} to="socialmedia">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -201,7 +208,7 @@ function Work(props) {
         </div>
 
         <div className="work-container mouse-hover">
-          <NavLink to="kiteArtwork">
+          <NavLink onClick={eyeRemove} to="kiteArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -231,7 +238,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="techniekArtwork">
+          <NavLink onClick={eyeRemove} to="techniekArtwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -261,7 +268,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="frontend">
+          <NavLink onClick={eyeRemove} to="frontend">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -291,7 +298,7 @@ function Work(props) {
           </NavLink>
         </div>
         <div className="work-container mouse-hover">
-          <NavLink to="artwork">
+          <NavLink onClick={eyeRemove} to="artwork">
             <div className="work-shape-wrapper">
               <div className="work-shape">
                 <img
@@ -323,7 +330,7 @@ function Work(props) {
 
         {/* <div className="btn-container archive-btn">
           <div className="btn-link">
-            <NavLink to="archive">
+            <NavLink onClick={eyeRemove} to="archive">
               <div className="btn">
                 <div className="line-btn"></div> <div>The Archive</div>
               </div>

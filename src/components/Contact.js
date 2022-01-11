@@ -36,10 +36,10 @@ function Contact(props) {
 
     emailjs
       .sendForm(
-        "service_rqzvnhb",
-        "template_6c0qfnq",
+        "service_m6seu3s",
+        "template_qdlax6n",
         form.current,
-        "user_U1WAViONvoh3IWln5NcVR"
+        "user_KuuaQcc7aQYck7voeam20"
       )
       .then(
         (result) => {
@@ -49,10 +49,48 @@ function Contact(props) {
           console.log(error.text);
         }
       );
+
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => {
+      input.value = " ";
+    });
+    document.querySelector("textarea").value = " ";
+
+    document.querySelector("main").style.opacity = 0.2;
+    document.querySelector("header").style.opacity = 0.2;
+    document.querySelector("footer").style.opacity = 0.2;
+    document.querySelector(".message-sent").style.display = "block";
   };
 
+  const closeText = () => {
+    document.querySelector("main").style.opacity = 1;
+    document.querySelector("header").style.opacity = 1;
+    document.querySelector("footer").style.opacity = 1;
+    document.querySelector(".message-sent").style.display = "none";
+  };
   return (
     <motion.div exit={{ opacity: 0 }} className="sections-padding">
+      <div className="message-sent">
+        <span className="text-close mouse-hover" onClick={closeText}>
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect
+              className="first-line-transition"
+              x="20"
+              y="30"
+              width="65"
+              height="7"
+            ></rect>
+            <rect
+              className="sec-line-transition"
+              y="50"
+              width="65"
+              height="7"
+            ></rect>
+          </svg>
+        </span>
+        <h2>Thank You</h2>
+        <p>We can't wait to read your message and will be in touch soon</p>
+      </div>
       <header className="contact-header">
         <div className="slide-header">
           <h1>
@@ -138,6 +176,7 @@ function Contact(props) {
                 <label>
                   <div>Email |</div>
                   <input
+                    required="True"
                     name="user_email"
                     type="email"
                     placeholder="hello@youlooknice.com"
@@ -146,6 +185,7 @@ function Contact(props) {
                 <label>
                   <div>Subject |</div>
                   <input
+                    required="True"
                     name="subject"
                     type="text"
                     placeholder="tell us about your dream"
@@ -157,6 +197,7 @@ function Contact(props) {
                 <label>
                   <div>First Name |</div>
                   <input
+                    required="True"
                     name="fisrt_name"
                     type="text"
                     placeholder="your given name"
@@ -165,6 +206,7 @@ function Contact(props) {
                 <label>
                   <div>Last Name |</div>
                   <input
+                    required="True"
                     name="last_name"
                     type="text"
                     placeholder="your family name"
@@ -175,12 +217,13 @@ function Contact(props) {
                 <div>Message | </div>
                 <br />
                 <textarea
+                  required="True"
                   name="message"
                   placeholder="We are excited to hear from you. Truly. It makes our day. Maybe, you need a website, or a social campaign; the scenario, we are ready to make something amazing with you."
                 ></textarea>
               </label>
               <div>
-                <button className="work-with mouse-hover" type="submit">
+                <button className="work-with" type="submit">
                   <div className="line"></div> <div>Let's Talk</div>
                 </button>
               </div>

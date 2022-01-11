@@ -76,6 +76,9 @@ input {
   font-size: 20px;
   outline: none;
 }
+.fx-relay-email-input-wrapper {
+  width: 70% !important;
+}
 input:active,
 input:hover,
 textarea:active,
@@ -132,4 +135,24 @@ button {
   border: 1px solid #c7c7c7;
   border-right: none;
   border-left: none;
+}
+.message-sent {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 780px;
+  z-index: 2;
+}
+.message-sent h2 {
+  margin-bottom: 20px;
+}
+.text-close {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
